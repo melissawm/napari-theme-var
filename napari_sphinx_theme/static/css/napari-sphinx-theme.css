@@ -10989,25 +10989,6 @@ footer .footer-item p {
     margin-bottom: 0
 }
 
-.bd-search {
-    position: relative;
-    padding: 1rem 15px;
-    margin-right: -15px;
-    margin-left: -15px
-}
-
-.bd-search .icon {
-    position: absolute;
-    color: #a4a6a7;
-    left: 25px
-}
-
-.bd-search input {
-    border-radius: .2rem;
-    border: 1px solid #e5e5e5;
-    padding-left: 35px
-}
-
 .bd-toc {
     order: 2;
     height: calc(100vh - 2rem);
@@ -13201,7 +13182,6 @@ figure figcaption .legend p {
 
 form.search {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000
 }
