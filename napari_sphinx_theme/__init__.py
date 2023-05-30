@@ -29,7 +29,6 @@ def update_templates(app, pagename, templatename, context, doctree):
                 if not os.path.splitext(template)[1]:
                     context[section][ii] = template + ".html"
 
-
 def set_config_defaults(app):
 
     try:
@@ -79,7 +78,6 @@ def setup(app):
     app.connect("html-page-context", update_templates)
 
     # Include templates for sidebar
-    print(f"{here=}")
     app.config.templates_path.append(str(here / "_templates"))
 
     return {'version': __version__, 'parallel_read_safe': True}
