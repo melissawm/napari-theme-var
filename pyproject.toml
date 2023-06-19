@@ -14,7 +14,7 @@ dependencies = [
   "pydata-sphinx-theme>0.13.1",
   "napari",
   "packaging",
-  "sphinx>5",
+  "sphinx<6",
 ]
 
 license = { file = "LICENSE" }
