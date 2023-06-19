@@ -13,7 +13,8 @@ requires-python = ">=3.7"
 dependencies = [
   "pydata-sphinx-theme>0.13.1",
   "napari",
-  "packaging"
+  "packaging",
+  "sphinx<6",
 ]
 
 license = { file = "LICENSE" }
