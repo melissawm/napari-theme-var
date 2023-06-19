@@ -59,9 +59,7 @@ napari_sphinx_theme = [
     "theme.conf",
     "*.html",
     "static/css/*.css",
-    "static/images/*.svg",
-    "static/images/*.ico",
-    "static/scripts/*.js",
-    "static/font/*.*",
     "components/*.html",
+    "partials/*.html",
+    "scripts/*.js",
 ]
