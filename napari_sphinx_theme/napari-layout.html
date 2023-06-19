@@ -22,16 +22,13 @@
 {% block body_tag %}
   <body>
 {%- endblock %}
-{%- block content %}
-    {% block docs_navbar %}
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
-      {%- include "docs-navbar.html" %}
-    </nav>
-    {% endblock %}
+{% block content %}
 
-    {# Added to support a banner with an alert #}
-    {%- include "announcement.html" -%}
-
+  {% block docs_navbar %}
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    {%- include "sections/header.html" %}
+  </nav>
+  {% endblock docs_navbar %}
     <div class="napari-page">
         {% block docs_sidebar %}
           {% if sidebars %}
@@ -87,8 +84,4 @@
 
     <script src="{{ pathto('_static/scripts/napari-sphinx-theme.js', 1) }}"></script>
 
-{%- endblock %}
-
-{%- block footer %}
-{%- include "footer.html" %}
 {%- endblock %}
