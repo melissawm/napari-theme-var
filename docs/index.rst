@@ -1,9 +1,5 @@
 Welcome to napari Sphinx Theme's documentation!
-===================================================
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+===============================================
 
 This is the official Sphinx theme for napari documentation.
 It extends the `pydata_sphinx_theme project <https://pydata-sphinx-theme.readthedocs.io/en/stable/>`__,
@@ -24,3 +20,8 @@ Configuration for this demo
 The full ``conf.py`` is
 
 .. literalinclude:: conf.py
+
+.. toctree::
+
+   test1
+   test2
