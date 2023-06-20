@@ -56,7 +56,7 @@ html_theme_options = {
     # and CI builds https://github.com/pydata/pydata-sphinx-theme/pull/386
     "show_toc_level": 1,
     "show_prev_next": False,
-    "navbar_end": ["version-switcher"],
+    "navbar_end": ["version-switcher", "navbar-icon-links"],
     # "left_sidebar_end": ["custom-template.html", "sidebar-ethical-ads.html"],
     # "footer_items": ['navbar-version', 'napari-footer-links', 'copyright'],
     "switcher": {
