@@ -10236,6 +10236,7 @@ div.admonition > .admonition-title,
   font-weight: 700;
   background-color: rgba(var(--pst-color-admonition-default), 0.1);
 }
+
 div.admonition > .admonition-title:before,
 .admonition > .admonition-title:before {
   position: absolute;
@@ -10245,6 +10246,10 @@ div.admonition > .admonition-title:before,
   color: rgba(var(--pst-color-admonition-default), 1);
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+div.admonition > .admonition-title:after,
+.admonition > .admonition-title:after {
+  content: "";
 }
 div.admonition > .admonition-title + *,
 .admonition > .admonition-title + * {
