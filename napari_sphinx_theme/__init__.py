@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
 
+from .calendar import CalendarDirective
+
 __version__ = "0.0.1dev"
 
 
@@ -46,25 +48,25 @@ def get_html_theme_path():
     """Return list of HTML theme paths."""
     return [str(Path(__file__).parent.parent.resolve())]
 
+GOOGLE_CALENDAR_API_KEY = os.environ.get('GOOGLE_CALENDAR_API_KEY', '')
 
-# def setup_html_page_context(app, pagename, templatename, context, doctree):
-#     """Add a mpl_path template function."""
-#     navbar_links = context['theme_navbar_links']
-#     if navbar_links not in ['internal', 'absolute', 'server-stable']:
-#         raise ValueError(f'Invalid navbar_links theme option: {navbar_links}')
+def add_google_calendar_secrets(app, exception):
+    if exception is not None:
+        return
 
-#     def mpl_path(path):
-#         if navbar_links == 'internal':
-#             pathto = context['pathto']
-#             return pathto(path)
-#         elif navbar_links == 'absolute':
-#             return f'https://matplotlib.org/stable/{path}'
-#         elif navbar_links == 'server-stable':
-#             return f'/stable/{path}'
-#         else:
-#             raise ValueError(
-#                 f'Invalid navbar_links theme option: {navbar_links}')
-#     context['mpl_path'] = mpl_path
+    script_path = os.path.join(
+        app.builder.outdir,
+        '_static',
+        'scripts',
+        'napari-sphinx-theme.js'
+    )
+
+    with open(script_path, 'r', encoding="utf8") as f:
+        source = f.read()
+        source = source.replace('{google_calendar_api_key}', GOOGLE_CALENDAR_API_KEY)
+
+    with open(script_path, 'w', encoding="utf8") as f:
+        f.write(source)
 
 
 # For more details, see:
@@ -76,6 +78,7 @@ def setup(app):
     app.add_html_theme("napari_sphinx_theme", str(here))
     app.connect("builder-inited", set_config_defaults)
     app.connect("html-page-context", update_templates)
+    app.add_directive('calendar', CalendarDirective)
 
     # Include templates for sidebar
     app.config.templates_path.append(str(here / "_templates"))
