@@ -1,9 +1,237 @@
+/***************************
+ napari custom colors
+***************************/
+
 html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  --napari-primary-blue: #80d1ff;
+  --napari-deep-blue: #009bf2;
+  --napari-light-blue: #d2efff;
+  --napari-dark-gray: #686868;
+  --napari-gray: #f7f7f7;
+  --pst-font-family-base: Barlow, var(--pst-font-family-base-system);
+  --pst-font-family-heading: Barlow, var(--pst-font-family-base-system);
+  --pst-font-family-monospace: "JetBrains Mono", var(--pst-font-family-monospace-system);
+  --pst-color-headerlink: var(--napari-dark-gray);
+  --pst-color-headerlink-hover: var(--napari-deep-blue);
+  --pst-color-inline-code: 0, 155, 242;
 }
+
+/****************************
+ Nav bar section
+*****************************/
+.navbar,
+.navbar-light {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  background-color: --napari-primary-blue !important;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border-color: #e9ecef #e9ecef #dee2e6;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/***************************
+ napari calendar
+***************************/
+
+/**
+ * By default, `react-calendar` includes no styling, so we need to provide our
+ * own using the Calendar component's CSS classes.
+ */
+.react-calendar,
+.react-calendar__viewContainer {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+}
+
+.react-calendar__month-view,
+.react-calendar__month-view>div,
+.react-calendar__month-view>div>div {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+}
+
+.react-calendar__month-view__days {
+  height: 100%;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  display: grid !important;
+}
+
+.react-calendar__month-view__days__day {
+  display: flex;
+  flex-direction: column;
+}
+
+.react-calendar__month-view__days__day> :not([hidden])~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.react-calendar__month-view__days__day {
+  border-style: none;
+  cursor: default !important;
+  -webkit-tap-highlight-color: transparent;
+  max-width: 100% !important;
+}
+
+.react-calendar__month-view__days__day abbr {
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
+  font-weight: 600;
+  cursor: default;
+  border-style: none;
+}
+
+.react-calendar__month-view__days__day.active-week abbr {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.react-calendar__month-view__days__day.active-week.active-day abbr {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(128 209 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.react-calendar__month-view__days__day:nth-child(n+0) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+
+.react-calendar__month-view__days__day:nth-child(n+8) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.react-calendar__month-view__days__day:nth-child(n+15) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+
+.react-calendar__month-view__days__day:nth-child(n+22) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.react-calendar__month-view__days__day:nth-child(n+29) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+
+.react-calendar__month-view__days__day:nth-child(n+36) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.react-calendar__month-view__days__day:nth-child(n+43) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+
+.react-calendar__month-view__days__day:nth-child(n+50) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.react-calendar__month-view__days__day:nth-child(n+57) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+
+.react-calendar__month-view__days__day ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0px;
+}
+
+.react-calendar__month-view__days__day ul>li {
+  margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0px;
+}
+
+.react-calendar__month-view__days__day ul>li::before {
+  display: none;
+}
+
+.react-calendar__month-view__weekdays {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr[title] {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+.napari-calendar {
+  font-family: Barlow, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.napari-calendar__container {
+  border: 1px solid #80d1ff;
+}
+
+.napari-calendar__popup {
+  width: calc(100vw - 6.25rem);
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #d2efff;
+  border-right: 1px solid #d2efff;
+}
+
+@media (max-width: 495px) {
+  .napari-calendar__popup {
+    width: calc(100vw - 3.125rem);
+  }
+}
+
+.napari-calendar__day-list ul>li {
+  padding: 0px;
+}
+
+.napari-calendar__day-list ul>li::before {
+  display: none;
+}
+
+.napari-calendar__popup-metadata a {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+/****************************
+ Still needs to be curated
+*****************************/
+
+
 
 body {
   margin: 0;
@@ -4288,79 +4516,6 @@ input[type=button].btn-block {
     transition: none;
   }
 }
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-}
-.nav-link:hover, .nav-link:focus {
-  text-decoration: none;
-}
-.nav-link.disabled {
-  color: #6c757d;
-  pointer-events: none;
-  cursor: default;
-}
-
-.nav-tabs {
-  border-bottom: 1px solid #dee2e6;
-}
-.nav-tabs .nav-link {
-  margin-bottom: -1px;
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
-}
-.nav-tabs .nav-link.disabled {
-  color: #6c757d;
-  background-color: transparent;
-  border-color: transparent;
-}
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
-}
-.nav-tabs .dropdown-menu {
-  margin-top: -1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.nav-pills .nav-link {
-  border-radius: 0.25rem;
-}
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #007bff;
-}
-
-.nav-fill > .nav-link,
-.nav-fill .nav-item {
-  flex: 1 1 auto;
-  text-align: center;
-}
-
-.nav-justified > .nav-link,
-.nav-justified .nav-item {
-  flex-basis: 0;
-  flex-grow: 1;
-  text-align: center;
-}
-
 .tab-content > .tab-pane {
   display: none;
 }
@@ -10417,30 +10572,6 @@ h3 {
   }
 }
 
-html {
-  font-size: var(--pst-font-size-base);
-  scroll-padding-top: calc(var(--pst-header-height) + 12px);
-}
-
-body {
-  padding-top: var(--pst-header-height);
-  background-color: white;
-  font-family: var(--pst-font-family-base);
-  font-weight: 400;
-  line-height: 1.65;
-  color: rgba(var(--pst-color-text-base), 1);
-}
-
-p {
-  margin-bottom: 1.15rem;
-  font-size: 1em;
-  color: rgba(var(--pst-color-paragraph), 1);
-  /* section header in docstring pages */
-}
-p.rubric {
-  border-bottom: 1px solid #c9c9c9;
-}
-
 a {
   color: rgba(var(--pst-color-link), 1);
   text-decoration: none;
@@ -10705,15 +10836,6 @@ footer .footer-item p {
   color: #a4a6a7;
 }
 
-.section-nav {
-  padding-left: 0;
-  border-left: 1px solid #eee;
-  border-bottom: none;
-}
-.section-nav ul {
-  padding-left: 1rem;
-}
-
 .toc-entry {
   display: block;
 }
@@ -10772,10 +10894,6 @@ footer .footer-item p {
   }
 }
 
-.bd-sidenav {
-  display: none;
-}
-
 .bd-content {
   padding-top: 20px;
 }
@@ -10809,52 +10927,6 @@ footer .footer-item p {
 }
 .bd-toc-item.active > .bd-toc-link:hover {
   background-color: transparent;
-}
-.bd-toc-item.active > .bd-sidenav {
-  display: block;
-}
-
-nav.bd-links p.caption {
-  font-size: var(--pst-sidebar-caption-font-size);
-  text-transform: uppercase;
-  font-weight: bold;
-  position: relative;
-  margin-top: 1.25em;
-  margin-bottom: 0.5em;
-  padding: 0 1.5rem;
-  color: rgba(var(--pst-color-sidebar-caption), 1);
-}
-nav.bd-links p.caption:first-child {
-  margin-top: 0;
-}
-
-.bd-sidebar .nav {
-  font-size: var(--pst-sidebar-font-size);
-}
-.bd-sidebar .nav ul {
-  list-style: none;
-  padding: 0 0 0 1.5rem;
-}
-.bd-sidebar .nav li > a {
-  display: block;
-  padding: 0.25rem 1.5rem;
-  color: rgba(var(--pst-color-sidebar-link), 1);
-}
-.bd-sidebar .nav li > a:hover {
-  color: rgba(var(--pst-color-sidebar-link-hover), 1);
-  text-decoration: none;
-  background-color: transparent;
-}
-.bd-sidebar .nav li > a.reference.external:after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f35d";
-  font-size: 0.75em;
-  margin-left: 0.3em;
-}
-.bd-sidebar .nav .active > a, .bd-sidebar .nav .active:hover > a {
-  font-weight: 600;
-  color: rgba(var(--pst-color-sidebar-link-active), 1);
 }
 
 /* adjust toc font sizes to improve overview */
@@ -11225,159 +11297,7 @@ div.doctest > div.highlight span.gp {
  * browsers:
  * https://stackoverflow.com/a/29512572
  */
-/**
- * By default, `react-calendar` includes no styling, so we need to provide our
- * own using the Calendar component's CSS classes.
- */
-.react-calendar, .react-calendar__viewContainer {
-  display: flex;
-  flex: 1 1 0%;
-  flex-direction: column;
-}
-.react-calendar__month-view, .react-calendar__month-view > div, .react-calendar__month-view > div > div {
-  display: flex;
-  flex: 1 1 0%;
-  flex-direction: column;
-}
-.react-calendar__month-view__days {
-  height: 100%;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-  display: grid !important;
-}
-.react-calendar__month-view__days__day {
-  display: flex;
-  flex-direction: column;
-}
-.react-calendar__month-view__days__day > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-.react-calendar__month-view__days__day {
-  border-style: none;
-  cursor: default !important;
-  -webkit-tap-highlight-color: transparent;
-  max-width: 100% !important;
-}
-.react-calendar__month-view__days__day abbr {
-  margin-top: 0.25rem;
-  margin-left: 0.25rem;
-  font-weight: 600;
-  cursor: default;
-  border-style: none;
-}
-.react-calendar__month-view__days__day.active-week abbr {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-.react-calendar__month-view__days__day.active-week.active-day abbr {
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(128 209 255 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.react-calendar__month-view__days__day:nth-child(n+0) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
-}
-.react-calendar__month-view__days__day:nth-child(n+8) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.react-calendar__month-view__days__day:nth-child(n+15) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
-}
-.react-calendar__month-view__days__day:nth-child(n+22) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.react-calendar__month-view__days__day:nth-child(n+29) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
-}
-.react-calendar__month-view__days__day:nth-child(n+36) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.react-calendar__month-view__days__day:nth-child(n+43) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
-}
-.react-calendar__month-view__days__day:nth-child(n+50) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.react-calendar__month-view__days__day:nth-child(n+57) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
-}
-.react-calendar__month-view__days__day ul {
-  margin-top: 0.5rem;
-  margin-bottom: 0px;
-}
-.react-calendar__month-view__days__day ul > li {
-  margin: 0px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 0px;
-}
-.react-calendar__month-view__days__day ul > li::before {
-  display: none;
-}
-.react-calendar__month-view__weekdays {
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-.react-calendar__month-view__weekdays__weekday {
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.react-calendar__month-view__weekdays__weekday abbr[title] {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
 
-.napari-calendar {
-  font-family: Barlow, sans-serif;
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.napari-calendar__container {
-  border: 1px solid #80d1ff;
-}
-.napari-calendar__popup {
-  width: calc(100vw - 6.25rem);
-  border-bottom: 1px solid #000;
-  border-left: 1px solid #d2efff;
-  border-right: 1px solid #d2efff;
-}
-@media (max-width: 495px) {
-  .napari-calendar__popup {
-    width: calc(100vw - 3.125rem);
-  }
-}
-.napari-calendar__day-list ul > li {
-  padding: 0px;
-}
-.napari-calendar__day-list ul > li::before {
-  display: none;
-}
-.napari-calendar__popup-metadata a {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
 
 /* stylelint-disable at-rule-no-unknown */
 /**
@@ -11567,9 +11487,6 @@ div.doctest > div.highlight span.gp {
 }
 .bd-sidebar .toctree-checkbox:checked ~ label > img {
   transform: rotate(90deg);
-}
-.bd-sidebar .nav ul {
-  padding: 0px;
 }
 .bd-sidebar .toctree-l1 a {
   padding-left: 32px !important;
@@ -12388,25 +12305,6 @@ figure figcaption .legend p {
   }
 }
 
-/* stylelint-disable at-rule-no-unknown */
-/**
- * Function for clamping a min and max value scaled based on the ratio between
- * the min value and the min content width to ensure proper scaling.
- */
-/**
- * Function for calculating the rem value for another value using a base font
- * size. The default base font size is 16px since that's what's used for most
- * browsers:
- * https://stackoverflow.com/a/29512572
- */
-.section-nav {
-  border-style: none;
-}
-
-.toc-entry a, .section-nav ul {
-  padding-left: 0px;
-}
-
 .toc-entry a {
   margin-bottom: 0.25rem;
 }
@@ -12466,16 +12364,6 @@ figure figcaption .legend p {
   border-left: 1px solid black;
 }
 
-.toc-entry > .nav-link {
-  border-left: 3px solid transparent;
-}
-.toc-entry > .nav-link:hover {
-  border-left: 3px solid #80d1ff;
-}
-.toc-entry > .nav-link.active {
-  border-left: 3px solid #000;
-}
-
 .onthispage {
   border-style: none;
   padding: 0px;
@@ -12485,10 +12373,6 @@ figure figcaption .legend p {
   text-transform: uppercase;
   color: #000 !important;
   margin: 0 !important;
-}
-
-.bd-toc .nav .nav.visible {
-  display: block;
 }
 
 .editthispage {
@@ -13041,21 +12925,7 @@ main[role=main] {
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-/* stylelint-enable */
-:root {
-  --napari-primary-bue: #80d1ff;
-  --napari-deep-blue: #009bf2;
-  --napari-light-blue: #d2efff;
-  --napari-dark-gray: #686868;
-  --napari-gray: #f7f7f7;
-  --pst-font-family-base: Barlow, var(--pst-font-family-base-system);
-  --pst-font-family-heading: Barlow, var(--pst-font-family-base-system);
-  --pst-font-family-monospace: "JetBrains Mono",
-    var(--pst-font-family-monospace-system);
-  --pst-color-headerlink: var(--napari-dark-gray);
-  --pst-color-headerlink-hover: var(--napari-deep-blue);
-  --pst-color-inline-code: 0, 155, 242;
-}
+
 .last\:tw-mr-0:last-child {
   margin-right: 0px;
 }
