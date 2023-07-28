@@ -16,6 +16,17 @@ html {
   --pst-color-inline-code: 0, 155, 242;
 }
 
+body {
+  margin: 0;
+  font-family: Barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  padding-top: 4rem;
+}
+
 /****************************
  Nav bar section
 *****************************/
@@ -343,19 +354,6 @@ napari page
  Still needs to be curated
 *****************************/
 
-
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
-  padding-top: 4rem;
-}
-
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -499,14 +497,6 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-pre,
-code,
-kbd,
-samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;
-}
-
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -520,54 +510,6 @@ table {
 
 table.field-list th.field-name {
   background-color: #eeeeee;
-}
-
-div.versionadded,
-div.versionchanged,
-div.deprecated {
-  padding: 0 0.6rem 0 0.6rem;
-  border-color: rgba(var(--pst-color-versionmodified-default), 1);
-  border-radius: 0.2rem;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05), 0 0 0.0625rem rgba(0, 0, 0, 0.1);
-  background-color: rgba(var(--pst-color-admonition-default), 0.1);
-}
-
-div.versionadded {
-  border-color: rgba(var(--pst-color-versionmodified-added), 1);
-  background-color: rgba(var(--pst-color-versionmodified-added), 0.1);
-}
-
-div.versionchanged {
-  border-color: rgba(var(--pst-color-versionmodified-changed), 1);
-  background-color: rgba(var(--pst-color-versionmodified-changed), 0.1);
-}
-
-div.deprecated {
-  border-color: rgba(var(--pst-color-versionmodified-deprecated), 1);
-  background-color: rgba(var(--pst-color-versionmodified-deprecated), 0.1);
-}
-
-span.versionmodified {
-  font-weight: 700;
-}
-
-span.versionmodified:before {
-  font-style: normal;
-  color: rgba(var(--pst-color-versionmodified-default), 1);
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-span.versionmodified.added:before {
-  color: rgba(var(--pst-color-versionmodified-added), 1);
-}
-
-span.versionmodified.changed:before {
-  color: rgba(var(--pst-color-versionmodified-changed), 1);
-}
-
-span.versionmodified.deprecated:before {
-  color: rgba(var(--pst-color-versionmodified-deprecated), 1);
 }
 
 caption {
@@ -594,17 +536,6 @@ button {
 
 button:focus:not(:focus-visible) {
   outline: 0;
-}
-
-input,
-button,
-select,
-optgroup,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
 }
 
 button,
@@ -908,17 +839,6 @@ div.admonition>.admonition-title,
   padding: 0.4rem 0.6rem 0.4rem 2rem;
   font-weight: 700;
   background-color: rgba(var(--pst-color-admonition-default), 0.1);
-}
-
-div.admonition>.admonition-title:before,
-.admonition>.admonition-title:before {
-  position: absolute;
-  left: 0.6rem;
-  width: 1rem;
-  height: 1rem;
-  color: rgba(var(--pst-color-admonition-default), 1);
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
 }
 
 div.admonition>.admonition-title:after,
@@ -6260,29 +6180,7 @@ a.close.disabled {
     max-width: 1140px;
   }
 }
-.tooltip {
-  position: absolute;
-  z-index: 1070;
-  display: block;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: left;
-  text-align: start;
-  text-decoration: none;
-  text-shadow: none;
-  text-transform: none;
-  letter-spacing: normal;
-  word-break: normal;
-  word-spacing: normal;
-  white-space: normal;
-  line-break: auto;
-  font-size: 0.875rem;
-  word-wrap: break-word;
-  opacity: 0;
-}
+
 .tooltip.show {
   opacity: 0.9;
 }
@@ -6358,35 +6256,6 @@ a.close.disabled {
   text-align: center;
   background-color: #000;
   border-radius: 0.25rem;
-}
-
-.popover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1060;
-  display: block;
-  max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: left;
-  text-align: start;
-  text-decoration: none;
-  text-shadow: none;
-  text-transform: none;
-  letter-spacing: normal;
-  word-break: normal;
-  word-spacing: normal;
-  white-space: normal;
-  line-break: auto;
-  font-size: 0.875rem;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
 }
 .popover .arrow {
   position: absolute;
@@ -10358,10 +10227,6 @@ button.bg-dark:focus {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-}
-
 .text-justify {
   text-align: justify !important;
 }
@@ -10703,13 +10568,6 @@ a.headerlink:hover {
   color: rgba(var(--pst-color-headerlink-hover), 1);
 }
 
-.heading-style, h6, h5, h4, h3, h2, h1 {
-  margin: 2.75rem 0 1.05rem;
-  font-family: var(--pst-font-family-heading);
-  font-weight: 400;
-  line-height: 1.15;
-}
-
 h1 {
   margin-top: 0;
   font-size: var(--pst-font-size-h1);
@@ -10749,13 +10607,6 @@ small,
 hr {
   border: 0;
   border-top: 1px solid #e5e5e5;
-}
-
-pre,
-code,
-kbd,
-samp {
-  font-family: var(--pst-font-family-monospace);
 }
 
 code {
@@ -10877,10 +10728,6 @@ a.footnote-reference {
 
 .topic {
   background-color: #eee;
-}
-
-.viewcode-back {
-  font-family: var(--pst-font-family-base);
 }
 
 .viewcode-block:target {
@@ -11714,19 +11561,6 @@ code {
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-span.guilabel {
-  font-family: Barlow, sans-serif;
-  font-weight: 600;
-  border-radius: 0px;
-  border-style: none;
-  --tw-bg-opacity: 1;
-  background-color: rgb(210 239 255 / var(--tw-bg-opacity));
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  font-size: 1.0625rem;
-  line-height: 1.59375rem;
 }
 
 aside.sidebar {
@@ -12877,9 +12711,6 @@ main[role=main] {
 .tw-text-left {
   text-align: left;
 }
-.tw-font-barlow {
-  font-family: Barlow, sans-serif;
-}
 .tw-text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -12907,6 +12738,9 @@ main[role=main] {
 }
 .tw-font-medium {
   font-weight: 500;
+}
+.tw-font-barlow {
+  font-family: Barlow, sans-serif;
 }
 .tw-uppercase {
   text-transform: uppercase;
