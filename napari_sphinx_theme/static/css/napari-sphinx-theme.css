@@ -228,6 +228,118 @@ html {
 }
 
 /****************************
+napari page
+*****************************/
+.napari-page {
+  margin-top: 7rem;
+  display: grid;
+  flex: 1 1 auto;
+  justify-content: center;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 875px) {
+  .napari-page {
+    grid-template-columns: 775px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .napari-page {
+    gap: 3rem;
+  }
+
+  .napari-page {
+    grid-template-columns: 225px 775px;
+  }
+}
+
+@media (min-width: 1425px) {
+  .napari-page {
+    grid-template-columns: 225px 775px 225px;
+  }
+}
+
+.napari-page .bd-sidebar,
+.napari-page .bd-toc,
+.napari-page .bd-content {
+  max-width: unset;
+}
+
+.napari-page .bd-sidebar {
+  height: unset;
+  position: static;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-style: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0 !important;
+}
+
+@media (min-width: 1150px) {
+  .napari-page .bd-sidebar {
+    display: block;
+  }
+
+  .napari-page .bd-sidebar {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .napari-page .bd-sidebar {
+    padding-top: 3rem;
+  }
+}
+
+.napari-page .bd-content {
+  width: 100vw;
+  padding: 0 1.5625rem !important;
+}
+
+@media (min-width: 875px) {
+  .napari-page .bd-content {
+    width: 100%;
+  }
+}
+
+.napari-page .bd-content section {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.napari-page .bd-content img,
+.napari-page .bd-content video {
+  width: 100%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.napari-page .bd-toc {
+  top: 5rem;
+  grid-column-start: 3;
+  display: none;
+}
+
+.napari-page .bd-toc> :not([hidden])~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.napari-page .bd-toc {
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1425px) {
+  .napari-page .bd-toc {
+    display: block;
+  }
+}
+
+/****************************
  Still needs to be curated
 *****************************/
 
@@ -12436,97 +12548,7 @@ main[role=main] {
   }
 }
 
-.napari-page {
-  margin-top: 3rem;
-  display: grid;
-  flex: 1 1 auto;
-  justify-content: center;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 875px) {
-  .napari-page {
-    grid-template-columns: 775px;
-  }
-}
-@media (min-width: 1150px) {
-  .napari-page {
-    gap: 3rem;
-  }
-  .napari-page {
-    grid-template-columns: 225px 775px;
-  }
-}
-@media (min-width: 1425px) {
-  .napari-page {
-    grid-template-columns: 225px 775px 225px;
-  }
-}
-.napari-page .bd-sidebar,
-.napari-page .bd-toc,
-.napari-page .bd-content {
-  max-width: unset;
-}
-.napari-page .bd-sidebar {
-  height: unset;
-  position: static;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  border-style: none;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0 !important;
-}
-@media (min-width: 1150px) {
-  .napari-page .bd-sidebar {
-    display: block;
-  }
-  .napari-page .bd-sidebar {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  .napari-page .bd-sidebar {
-    padding-top: 3rem;
-  }
-}
-.napari-page .bd-content {
-  width: 100vw;
-  padding: 0 1.5625rem !important;
-}
-@media (min-width: 875px) {
-  .napari-page .bd-content {
-    width: 100%;
-  }
-}
-.napari-page .bd-content section {
-  max-width: 100%;
-  overflow-x: auto;
-}
-.napari-page .bd-content img, .napari-page .bd-content video {
-  width: 100%;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-}
-.napari-page .bd-toc {
-  top: 5rem;
-  grid-column-start: 3;
-  display: none;
-}
-.napari-page .bd-toc > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-.napari-page .bd-toc {
-  padding-bottom: 3rem;
-}
-@media (min-width: 1425px) {
-  .napari-page .bd-toc {
-    display: block;
-  }
-}
+
 
 /* stylelint-disable */
 .tw-static {
