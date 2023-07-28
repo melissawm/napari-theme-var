@@ -37,16 +37,6 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   background-color: --napari-primary-blue !important;
 }
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
-}
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
-}
 
 /***************************
  napari calendar
