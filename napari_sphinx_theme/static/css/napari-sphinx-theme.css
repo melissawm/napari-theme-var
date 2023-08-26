@@ -19,6 +19,10 @@ html {
     --pst-color-inline-code: 0, 155, 242;
 }
 
+html[data-theme="light"] {
+    --pst-color-primary: black;
+}
+
 body {
     margin: 0;
     font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -253,12 +257,155 @@ button.btn.version-switcher__button {
     font-weight: 600;
     border-style: none;
 }
-/*
-#version_switcher .version-switcher-chevron {
-    margin-left: 0.625rem;
+
+/***************************
+ sidebar
+***************************/
+
+.bd-sidebar-primary {
+    border-right: none;
+    max-width: fit-content;
+    overflow-y: unset;
+    position: static;
+    max-height: unset;
 }
 
-#version_switcher.show .version-switcher-chevron {
-    transform: rotate(180deg);
+.bd-sidebar a.reference,
+.bd-sidebar .caption-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 }
-*/
+
+nav.bd-links li>a {
+    color: var(--napari-color-text-base);
+    display: block;
+    line-height: 1.25rem;
+}
+
+.navbar-nav li a:focus,
+.navbar-nav li a:hover,
+.navbar-nav li.current>a {
+    color: var(--napari-color-text-base);
+}
+
+.bd-sidebar label {
+    left: 0px;
+}
+
+.bd-sidebar-primary label.toctree-toggle:hover {
+    background: none;
+}
+
+
+.bd-sidebar-primary label.toctree-toggle i.fa-solid.fa-chevron-down::before {
+    content: "\f04b";
+    font-family: FontAwesome;
+    font-size: 0.5rem;
+    /*<i class="fa-solid fa-play"></i>*/
+}
+
+.navbar-nav .toctree-checkbox:checked~label i {
+    transform: rotate(90deg);
+}
+
+.bd-sidebar {
+    padding-top: 2rem;
+}
+
+.bd-sidebar .toctree-l1 a {
+    padding-left: 32px !important;
+}
+ 
+.bd-sidebar .toctree-l2 {
+    margin-left: 1rem;
+    border-left: 1px solid var(--napari-color-text-base);
+}
+
+.bd-sidebar .toctree-l2 label {
+    left: 4px;
+}
+
+.bd-sidebar .toctree-l2 a {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    border-left: 2px solid transparent;
+    color: var(--napari-color-text-base) !important;
+}
+
+.bd-sidebar .toctree-l2 a:hover,
+.bd-sidebar .toctree-l2 a.current:hover {
+    border-left: 2px solid var(--napari-primary-blue);
+}
+
+.bd-sidebar .toctree-l2 a.current {
+    border-left: 2px solid var(--napari-color-text-base);
+}
+
+.bd-sidebar .toctree-l3 label {
+    left: 6px;
+}
+
+.bd-sidebar .toctree-l3 a {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    border-left: 2px solid transparent;
+    color: var(--napari-color-text-base) !important;
+}
+
+.bd-sidebar .toctree-l3 a:hover,
+.bd-sidebar .toctree-l3 a.current:hover {
+    border-left: 2px solid var(--napari-primary-blue);
+}
+
+.bd-sidebar .toctree-l3 a.current {
+    border-left: 2px solid var(--napari-color-text-base);
+}
+
+.bd-sidebar .toctree-l4 label {
+    left: 8px;
+}
+
+.bd-sidebar .toctree-l4 a {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    border-left: 2px solid transparent;
+    color: var(--napari-color-text-base) !important;
+}
+
+.bd-sidebar .toctree-l4 a:hover,
+.bd-sidebar .toctree-l4 a.current:hover {
+    border-left: 2px solid var(--napari-primary-blue);
+}
+
+.bd-sidebar .toctree-l4 a.current {
+    border-left: 2px solid var(--napari-color-text-base);
+}
+
+.bd-sidebar .toctree-l5 label {
+    left: 10px;
+}
+
+.bd-sidebar .toctree-l5 a {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    border-left: 2px solid transparent;
+    color: var(--napari-color-text-base) !important;
+}
+
+.bd-sidebar .toctree-l5 a:hover,
+.bd-sidebar .toctree-l5 a.current:hover {
+    border-left: 2px solid var(--napari-primary-blue);
+}
+
+.bd-sidebar .toctree-l5 a.current {
+    border-left: 2px solid var(--napari-color-text-base);
+}
+
