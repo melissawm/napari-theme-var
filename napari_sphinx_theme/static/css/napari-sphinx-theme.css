@@ -1,3 +1,51 @@
+/***************************
+ napari custom colors
+***************************/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+html {
+    --napari-primary-blue: #80d1ff;
+    --napari-deep-blue: #009bf2;
+    --napari-light-blue: #d2efff;
+    --napari-dark-gray: #686868;
+    --napari-gray: #f7f7f7;
+    --napari-color-text-base: black;
+    --pst-font-family-base: "Barlow", var(--pst-font-family-base-system);
+    --pst-font-family-heading: "Barlow", var(--pst-font-family-base-system);
+    --pst-font-family-monospace: "JetBrains Mono", var(--pst-font-family-monospace-system);
+    --pst-font-size-base: 16px;
+    --pst-color-headerlink: var(--napari-dark-gray);
+    --pst-color-headerlink-hover: var(--napari-deep-blue);
+    --pst-color-inline-code: 0, 155, 242;
+}
+
+body {
+    margin: 0;
+    font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: left;
+    background-color: #fff;
+    color: var(--napari-color-text-base);
+}
+
+p {
+    color: var(--napari-color-text-base);
+}
+p,
+.line-block .line {
+    line-height: 1.5;
+    font-size: 1.0625rem;
+}
+
+h1 {
+    font-size: 2.1875rem;
+    line-height: 125%;
+    font-weight: bolder;
+}
+
+/***************************
+ napari footer
+***************************/
+
 .napari-footer {
     display: flex;
     flex-shrink: 0;
@@ -6,8 +54,7 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    background-color: rgb(0 0 0);
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 1.5rem;
@@ -37,8 +84,6 @@
 
 @media (min-width: 780px) {
     .napari-footer .footer-item--with-napari-copyright {
-        width: -webkit-max-content;
-        width: -moz-max-content;
         width: max-content;
     }
 
@@ -52,18 +97,15 @@
 }
 
 .napari-footer a {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: rgb(255 255 255);
 }
 
 .napari-footer a:hover {
-    --tw-text-opacity: 1;
-    color: rgb(210 239 255 / var(--tw-text-opacity));
+    color: rgb(210 239 255);
 }
 
 .napari-footer a {
     white-space: nowrap;
-    -webkit-text-decoration-line: none;
     text-decoration-line: none;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -101,8 +143,7 @@
 .napari-footer .napari-copyright {
     display: flex;
     flex-direction: column;
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: rgb(255 255 255);
 }
 
 .napari-footer .napari-copyright,
@@ -126,9 +167,8 @@
 }
 
 .napari-footer .napari-copyright .sphinx-link> :not([hidden])~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(0.25rem);
+    margin-left: calc(0.25rem);
 }
 
 .napari-footer .napari-copyright .sphinx-version {
@@ -146,3 +186,79 @@
 .napari-footer .footer-icon__hover-blue:hover .footer-icon__light-blue {
     display: block;
 }
+
+/****************************
+ Nav bar section
+*****************************/
+.navbar {
+    background-color: var(--napari-primary-blue) !important;
+    height: 64px;
+    box-shadow: none;
+}
+
+.bd-header .navbar-nav li a.nav-link {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    vertical-align: middle;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0);
+    position: relative;
+    font-weight: bolder;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+    text-decoration: none;
+    color: rgba(0, 0, 0);
+}
+
+.navbar .navbar-brand p.title {
+    font-size: 1rem;
+    line-height: 125%;
+}
+
+.navbar .nav-item a {
+    text-decoration-line: none;
+    color: #000 !important;
+    font-size: 1.0625rem;
+    padding: 22px 1.0625rem 10px !important;
+    border-bottom: .1875rem solid transparent;
+    font-weight: 500 !important;
+}
+
+.navbar .nav-item.active a {
+    font-weight: 700 !important;
+}
+.navbar .nav-item.active a,
+.navbar .nav-item:hover a {
+    border-bottom: .1875rem solid #000;
+}
+.navbar .nav-item a>i {
+    margin-left: 0.5rem;
+    font-size: 0.875rem !important;
+}
+
+.col-lg-9.navbar-header-items {
+    max-width: 75%;
+}
+
+/***************************
+ version switcher
+***************************/
+
+button.btn.version-switcher__button {
+    padding-top: 15px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-style: none;
+}
+/*
+#version_switcher .version-switcher-chevron {
+    margin-left: 0.625rem;
+}
+
+#version_switcher.show .version-switcher-chevron {
+    transform: rotate(180deg);
+}
+*/
