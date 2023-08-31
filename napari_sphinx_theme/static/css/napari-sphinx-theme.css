@@ -258,6 +258,21 @@ button.btn.version-switcher__button {
     border-style: none;
 }
 
+.version-switcher__menu a.list-group-item {
+    background-color: var(--pst-color-on-background);
+    color: var(--pst-color-text-base);
+    padding: .5rem 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.version-switcher__menu,
+button.version-switcher__button {
+    min-width: max-content;
+    border-radius: unset;
+}
+
 /***************************
  sidebar
 ***************************/
