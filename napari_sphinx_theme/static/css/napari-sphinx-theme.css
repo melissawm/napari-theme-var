@@ -64,6 +64,7 @@ h1 {
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
 }
+
 @media (min-width: 495px) {
     .napari-footer {
         padding-left: 3rem;
@@ -86,6 +87,7 @@ h1 {
     justify-content: flex-end;
 }
 
+
 @media (min-width: 780px) {
     .napari-footer .footer-item--with-napari-copyright {
         width: max-content;
@@ -95,6 +97,7 @@ h1 {
         justify-content: flex-start;
     }
 }
+
 
 .napari-footer p {
     color: #fff !important;
@@ -194,6 +197,7 @@ h1 {
 /****************************
  Nav bar section
 *****************************/
+
 .navbar {
     background-color: var(--napari-primary-blue) !important;
     height: 64px;
@@ -247,6 +251,7 @@ h1 {
     max-width: 75%;
 }
 
+
 /***************************
  version switcher
 ***************************/
@@ -277,12 +282,13 @@ button.version-switcher__button {
  sidebar
 ***************************/
 
-.bd-sidebar-primary {
-    border-right: none;
-    max-width: fit-content;
-    overflow-y: unset;
-    position: static;
-    max-height: unset;
+.bd-sidebar {
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+
+.bd-sidebar label {
+    left: 0px;
 }
 
 .bd-sidebar a.reference,
@@ -291,40 +297,10 @@ button.version-switcher__button {
     line-height: 1.25rem;
 }
 
-nav.bd-links li>a {
-    color: var(--napari-color-text-base);
-    display: block;
-    line-height: 1.25rem;
-}
-
-.navbar-nav li a:focus,
-.navbar-nav li a:hover,
-.navbar-nav li.current>a {
-    color: var(--napari-color-text-base);
-}
-
-.bd-sidebar label {
-    left: 0px;
-}
-
-.bd-sidebar-primary label.toctree-toggle:hover {
-    background: none;
-}
-
-
-.bd-sidebar-primary label.toctree-toggle i.fa-solid.fa-chevron-down::before {
-    content: "\f04b";
-    font-family: FontAwesome;
-    font-size: 0.5rem;
-    /*<i class="fa-solid fa-play"></i>*/
-}
-
-.navbar-nav .toctree-checkbox:checked~label i {
-    transform: rotate(90deg);
-}
-
-.bd-sidebar {
-    padding-top: 2rem;
+.bd-sidebar-primary {
+    border-right: none;
+    overflow-y: unset;
+    max-height: unset;
 }
 
 .bd-sidebar .toctree-l1 a {
@@ -343,7 +319,6 @@ nav.bd-links li>a {
 .bd-sidebar .toctree-l2 a {
     font-size: 0.875rem;
     line-height: 1.5rem;
-    -webkit-text-decoration-line: none;
     text-decoration-line: none;
     border-left: 2px solid transparent;
     color: var(--napari-color-text-base) !important;
@@ -365,7 +340,6 @@ nav.bd-links li>a {
 .bd-sidebar .toctree-l3 a {
     font-size: 0.875rem;
     line-height: 1.5rem;
-    -webkit-text-decoration-line: none;
     text-decoration-line: none;
     border-left: 2px solid transparent;
     color: var(--napari-color-text-base) !important;
@@ -387,7 +361,6 @@ nav.bd-links li>a {
 .bd-sidebar .toctree-l4 a {
     font-size: 0.875rem;
     line-height: 1.5rem;
-    -webkit-text-decoration-line: none;
     text-decoration-line: none;
     border-left: 2px solid transparent;
     color: var(--napari-color-text-base) !important;
@@ -409,7 +382,6 @@ nav.bd-links li>a {
 .bd-sidebar .toctree-l5 a {
     font-size: 0.875rem;
     line-height: 1.5rem;
-    -webkit-text-decoration-line: none;
     text-decoration-line: none;
     border-left: 2px solid transparent;
     color: var(--napari-color-text-base) !important;
@@ -424,6 +396,66 @@ nav.bd-links li>a {
     border-left: 2px solid var(--napari-color-text-base);
 }
 
+.bd-sidebar-primary label.toctree-toggle:hover {
+    background: none;
+}
+
+.bd-sidebar-primary label.toctree-toggle i.fa-solid.fa-chevron-down::before {
+    content: "\f04b";
+    font-family: FontAwesome;
+    font-size: 0.5rem;
+}
+
+.navbar-nav li a:focus,
+.navbar-nav li a:hover,
+.navbar-nav li.current>a {
+    color: var(--napari-color-text-base);
+}
+
+.navbar-nav .toctree-checkbox:checked~label i {
+    transform: rotate(90deg);
+}
+
+nav.bd-links li>a {
+    color: var(--napari-color-text-base);
+    display: block;
+    line-height: 1.25rem;
+}
+
+/***************************
+page toc sidebar
+***************************/
+
+.onthispage {
+    border-style: none;
+    padding: 0px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--napari-color-text-base) !important;
+    margin: 0 !important;
+}
+
+.page-toc {
+    .section-nav {
+        padding-left: 0;
+        border-bottom: none;
+        ul {
+            padding-left: 1rem;
+        }
+    }
+
+    .onthispage {
+        color: var(--napari-color-text-base);
+        font-weight: var(--pst-sidebar-header-font-weight);
+        margin-bottom: 1rem;
+    }
+
+}
+
 /***************************
  napari calendar
 ***************************/
@@ -432,6 +464,7 @@ nav.bd-links li>a {
  * By default, `react-calendar` includes no styling, so we need to provide our
  * own using the Calendar component's CSS classes.
  */
+
 .react-calendar,
 .react-calendar__viewContainer {
     display: flex;
@@ -652,6 +685,7 @@ h6 {
 /***************************
  Admonitions
 ***************************/
+
 .admonition,
 div.admonition {
     box-shadow: none !important;
@@ -924,23 +958,11 @@ div.admonition.note>.admonition-title::after {
     font-size: 0.5625rem;
 }
 
-@media (min-width: 495px) {
-    .admonition>p:not(.admonition-title) {
-        font-size: 0.875rem;
-    }
-}
-
 .admonition-title {
     text-transform: uppercase;
     background: var(--color) !important;
     font-size: 0.6875rem !important;
     padding: 0.625rem 1.5625rem;
-}
-
-@media (min-width: 495px) {
-    .admonition-title {
-        font-size: 1.0625rem !important;
-    }
 }
 
 .admonition-title::before {
@@ -1012,4 +1034,14 @@ div.admonition.note>.admonition-title::after {
 
 .admonition.tip {
     --color: #cf80ff;
+}
+
+/***************************
+ Page container
+***************************/
+/*
+.bd-container {
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
