@@ -308,7 +308,7 @@ button.version-switcher__button {
 }
  
 .bd-sidebar .toctree-l2 {
-    margin-left: 1rem;
+    margin-left: -0.2rem;
     border-left: 1px solid var(--napari-color-text-base);
 }
 
