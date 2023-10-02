@@ -217,8 +217,8 @@ h1 {
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
-    text-decoration: none;
-    color: rgba(0, 0, 0);
+    text-decoration: none !important;
+    color: var(--napari-color-text-base) !important;
 }
 
 .navbar .navbar-brand p.title {
@@ -230,18 +230,24 @@ h1 {
     text-decoration-line: none;
     color: var(--napari-color-text-base) !important;
     font-size: 1.0625rem;
-    padding: 22px 1.0625rem 10px !important;
+    padding: 15px 1.0625rem 15px !important;
     border-bottom: .1875rem solid transparent;
     font-weight: 500 !important;
+}
+
+.bd-header .navbar-nav>.current>.nav-link {
+    border-bottom: .1875rem solid var(--napari-color-text-base);
+}
+
+.bd-header .navbar-nav li a.nav-link:hover {
+    text-decoration: none !important;
+    border-bottom: .1875rem solid var(--napari-color-text-base);
 }
 
 .navbar .nav-item.active a {
     font-weight: 700 !important;
 }
-.navbar .nav-item.active a,
-.navbar .nav-item:hover a {
-    border-bottom: .1875rem solid var(--napari-color-text-base);
-}
+
 .navbar .nav-item a>i {
     margin-left: 0.5rem;
     font-size: 0.875rem !important;
@@ -257,7 +263,7 @@ h1 {
 ***************************/
 
 button.btn.version-switcher__button {
-    padding-top: 15px;
+    padding-top: 0px;
     font-size: 0.875rem;
     font-weight: 600;
     border-style: none;
@@ -265,17 +271,25 @@ button.btn.version-switcher__button {
 
 .version-switcher__menu a.list-group-item {
     background-color: var(--pst-color-on-background);
-    color: var(--pst-color-text-base);
+    color: var(--napari-color-text-base);
     padding: .5rem 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-size: 0.875rem;
 }
 
+.version-switcher__menu a.list-group-item:hover {
+    color: var(--napari-color-text-base);
+}
+
 .version-switcher__menu,
 button.version-switcher__button {
     min-width: max-content;
     border-radius: unset;
+}
+
+button.btn.version-switcher__button:hover {
+    color: var(--napari-color-text-base);
 }
 
 /***************************
@@ -297,10 +311,42 @@ button.version-switcher__button {
     line-height: 1.25rem;
 }
 
-.bd-sidebar-primary {
-    border-right: none;
-    overflow-y: unset;
-    max-height: unset;
+nav.bd-links li>a {
+    color: var(--napari-color-text-base);
+    display: block;
+    line-height: 1.25rem;
+}
+
+.navbar-nav li a:focus,
+.navbar-nav li a:hover,
+.navbar-nav li.current>a {
+    color: var(--napari-color-text-base);
+}
+
+.bd-sidebar label {
+    left: 0px;
+}
+
+.bd-sidebar-primary label.toctree-toggle:hover {
+    background: none;
+}
+nav.bd-links li > a:active, nav.bd-links li > a:hover {
+  color: var(--pst-color-link-hover);
+}
+
+.bd-sidebar-primary label.toctree-toggle i.fa-solid.fa-chevron-down::before {
+    content: "\f04b";
+    font-family: FontAwesome;
+    font-size: 0.5rem;
+    /*<i class="fa-solid fa-play"></i>*/
+}
+
+.navbar-nav .toctree-checkbox:checked~label i {
+    transform: rotate(90deg);
+}
+
+.bd-sidebar {
+    padding-top: 2rem;
 }
 
 .bd-sidebar .toctree-l1 a {
@@ -421,6 +467,18 @@ nav.bd-links li>a {
     display: block;
     line-height: 1.25rem;
 }
+nav.bd-links li>a:active,
+nav.bd-links li>a:hover {
+    color: var(--napari-color-text-base);
+}
+
+nav.bd-links li>a:hover {
+    text-decoration: none !important;
+}
+
+nav.bd-links .current>a {
+    box-shadow: none !important;
+ }
 
 /***************************
 page toc sidebar
@@ -443,9 +501,6 @@ page toc sidebar
     .section-nav {
         padding-left: 0;
         border-bottom: none;
-        ul {
-            padding-left: 1rem;
-        }
     }
 
     .onthispage {
@@ -454,6 +509,51 @@ page toc sidebar
         margin-bottom: 1rem;
     }
 
+}
+
+.toc-entry a.nav-link.active:hover {
+    color: var(--napari-color-text-base);
+}
+
+.toc-entry a.nav-link:active,
+.toc-entry a.nav-link:hover {
+    color: var(--napari-color-text-base);
+}
+
+nav.page-toc {
+    border-left: 1px solid var(--napari-color-text-base);
+    padding-left: 1rem;
+}
+
+.sidebar-secondary-item {
+    border-left: none !important;
+}
+
+.toc-entry a.nav-link,
+.toc-entry a>code {
+    color: var(--napari-color-text-base);
+}
+
+.toc-entry>.nav-link {
+    border-left: 3px solid transparent;
+}
+
+.toc-entry>.nav-link:hover {
+    border-left: 3px solid var(--napari-primary-blue);
+}
+
+.toc-entry a.nav-link:hover {
+    text-decoration: none !important;
+}
+
+.toc-entry a.nav-link.active {
+    box-shadow: none !important;
+    border-left: 3px solid var(--napari-color-text-base);
+}
+
+.toc-h3.nav-item.toc-entry.active a {
+    margin-left: -2rem;
+    padding-left: 2rem;
 }
 
 /***************************
@@ -680,6 +780,15 @@ h5 {
 h6 {
     font-weight: 700;
     color: var(--napari-color-text-base) !important;
+}
+
+a.headerlink {
+    color: var(--napari-dark-gray);
+}
+
+.sd-card-hover:hover {
+    border-color: var(--napari-color-text-base) !important;
+    transform: scale(1.01);
 }
 
 /***************************
@@ -955,14 +1064,14 @@ div.admonition.note>.admonition-title::after {
     font-weight: 500;
     margin: 0 !important;
     padding: 1.5625rem !important;
-    font-size: 0.5625rem;
+    font-size: 0.938rem;
 }
 
 .admonition-title {
     text-transform: uppercase;
     background: var(--color) !important;
-    font-size: 0.6875rem !important;
-    padding: 0.625rem 1.5625rem;
+    font-size: 0.938rem !important;
+    padding: 0.25rem 1.5625rem;
 }
 
 .admonition-title::before {
@@ -1044,4 +1153,10 @@ div.admonition.note>.admonition-title::after {
     max-width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+*/
+
+#pst-back-to-top {
+    background-color: var(--napari-light-blue);
+    color: var(--napari-dark-gray);
 }
