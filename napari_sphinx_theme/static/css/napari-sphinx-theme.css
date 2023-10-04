@@ -478,7 +478,11 @@ nav.bd-links li>a:hover {
 
 nav.bd-links .current>a {
     box-shadow: none !important;
- }
+}
+
+.bd-search {
+    border: 1px solid transparent;
+}
 
 /***************************
 page toc sidebar
