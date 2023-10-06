@@ -1,5 +1,8 @@
 import os
 from pathlib import Path
+from bs4 import BeautifulSoup
+from .calendar import CalendarDirective
+from typing import Union
 
 from .calendar import CalendarDirective
 
@@ -68,6 +71,21 @@ def add_google_calendar_secrets(app, exception):
     with open(script_path, 'w', encoding="utf8") as f:
         f.write(source)
 
+
+def replace_chevron(app, pagename, templatename, context, doctree, **kwargs):
+    """Replace fa-chevron-down with fa-play glyph in sidebar toctree."""
+
+    def generate_toctree_napari(
+        kind: str, startdepth: int = 1, show_nav_level: int = 1, **kwargs
+    ) -> Union[BeautifulSoup, str]:
+        soup = context["generate_toctree_html"](kind=kind, startdepth=startdepth, show_nav_level=show_nav_level, **kwargs)
+        logger.info(f"{soup=}", color="green")
+        for element in soup.find_all("fa-chevron-down", recursive=True):
+            element.replace_with(soup.new_tag("i", attrs={"class": "fa-solid fa-play"}))
+
+        return soup
+
+    context["generate_toctree_html"] = generate_toctree_napari
 
 # For more details, see:
 # https://www.sphinx-doc.org/en/master/development/theming.html#distribute-your-theme-as-a-python-package
