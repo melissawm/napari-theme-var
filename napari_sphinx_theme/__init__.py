@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 
 from .calendar import CalendarDirective
+from .napari_code_theme import *
 
 __version__ = "0.0.1dev"
 
