@@ -9,28 +9,46 @@ html {
     --napari-light-blue: #d2efff;
     --napari-dark-gray: #686868;
     --napari-gray: #f7f7f7;
-    --napari-color-text-base: black;
     --pst-font-family-base: "Barlow", var(--pst-font-family-base-system);
     --pst-font-family-heading: "Barlow", var(--pst-font-family-base-system);
     --pst-font-family-monospace: "JetBrains Mono", var(--pst-font-family-monospace-system);
     --pst-font-size-base: 16px;
     --pst-color-headerlink: var(--napari-dark-gray);
     --pst-color-headerlink-hover: var(--napari-deep-blue);
-    --pst-color-link: black;
-    --pst-color-link-hover: black !important;
-    --pst-color-inline-code: black !important;
-    --pst-color-inline-code-links: black !important;
     --pst-color-surface: var(--napari-gray) !important;
 }
 
 html[data-theme="light"] {
     --pst-color-primary: black;
     --pst-color-secondary: var(--napari-primary-blue);
+    --pst-color-background: white;
+    --napari-color-text-base: black;
+    --pst-color-text-base: var(--napari-color-text-base);
+    --pst-color-link: black;
+    --pst-color-link-hover: black !important;
+    --pst-color-inline-code: black !important;
+    --pst-color-inline-code-links: black !important;
+    --pst-color-on-background: white;
+    --pst-color-text-muted: var(--napari-dark-gray);
+    --pst-color-border: var(--napari-gray);
+    --pst-color-target: var(--napari-gray);
 }
 
+/* Dark theme is currently unset - design/accessibility assessment is needed here */
 html[data-theme="dark"] {
-    --pst-color-primary: white;
+    --pst-color-primary: black;
     --pst-color-secondary: var(--napari-primary-blue);
+    --pst-color-background: white;
+    --napari-color-text-base: black;
+    --pst-color-text-base: var(--napari-color-text-base);
+    --pst-color-link: black;
+    --pst-color-link-hover: black !important;
+    --pst-color-inline-code: black !important;
+    --pst-color-inline-code-links: black !important;
+    --pst-color-on-background: white;
+    --pst-color-text-muted: var(--napari-dark-gray);
+    --pst-color-border: var(--napari-gray);
+    --pst-color-target: var(--napari-gray);
 }
 
 body {
@@ -260,10 +278,11 @@ button.btn.version-switcher__button {
     font-size: 0.875rem;
     font-weight: 600;
     border-style: none;
+    color: var(--napari-color-text-base);
 }
 
 .version-switcher__menu a.list-group-item {
-    background-color: var(--pst-color-on-background);
+    background-color: var(--pst-color-background);
     color: var(--napari-color-text-base);
     padding: .5rem 0.5rem;
     padding-top: 0.5rem;
