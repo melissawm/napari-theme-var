@@ -28,17 +28,6 @@ add_image APIs, then add points in 3D
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-31
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add-points-3d_001.png
-   :alt: add points 3d
-   :srcset: /gallery/images/sphx_glr_add-points-3d_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

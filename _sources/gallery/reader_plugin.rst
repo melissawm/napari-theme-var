@@ -27,12 +27,6 @@ Barebones reader plugin example, using ``imageio.imread```
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-31
 
-
-
-
-
-
-
 .. code-block:: default
 
     from imageio import formats, imread

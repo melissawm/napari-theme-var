@@ -30,31 +30,6 @@ appearing on each slice.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-38
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_3D_paths_001.png
-   :alt: 3D paths
-   :srcset: /gallery/images/sphx_glr_3D_paths_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    0.00s - Debugger warning: It seems that frozen modules are being used, which may
-    0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
-    0.00s - to python to disable frozen modules.
-    0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
-    Path (2, 6, 3)
-
-
-
-
-
-
-|
-
 .. code-block:: default
 
 

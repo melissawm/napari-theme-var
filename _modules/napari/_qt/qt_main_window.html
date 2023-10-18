@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -40,8 +40,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -54,8 +55,10 @@
     <script src="../../../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_modules/napari/_qt/qt_main_window';</script>
     <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -66,36 +69,79 @@
     
 
   </head>
-  <body>
-
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
   
-  <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
-    <div class="container-xl">
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <div id="navbar-start">
-    
-    <!-- A small template snippet for theme testing -->
-<a class="navbar-brand" href="../../../index.html">
-  napari
-</a>
-    
-  </div>
+  
+  
+  <div id="pst-scroll-pixel-helper"></div>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20 2H0" stroke="black" stroke-width="3"/>
-  <path d="M20 10H0" stroke="black" stroke-width="3"/>
-  <path d="M20 18H0" stroke="black" stroke-width="3"/>
-</svg>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
   </button>
 
   
-  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
-    <div id="navbar-center" class="me-auto">
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="search"
+         aria-label="search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item"><!-- A small template snippet for theme testing -->
+<a class="navbar-brand" href="../../../index.html">
+  napari
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
       
-      <div class="navbar-center-item">
-        <nav class="navbar-nav">
+        <div class="navbar-item"><nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -126,6 +172,13 @@
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../developers/index.html">
+                        Contributing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../../../api/index.html">
                         API Reference
                       </a>
@@ -139,32 +192,30 @@
                 </li>
                 
   </ul>
-</nav>
-      </div>
+</nav></div>
       
     </div>
-
-    <div id="navbar-end">
+    
+    
+    <div class="navbar-header-items__end">
       
-      <div class="navbar-end-item">
-        
+      
+        <div class="navbar-item">
 <script>
 document.write(`
   <div class="version-switcher__container dropdown">
-    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown">
-      latest  <!-- this text may get changed later by javascript -->
+    <button id="versionswitcherbutton" type="button" role="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="listbox" aria-controls="versionswitcherlist" aria-label="Version switcher list">
+      Choose version  <!-- this text may get changed later by javascript -->
       <span class="caret"></span>
     </button>
-    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <div id="versionswitcherlist" class="version-switcher__menu dropdown-menu list-group-flush py-0" role="listbox" aria-labelledby="versionswitcherbutton">
     <!-- dropdown will be populated by javascript on page load -->
     </div>
   </div>
 `);
-</script>
-      </div>
+</script></div>
       
-      <div class="navbar-end-item">
-        <ul class="navbar-icon-links navbar-nav"
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
     aria-label="Icon Links">
         <li class="nav-item">
           
@@ -175,24 +226,130 @@ document.write(`
           
           
           
-          <a href="https://github.com/napari/napari" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/napari/napari" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
-</ul>
-      </div>
+</ul></div>
       
     </div>
+    
   </div>
-</div>
-  </nav>
+  
   
 
-  <div class="napari-page">
-    
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- Only show if we have sidebars configured, else just a small margin  -->
-        <div class="bd-sidebar">
-          <div class="sidebar-start-items">
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../usage.html">
+                        Usage
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../plugins/index.html">
+                        Plugins
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../community/index.html">
+                        Community
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../developers/index.html">
+                        Contributing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../api/index.html">
+                        API Reference
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://napari-hub.org">
+                    napari hub
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="versionswitcherbutton" type="button" role="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="listbox" aria-controls="versionswitcherlist" aria-label="Version switcher list">
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="versionswitcherlist" class="version-switcher__menu dropdown-menu list-group-flush py-0" role="listbox" aria-labelledby="versionswitcherbutton">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/napari/napari" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
 <form class="bd-search d-flex align-items-center"
       action="../../../search.html"
       method="get">
@@ -208,28 +365,61 @@ document.write(`
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-          </div>
-          <div class="sidebar-end-items">
-          </div>
-        </div>
-      
-    
+</form></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
-    
-      <div class="bd-toc">
-        
+
       </div>
-    
-
-    
       
+      <main id="main-content" class="bd-main">
         
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
       
-      <main class="col-md-9 col-xl-7 bd-content" role="main">
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">napari._qt.q...</li>
+  </ul>
+</nav>
+</div>
       
-        <div>
-          
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <h1>Source code for napari._qt.qt_main_window</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Custom Qt widgets that serve as native objects that the public-facing elements</span>
@@ -281,10 +471,12 @@ document.write(`
 <span class="kn">from</span> <span class="nn">superqt.utils</span> <span class="kn">import</span> <span class="n">QSignalThrottler</span>
 
 <span class="kn">from</span> <span class="nn">napari._app_model.constants</span> <span class="kn">import</span> <span class="n">MenuId</span>
+<span class="kn">from</span> <span class="nn">napari._app_model.context</span> <span class="kn">import</span> <span class="n">get_context</span>
 <span class="kn">from</span> <span class="nn">napari._qt</span> <span class="kn">import</span> <span class="n">menus</span>
 <span class="kn">from</span> <span class="nn">napari._qt._qapp_model</span> <span class="kn">import</span> <span class="n">build_qmodel_menu</span>
 <span class="kn">from</span> <span class="nn">napari._qt._qapp_model.qactions</span> <span class="kn">import</span> <span class="n">init_qactions</span>
 <span class="kn">from</span> <span class="nn">napari._qt.dialogs.confirm_close_dialog</span> <span class="kn">import</span> <span class="n">ConfirmCloseDialog</span>
+<span class="kn">from</span> <span class="nn">napari._qt.dialogs.preferences_dialog</span> <span class="kn">import</span> <span class="n">PreferencesDialog</span>
 <span class="kn">from</span> <span class="nn">napari._qt.dialogs.qt_activity_dialog</span> <span class="kn">import</span> <span class="n">QtActivityDialog</span>
 <span class="kn">from</span> <span class="nn">napari._qt.dialogs.qt_notification</span> <span class="kn">import</span> <span class="n">NapariQtNotification</span>
 <span class="kn">from</span> <span class="nn">napari._qt.qt_event_loop</span> <span class="kn">import</span> <span class="n">NAPARI_ICON_PATH</span><span class="p">,</span> <span class="n">get_app</span><span class="p">,</span> <span class="n">quit_app</span>
@@ -300,6 +492,7 @@ document.write(`
     <span class="n">menu_item_template</span> <span class="k">as</span> <span class="n">plugin_menu_item_template</span><span class="p">,</span>
     <span class="n">plugin_manager</span><span class="p">,</span>
 <span class="p">)</span>
+<span class="kn">from</span> <span class="nn">napari.plugins._npe2</span> <span class="kn">import</span> <span class="n">_rebuild_npe1_samples_menu</span>
 <span class="kn">from</span> <span class="nn">napari.settings</span> <span class="kn">import</span> <span class="n">get_settings</span>
 <span class="kn">from</span> <span class="nn">napari.utils</span> <span class="kn">import</span> <span class="n">perf</span>
 <span class="kn">from</span> <span class="nn">napari.utils._proxies</span> <span class="kn">import</span> <span class="n">PublicOnlyProxy</span>
@@ -819,7 +1012,6 @@ document.write(`
 <span class="sd">        Help menu.</span>
 <span class="sd">    main_menu : qtpy.QtWidgets.QMainWindow.menuBar</span>
 <span class="sd">        Main menubar.</span>
-
 <span class="sd">    view_menu : qtpy.QtWidgets.QMenu</span>
 <span class="sd">        View menu.</span>
 <span class="sd">    window_menu : qtpy.QtWidgets.QMenu</span>
@@ -836,6 +1028,8 @@ document.write(`
         <span class="p">]</span> <span class="o">=</span> <span class="n">WeakValueDictionary</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_unnamed_dockwidget_count</span> <span class="o">=</span> <span class="mi">1</span>
 
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pref_dialog</span> <span class="o">=</span> <span class="kc">None</span>
+
         <span class="c1"># Connect the Viewer and create the Main Window</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span> <span class="o">=</span> <span class="n">_QtMainWindow</span><span class="p">(</span><span class="n">viewer</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
         <span class="n">qapp</span><span class="o">.</span><span class="n">installEventFilter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span><span class="p">)</span>
@@ -851,7 +1045,11 @@ document.write(`
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_add_menus</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_update_theme</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_font_size</span><span class="p">()</span>
         <span class="n">get_settings</span><span class="p">()</span><span class="o">.</span><span class="n">appearance</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">theme</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme</span><span class="p">)</span>
+        <span class="n">get_settings</span><span class="p">()</span><span class="o">.</span><span class="n">appearance</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">font_size</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_font_size</span>
+        <span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_add_viewer_dock_widget</span><span class="p">(</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_qt_viewer</span><span class="o">.</span><span class="n">dockConsole</span><span class="p">,</span> <span class="n">tabify</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">menu</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">window_menu</span>
@@ -872,7 +1070,6 @@ document.write(`
         <span class="n">viewer</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">help</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_help_changed</span><span class="p">)</span>
         <span class="n">viewer</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_title_changed</span><span class="p">)</span>
         <span class="n">viewer</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">theme</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme</span><span class="p">)</span>
-        <span class="n">viewer</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_menu</span><span class="o">.</span><span class="n">update</span><span class="p">)</span>
         <span class="n">viewer</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">status</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_status_changed</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">show</span><span class="p">:</span>
@@ -914,6 +1111,7 @@ document.write(`
         <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">warning</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_no_event</span><span class="p">)</span>
         <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">current</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_no_event</span><span class="p">)</span>
         <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">icon</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_no_event</span><span class="p">)</span>
+        <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">font_size</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_no_event</span><span class="p">)</span>
         <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
             <span class="k">lambda</span> <span class="n">_</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qt_viewer</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">_set_theme_change</span><span class="p">(</span>
                 <span class="n">get_settings</span><span class="p">()</span><span class="o">.</span><span class="n">appearance</span><span class="o">.</span><span class="n">theme</span>
@@ -938,6 +1136,7 @@ document.write(`
         <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">warning</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_no_event</span><span class="p">)</span>
         <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">current</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_no_event</span><span class="p">)</span>
         <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">icon</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_no_event</span><span class="p">)</span>
+        <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">font_size</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_update_theme_no_event</span><span class="p">)</span>
         <span class="n">theme</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span>
             <span class="k">lambda</span> <span class="n">_</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qt_viewer</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">_set_theme_change</span><span class="p">(</span>
                 <span class="n">get_settings</span><span class="p">()</span><span class="o">.</span><span class="n">appearance</span><span class="o">.</span><span class="n">theme</span>
@@ -967,7 +1166,7 @@ document.write(`
     <span class="k">def</span> <span class="nf">qt_viewer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
             <span class="n">trans</span><span class="o">.</span><span class="n">_</span><span class="p">(</span>
-                <span class="s1">&#39;Public access to Window.qt_viewer is deprecated and will be removed in</span><span class="se">\n</span><span class="s1">v0.5.0. It is considered an &quot;implementation detail&quot; of the napari</span><span class="se">\n</span><span class="s1">application, not part of the napari viewer model. If your use case</span><span class="se">\n</span><span class="s1">requires access to qt_viewer, please open an issue to discuss.&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Public access to Window.qt_viewer is deprecated and will be removed in</span><span class="se">\n</span><span class="s1">v0.6.0. It is considered an &quot;implementation detail&quot; of the napari</span><span class="se">\n</span><span class="s1">application, not part of the napari viewer model. If your use case</span><span class="se">\n</span><span class="s1">requires access to qt_viewer, please open an issue to discuss.&#39;</span><span class="p">,</span>
                 <span class="n">deferred</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
             <span class="p">),</span>
             <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">,</span>
@@ -984,6 +1183,21 @@ document.write(`
     <span class="k">def</span> <span class="nf">_status_bar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># TODO: remove from window</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span><span class="o">.</span><span class="n">statusBar</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">_update_menu_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">menu</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Update enabled/visible state of menu item with context.&quot;&quot;&quot;</span>
+        <span class="n">layerlist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qt_viewer</span><span class="o">.</span><span class="n">_layers</span><span class="o">.</span><span class="n">model</span><span class="p">()</span><span class="o">.</span><span class="n">sourceModel</span><span class="p">()</span><span class="o">.</span><span class="n">_root</span>
+        <span class="n">menu_model</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">menu</span><span class="p">)</span>
+        <span class="n">menu_model</span><span class="o">.</span><span class="n">update_from_context</span><span class="p">(</span><span class="n">get_context</span><span class="p">(</span><span class="n">layerlist</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">_setup_npe1_samples_menu</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Register npe1 sample data, build menu and connect to events.&quot;&quot;&quot;</span>
+        <span class="n">plugin_manager</span><span class="o">.</span><span class="n">discover_sample_data</span><span class="p">()</span>
+        <span class="n">plugin_manager</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">enabled</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">_rebuild_npe1_samples_menu</span><span class="p">)</span>
+        <span class="n">plugin_manager</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">disabled</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">_rebuild_npe1_samples_menu</span><span class="p">)</span>
+        <span class="n">plugin_manager</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">registered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">_rebuild_npe1_samples_menu</span><span class="p">)</span>
+        <span class="n">plugin_manager</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">unregistered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">_rebuild_npe1_samples_menu</span><span class="p">)</span>
+        <span class="n">_rebuild_npe1_samples_menu</span><span class="p">()</span>
 
     <span class="k">def</span> <span class="nf">_add_menus</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Add menubar to napari app.&quot;&quot;&quot;</span>
@@ -1002,19 +1216,35 @@ document.write(`
         <span class="bp">self</span><span class="o">.</span><span class="n">_main_menu_shortcut</span><span class="o">.</span><span class="n">activated</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_toggle_menubar_visible</span>
         <span class="p">)</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="n">file_menu</span> <span class="o">=</span> <span class="n">menus</span><span class="o">.</span><span class="n">FileMenu</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="c1"># file menu</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">file_menu</span> <span class="o">=</span> <span class="n">build_qmodel_menu</span><span class="p">(</span>
+            <span class="n">MenuId</span><span class="o">.</span><span class="n">MENUBAR_FILE</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">trans</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;&amp;File&#39;</span><span class="p">),</span> <span class="n">parent</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_setup_npe1_samples_menu</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">file_menu</span><span class="o">.</span><span class="n">aboutToShow</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+            <span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_menu_state</span><span class="p">(</span><span class="s1">&#39;file_menu&#39;</span><span class="p">)</span>
+        <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">main_menu</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_menu</span><span class="p">)</span>
+        <span class="c1"># view menu</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">view_menu</span> <span class="o">=</span> <span class="n">build_qmodel_menu</span><span class="p">(</span>
             <span class="n">MenuId</span><span class="o">.</span><span class="n">MENUBAR_VIEW</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">trans</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;&amp;View&#39;</span><span class="p">),</span> <span class="n">parent</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span>
         <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">view_menu</span><span class="o">.</span><span class="n">aboutToShow</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+            <span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_menu_state</span><span class="p">(</span><span class="s1">&#39;view_menu&#39;</span><span class="p">)</span>
+        <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">main_menu</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">view_menu</span><span class="p">)</span>
+        <span class="c1"># plugin menu</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">plugins_menu</span> <span class="o">=</span> <span class="n">menus</span><span class="o">.</span><span class="n">PluginsMenu</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">main_menu</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">plugins_menu</span><span class="p">)</span>
+        <span class="c1"># window menu</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">window_menu</span> <span class="o">=</span> <span class="n">menus</span><span class="o">.</span><span class="n">WindowMenu</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">main_menu</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">window_menu</span><span class="p">)</span>
+        <span class="c1"># help menu</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">help_menu</span> <span class="o">=</span> <span class="n">build_qmodel_menu</span><span class="p">(</span>
             <span class="n">MenuId</span><span class="o">.</span><span class="n">MENUBAR_HELP</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">trans</span><span class="o">.</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;&amp;Help&#39;</span><span class="p">),</span> <span class="n">parent</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">help_menu</span><span class="o">.</span><span class="n">aboutToShow</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+            <span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_menu_state</span><span class="p">(</span><span class="s1">&#39;help_menu&#39;</span><span class="p">)</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">main_menu</span><span class="o">.</span><span class="n">addMenu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">help_menu</span><span class="p">)</span>
 
@@ -1050,7 +1280,7 @@ document.write(`
 <div class="viewcode-block" id="Window.add_plugin_dock_widget"><a class="viewcode-back" href="../../../api/napari.window.Window.html#napari.qt.Window.add_plugin_dock_widget">[docs]</a>    <span class="k">def</span> <span class="nf">add_plugin_dock_widget</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">plugin_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-        <span class="n">widget_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">widget_name</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
         <span class="n">tabify</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">QtViewerDockWidget</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Add plugin dock widget if not already added.</span>
@@ -1086,7 +1316,7 @@ document.write(`
         <span class="k">if</span> <span class="ow">not</span> <span class="n">widget_name</span><span class="p">:</span>
             <span class="c1"># if widget_name wasn&#39;t provided, `get_widget` will have</span>
             <span class="c1"># ensured that there is a single widget available.</span>
-            <span class="n">widget_name</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">plugin_manager</span><span class="o">.</span><span class="n">_dock_widgets</span><span class="p">[</span><span class="n">plugin_name</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">widget_name</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">plugin_manager</span><span class="o">.</span><span class="n">_dock_widgets</span><span class="p">[</span><span class="n">plugin_name</span><span class="p">]))</span>
 
         <span class="n">full_name</span> <span class="o">=</span> <span class="n">plugin_menu_item_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">plugin_name</span><span class="p">,</span> <span class="n">widget_name</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">full_name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dock_widgets</span><span class="p">:</span>
@@ -1539,20 +1769,35 @@ document.write(`
     <span class="k">def</span> <span class="nf">_update_theme_no_event</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_update_theme</span><span class="p">()</span>
 
-    <span class="k">def</span> <span class="nf">_update_theme</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_update_theme_font_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">settings</span> <span class="o">=</span> <span class="n">get_settings</span><span class="p">()</span>
+        <span class="n">font_size</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">value</span> <span class="k">if</span> <span class="n">event</span> <span class="k">else</span> <span class="n">settings</span><span class="o">.</span><span class="n">appearance</span><span class="o">.</span><span class="n">font_size</span>
+        <span class="n">extra_variables</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;font_size&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">font_size</span><span class="si">}</span><span class="s2">pt&quot;</span><span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_update_theme</span><span class="p">(</span><span class="n">extra_variables</span><span class="o">=</span><span class="n">extra_variables</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_update_theme</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">extra_variables</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Update widget color theme.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">extra_variables</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">extra_variables</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="n">settings</span> <span class="o">=</span> <span class="n">get_settings</span><span class="p">()</span>
         <span class="k">with</span> <span class="n">contextlib</span><span class="o">.</span><span class="n">suppress</span><span class="p">(</span><span class="ne">AttributeError</span><span class="p">,</span> <span class="ne">RuntimeError</span><span class="p">):</span>
             <span class="n">value</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">value</span> <span class="k">if</span> <span class="n">event</span> <span class="k">else</span> <span class="n">settings</span><span class="o">.</span><span class="n">appearance</span><span class="o">.</span><span class="n">theme</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_qt_viewer</span><span class="o">.</span><span class="n">viewer</span><span class="o">.</span><span class="n">theme</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="n">actual_theme_name</span> <span class="o">=</span> <span class="n">value</span>
             <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="s2">&quot;system&quot;</span><span class="p">:</span>
-                <span class="c1"># system isn&#39;t a theme, so get the name and set style sheet</span>
+                <span class="c1"># system isn&#39;t a theme, so get the name</span>
                 <span class="n">actual_theme_name</span> <span class="o">=</span> <span class="n">get_system_theme</span><span class="p">()</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span>
-                    <span class="n">get_stylesheet</span><span class="p">(</span><span class="n">actual_theme_name</span><span class="p">)</span>
+            <span class="c1"># check `font_size` value is always passed when updating style</span>
+            <span class="k">if</span> <span class="s2">&quot;font_size&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">extra_variables</span><span class="p">:</span>
+                <span class="n">extra_variables</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
+                    <span class="p">{</span><span class="s2">&quot;font_size&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">settings</span><span class="o">.</span><span class="n">appearance</span><span class="o">.</span><span class="n">font_size</span><span class="si">}</span><span class="s2">pt&quot;</span><span class="p">}</span>
                 <span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="n">get_stylesheet</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+            <span class="c1"># set the style sheet with the theme name and extra_variables</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span>
+                <span class="n">get_stylesheet</span><span class="p">(</span>
+                    <span class="n">actual_theme_name</span><span class="p">,</span> <span class="n">extra_variables</span><span class="o">=</span><span class="n">extra_variables</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_status_changed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Update status bar.</span>
@@ -1714,10 +1959,6 @@ document.write(`
         <span class="bp">self</span><span class="o">.</span><span class="n">_setup_existing_themes</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
         <span class="n">_themes</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">added</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_add_theme</span><span class="p">)</span>
         <span class="n">_themes</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">removed</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_remove_theme</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_qt_viewer</span><span class="o">.</span><span class="n">viewer</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_menu</span><span class="o">.</span><span class="n">update</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">menu</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_menu</span><span class="o">.</span><span class="n">_INSTANCES</span><span class="p">:</span>
-            <span class="k">with</span> <span class="n">contextlib</span><span class="o">.</span><span class="n">suppress</span><span class="p">(</span><span class="ne">RuntimeError</span><span class="p">):</span>
-                <span class="n">menu</span><span class="o">.</span><span class="n">_destroy</span><span class="p">()</span>
 
 <div class="viewcode-block" id="Window.close"><a class="viewcode-back" href="../../../api/napari.window.Window.html#napari.qt.Window.close">[docs]</a>    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Close the viewer window and cleanup sub-widgets.&quot;&quot;&quot;</span>
@@ -1727,7 +1968,43 @@ document.write(`
             <span class="bp">self</span><span class="o">.</span><span class="n">_teardown</span><span class="p">()</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_qt_viewer</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-            <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span></div></div>
+            <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span></div>
+
+    <span class="k">def</span> <span class="nf">_open_preferences_dialog</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PreferencesDialog</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Edit preferences from the menubar.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pref_dialog</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">win</span> <span class="o">=</span> <span class="n">PreferencesDialog</span><span class="p">(</span><span class="n">parent</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_qt_window</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_pref_dialog</span> <span class="o">=</span> <span class="n">win</span>
+
+            <span class="n">app_pref</span> <span class="o">=</span> <span class="n">get_settings</span><span class="p">()</span><span class="o">.</span><span class="n">application</span>
+            <span class="k">if</span> <span class="n">app_pref</span><span class="o">.</span><span class="n">preferences_size</span><span class="p">:</span>
+                <span class="n">win</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="o">*</span><span class="n">app_pref</span><span class="o">.</span><span class="n">preferences_size</span><span class="p">)</span>
+
+            <span class="nd">@win</span><span class="o">.</span><span class="n">resized</span><span class="o">.</span><span class="n">connect</span>
+            <span class="k">def</span> <span class="nf">_save_size</span><span class="p">(</span><span class="n">sz</span><span class="p">:</span> <span class="n">QSize</span><span class="p">):</span>
+                <span class="n">app_pref</span><span class="o">.</span><span class="n">preferences_size</span> <span class="o">=</span> <span class="p">(</span><span class="n">sz</span><span class="o">.</span><span class="n">width</span><span class="p">(),</span> <span class="n">sz</span><span class="o">.</span><span class="n">height</span><span class="p">())</span>
+
+            <span class="k">def</span> <span class="nf">_clean_pref_dialog</span><span class="p">():</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_pref_dialog</span> <span class="o">=</span> <span class="kc">None</span>
+
+            <span class="n">win</span><span class="o">.</span><span class="n">finished</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">_clean_pref_dialog</span><span class="p">)</span>
+            <span class="n">win</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_pref_dialog</span><span class="o">.</span><span class="n">raise_</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pref_dialog</span>
+
+    <span class="k">def</span> <span class="nf">_screenshot_dialog</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Save screenshot of current display with viewer, default .png&quot;&quot;&quot;</span>
+        <span class="kn">from</span> <span class="nn">napari._qt.dialogs.screenshot_dialog</span> <span class="kn">import</span> <span class="n">ScreenshotDialog</span>
+        <span class="kn">from</span> <span class="nn">napari.utils.history</span> <span class="kn">import</span> <span class="n">get_save_history</span><span class="p">,</span> <span class="n">update_save_history</span>
+
+        <span class="n">hist</span> <span class="o">=</span> <span class="n">get_save_history</span><span class="p">()</span>
+        <span class="n">dial</span> <span class="o">=</span> <span class="n">ScreenshotDialog</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">screenshot</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_qt_viewer</span><span class="p">,</span> <span class="n">hist</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">hist</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">dial</span><span class="o">.</span><span class="n">exec_</span><span class="p">():</span>
+            <span class="n">update_save_history</span><span class="p">(</span><span class="n">dial</span><span class="o">.</span><span class="n">selectedFiles</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span></div>
 
 
 <span class="k">def</span> <span class="nf">_instantiate_dock_widget</span><span class="p">(</span><span class="n">wdg_cls</span><span class="p">,</span> <span class="n">viewer</span><span class="p">:</span> <span class="s1">&#39;Viewer&#39;</span><span class="p">):</span>
@@ -1737,6 +2014,7 @@ document.write(`
     <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">sig</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">signature</span><span class="p">(</span><span class="n">wdg_cls</span><span class="o">.</span><span class="fm">__init__</span><span class="p">)</span>
+    <span class="c1"># Inspection can fail when adding to bundle as it thinks widget is a builtin</span>
     <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
         <span class="k">pass</span>
     <span class="k">else</span><span class="p">:</span>
@@ -1754,16 +2032,35 @@ document.write(`
     <span class="k">return</span> <span class="n">wdg_cls</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </pre></div>
 
-        </div>
-      
-      
-        <!-- Previous / next buttons -->
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
 </div>
-      
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
       </main>
-    
+    </div>
   </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <script src="../../../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
   

@@ -75,12 +75,6 @@ coordinates, and may require resizing the textures to match each other.
     import napari
 
 
-
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 55-57
 
 Download the model
@@ -113,21 +107,6 @@ Download the model
             print(f"using cached {tmp_dir / file_name}")
 
 
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    downloading data into /Users/mwebermendonca/Library/Caches/napari-surface-texture-example
-    using cached /Users/mwebermendonca/Library/Caches/napari-surface-texture-example/PocilloporaDamicornisSkin.obj
-    using cached /Users/mwebermendonca/Library/Caches/napari-surface-texture-example/PocilloporaDamicornisSkin_Texture_0.jpg
-    using cached /Users/mwebermendonca/Library/Caches/napari-surface-texture-example/PocilloporaDamicornisSkin_GeneratedMat2.png
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 80-86
 
 Load the model
@@ -144,12 +123,6 @@ are also ignored and re-calculated from the faces.
     vertices, faces, _normals, texcoords = read_mesh(tmp_dir / data_files["mesh"])
 
 
-
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 89-94
 
 Load the textures
@@ -164,12 +137,6 @@ material to fill in  parts of the model lacking photographic texture.
 
     photo_texture = imread(tmp_dir / data_files["Texture_0"])
     generated_texture = imread(tmp_dir / data_files["GeneratedMat2"])
-
-
-
-
-
-
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 98-99
@@ -190,17 +157,6 @@ This is what the texture images look like in 2D:
     axs[1].set_xticks((0, generated_texture.shape[1]), labels=(0.0, 1.0))
     axs[1].set_yticks((0, generated_texture.shape[0]), labels=(0.0, 1.0))
     fig.show()
-
-
-
-
-.. image-sg:: /gallery/images/sphx_glr_surface_multi_texture_001.png
-   :alt: Texture_0 (8192, 8192, 3), GeneratedMat2 (2048, 2048, 4)
-   :srcset: /gallery/images/sphx_glr_surface_multi_texture_001.png
-   :class: sphx-glr-single-img
-
-
-
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 111-116
@@ -229,12 +185,6 @@ texture, but this is not a strict requirement.
     )
 
 
-
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 130-134
 
 Add the layers to a viewer
@@ -256,22 +206,6 @@ sphinx_gallery_thumbnail_number = 2
 
     if __name__ == '__main__':
         napari.run()
-
-
-
-.. image-sg:: /gallery/images/sphx_glr_surface_multi_texture_002.png
-   :alt: surface multi texture
-   :srcset: /gallery/images/sphx_glr_surface_multi_texture_002.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-
-.. rst-class:: sphx-glr-timing
-
-   **Total running time of the script:** ( 0 minutes  22.718 seconds)
 
 
 .. _sphx_glr_download_gallery_surface_multi_texture.py:

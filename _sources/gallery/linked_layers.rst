@@ -31,17 +31,6 @@ linked layers, all of the other layers follow.
 
 .. GENERATED FROM PYTHON SOURCE LINES 13-33
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_linked_layers_001.png
-   :alt: linked layers
-   :srcset: /gallery/images/sphx_glr_linked_layers_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
     import numpy as np

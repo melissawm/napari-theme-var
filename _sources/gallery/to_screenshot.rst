@@ -29,17 +29,6 @@ your shapes.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-132
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_to_screenshot_001.png
-   :alt: to screenshot
-   :srcset: /gallery/images/sphx_glr_to_screenshot_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

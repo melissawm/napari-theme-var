@@ -27,17 +27,6 @@ Display concentric spheres in 3D.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-31
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_concentric-spheres_001.png
-   :alt: concentric spheres
-   :srcset: /gallery/images/sphx_glr_concentric-spheres_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

@@ -41,12 +41,6 @@ them using magicgui.
     import napari
 
 
-
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 21-22
 
 Part 1: using code to view a specific value.
@@ -70,17 +64,6 @@ Part 1: using code to view a specific value.
 
     if __name__ == '__main__':
         napari.run()
-
-
-
-
-.. image-sg:: /gallery/images/sphx_glr_dynamic-projections-dask_001.png
-   :alt: dynamic projections dask
-   :srcset: /gallery/images/sphx_glr_dynamic-projections-dask_001.png
-   :class: sphx-glr-single-img
-
-
-
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 39-40
@@ -123,17 +106,6 @@ Part 2: using magicgui to vary the slice thickness.
 
     if __name__ == '__main__':
         napari.run()
-
-
-
-.. image-sg:: /gallery/images/sphx_glr_dynamic-projections-dask_002.png
-   :alt: dynamic projections dask
-   :srcset: /gallery/images/sphx_glr_dynamic-projections-dask_002.png
-   :class: sphx-glr-single-img
-
-
-
-
 
 
 .. _sphx_glr_download_gallery_dynamic-projections-dask.py:

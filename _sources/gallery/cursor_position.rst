@@ -27,17 +27,6 @@ Add small data to examine cursor positions
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-33
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_cursor_position_001.png
-   :alt: cursor position
-   :srcset: /gallery/images/sphx_glr_cursor_position_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

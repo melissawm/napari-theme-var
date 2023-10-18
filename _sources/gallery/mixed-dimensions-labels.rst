@@ -35,17 +35,6 @@ on every slice.
 
 .. GENERATED FROM PYTHON SOURCE LINES 17-38
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_mixed-dimensions-labels_001.png
-   :alt: mixed dimensions labels
-   :srcset: /gallery/images/sphx_glr_mixed-dimensions-labels_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

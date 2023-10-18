@@ -30,17 +30,6 @@ viewer when the viewer is out of scope.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-23
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_get_current_viewer_001.png
-   :alt: get current viewer
-   :srcset: /gallery/images/sphx_glr_get_current_viewer_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

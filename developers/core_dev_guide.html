@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,8 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -57,8 +58,10 @@
     <script src="../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'developers/core_dev_guide';</script>
     <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -71,36 +74,79 @@
     
 
   </head>
-  <body>
-
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
   
-  <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
-    <div class="container-xl">
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <div id="navbar-start">
-    
-    <!-- A small template snippet for theme testing -->
-<a class="navbar-brand" href="../index.html">
-  napari
-</a>
-    
-  </div>
+  
+  
+  <div id="pst-scroll-pixel-helper"></div>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20 2H0" stroke="black" stroke-width="3"/>
-  <path d="M20 10H0" stroke="black" stroke-width="3"/>
-  <path d="M20 18H0" stroke="black" stroke-width="3"/>
-</svg>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
   </button>
 
   
-  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
-    <div id="navbar-center" class="me-auto">
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="search"
+         aria-label="search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item"><!-- A small template snippet for theme testing -->
+<a class="navbar-brand" href="../index.html">
+  napari
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
       
-      <div class="navbar-center-item">
-        <nav class="navbar-nav">
+        <div class="navbar-item"><nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -123,9 +169,16 @@
                     </li>
                 
 
-                    <li class="nav-item current active">
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../community/index.html">
                         Community
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        Contributing
                       </a>
                     </li>
                 
@@ -144,32 +197,30 @@
                 </li>
                 
   </ul>
-</nav>
-      </div>
+</nav></div>
       
     </div>
-
-    <div id="navbar-end">
+    
+    
+    <div class="navbar-header-items__end">
       
-      <div class="navbar-end-item">
-        
+      
+        <div class="navbar-item">
 <script>
 document.write(`
   <div class="version-switcher__container dropdown">
-    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown">
-      latest  <!-- this text may get changed later by javascript -->
+    <button id="versionswitcherbutton" type="button" role="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="listbox" aria-controls="versionswitcherlist" aria-label="Version switcher list">
+      Choose version  <!-- this text may get changed later by javascript -->
       <span class="caret"></span>
     </button>
-    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <div id="versionswitcherlist" class="version-switcher__menu dropdown-menu list-group-flush py-0" role="listbox" aria-labelledby="versionswitcherbutton">
     <!-- dropdown will be populated by javascript on page load -->
     </div>
   </div>
 `);
-</script>
-      </div>
+</script></div>
       
-      <div class="navbar-end-item">
-        <ul class="navbar-icon-links navbar-nav"
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
     aria-label="Icon Links">
         <li class="nav-item">
           
@@ -180,24 +231,134 @@ document.write(`
           
           
           
-          <a href="https://github.com/napari/napari" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/napari/napari" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
-</ul>
-      </div>
+</ul></div>
       
     </div>
+    
   </div>
-</div>
-  </nav>
+  
   
 
-  <div class="napari-page">
-    
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- Only show if we have sidebars configured, else just a small margin  -->
-        <div class="bd-sidebar">
-          <div class="sidebar-start-items">
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../usage.html">
+                        Usage
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../plugins/index.html">
+                        Plugins
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../community/index.html">
+                        Community
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        Contributing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../api/index.html">
+                        API Reference
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://napari-hub.org">
+                    napari hub
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="versionswitcherbutton" type="button" role="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="listbox" aria-controls="versionswitcherlist" aria-label="Version switcher list">
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="versionswitcherlist" class="version-switcher__menu dropdown-menu list-group-flush py-0" role="listbox" aria-labelledby="versionswitcherbutton">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/napari/napari" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -213,48 +374,40 @@ document.write(`
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form><nav class="bd-docs-nav bd-links"
+</form></div>
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../community/mission_and_values.html">Mission and Values</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../community/team.html">About the project and team</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../community/code_of_conduct.html">Code of Conduct</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../community/code_of_conduct_reporting.html">Handling Code of Conduct reports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../community/governance.html">Governance model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../community/working_groups.html">Working groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../community/meeting_schedule.html">Meeting schedule</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Contributing resources</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="contributing.html">Contributing guide</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../naps/index.html">napari Advancement Proposals (NAPs)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../naps/0-nap-process.html">NAP 0 — Purpose and Process</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../naps/1-institutional-funding-partners.html">NAP-1 — Institutional and Funding Partners</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../naps/2-conda-based-packaging.html">NAP-2 — Distributing napari with conda-based packaging</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../naps/3-spaces.html">NAP-3 — Spaces</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../naps/4-async-slicing.html">NAP-4: Asynchronous slicing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../naps/5-new-logo.html">NAP-5 — New logo (2022)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../naps/6-contributable-menus.html">NAP-6 — Contributable Menus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../naps/7-key-binding-dispatch.html">NAP-7 — Key Binding Dispatch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../naps/template.html">NAP-X — Template and Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing guide</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../naps/index.html">napari Advancement Proposals (NAPs)</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../naps/0-nap-process.html">NAP 0 — Purpose and Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../naps/1-institutional-funding-partners.html">NAP-1 — Institutional and Funding Partners</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../naps/2-conda-based-packaging.html">NAP-2 — Distributing napari with conda-based packaging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../naps/3-spaces.html">NAP-3 — Spaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../naps/4-async-slicing.html">NAP-4: Asynchronous slicing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../naps/5-new-logo.html">NAP-5 — New logo (2022)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../naps/6-contributable-menus.html">NAP-6 — Contributable Menus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../naps/7-key-binding-dispatch.html">NAP-7 — Key Binding Dispatch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../naps/template.html">NAP-X — Template and Instructions</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="documentation/index.html">Contributing Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="documentation/docs_template.html">Docs template</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="documentation/index.html">Contributing Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="documentation/docs_template.html">Docs template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/docs_deployment.html">Documentation and website deployment</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="translations.html">Translations</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Core Developer guide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="release.html">Release guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translations.html">Translations</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Core Developer guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release guide</a></li>
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="testing.html">Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profiling.html">Profiling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="benchmarks.html">Benchmarks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packaging.html">Packaging</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../release/index.html">Release notes</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiling.html">Profiling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="benchmarks.html">Benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="packaging.html">Packaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance.html">Maintenance</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../release/index.html">Release notes</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../release/release_0_4_18.html">napari 0.4.18</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../release/release_0_4_17.html">napari 0.4.17</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../release/release_0_4_16.html">napari 0.4.16</a></li>
@@ -300,64 +453,69 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../release/release_0_1_0.html">napari 0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../roadmaps/index.html">Roadmaps</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../roadmaps/index.html">Roadmaps</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../roadmaps/0_4.html">Roadmap 0.4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../roadmaps/0_3_retrospective.html">Roadmap 0.3 Retrospective</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../roadmaps/0_3.html">Roadmap 0.3</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../community/licensing.html">Licensing</a></li>
 </ul>
 </div>
-</nav>
-          </div>
-          <div class="sidebar-end-items">
-          </div>
-        </div>
-      
-    
-
-    
-      <div class="bd-toc">
-        
-          
-            <div class="toc-item">
-              
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#all-contributors-are-treated-the-same">All contributors are treated the same</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewing">Reviewing</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-conduct-a-good-review">How to conduct a good review</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merge-only-changes-you-understand">Merge only changes you understand</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">Further resources</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inviting-new-core-members">Inviting new core members</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contribute-to-this-guide">Contribute to this guide (!)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
-</ul>
-  </nav>
-            </div>
-          
-            <div class="toc-item">
-              
-            </div>
-          
-        
-      </div>
-    
+  
+  <div id="rtd-footer-container"></div>
 
-    
+
+      </div>
       
+      <main id="main-content" class="bd-main">
         
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
       
-      <main class="col-md-9 col-xl-7 bd-content" role="main">
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Contributing</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Core Developer guide</li>
+  </ul>
+</nav>
+</div>
       
-        <div>
-          
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="core-developer-guide">
 <span id="core-dev-guide"></span><h1>Core Developer guide<a class="headerlink" href="#core-developer-guide" title="Permalink to this heading">#</a></h1>
 <p>Welcome, new core developer!  The core team appreciate the quality of
@@ -453,6 +611,10 @@ in that order.</p></li>
 should be covered by at least one test. Good tests not only execute the code,
 but explore corner cases.  It can be tempting not to review tests, but please
 do so.</p></li>
+<li><p><strong>Labels and Milestones:</strong> Make sure you add the appropriate labels and
+milestone to PRs before merging. This should be done both in the main napari
+repo and in the docs repo. Both repos have a CI check, triggered by the
+<code class="docutils literal notranslate"><span class="pre">ready_to_merge</span></code> label, which will fail if the milestone is not set in the PR.</p></li>
 </ol>
 <p>Other changes may be <em>nitpicky</em>: spelling mistakes, formatting,
 etc. Do not insist contributors make these changes, but instead you should offer
@@ -481,6 +643,11 @@ for added insight where needed, and see this as a great learning opportunity.</p
 of the code base, you are vouching for changes you merge.  Please take
 that responsibility seriously.</p>
 </section>
+</section>
+<section id="documentation-and-website">
+<h2>Documentation and website<a class="headerlink" href="#documentation-and-website" title="Permalink to this heading">#</a></h2>
+<p>For details on how the documentation and website are built, see
+<a class="reference internal" href="documentation/docs_deployment.html"><span class="doc std std-doc">Documentation and website deployment</span></a>.</p>
 </section>
 <section id="further-resources">
 <h2>Further resources<a class="headerlink" href="#further-resources" title="Permalink to this heading">#</a></h2>
@@ -541,10 +708,14 @@ advance!</p>
 </section>
 
 
-        </div>
-      
-      
-        <!-- Previous / next buttons -->
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="translations.html"
@@ -565,10 +736,49 @@ advance!</p>
       <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-      
-      </main>
-    
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
   </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#all-contributors-are-treated-the-same">All contributors are treated the same</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewing">Reviewing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-conduct-a-good-review">How to conduct a good review</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merge-only-changes-you-understand">Merge only changes you understand</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation-and-website">Documentation and website</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-resources">Further resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inviting-new-core-members">Inviting new core members</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contribute-to-this-guide">Contribute to this guide (!)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <script src="../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
   

@@ -27,28 +27,6 @@ Displays an nD multiscale image
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-29
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_multiscale_image_001.png
-   :alt: nD multiscale image
-   :srcset: /gallery/images/sphx_glr_nD_multiscale_image_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    base shape (8, 1536, 1536)
-    multiscale level shapes:  [(8, 1536, 1536), (4, 768, 1536), (2, 384, 1536)]
-
-
-
-
-
-
-|
-
 .. code-block:: default
 
 

@@ -27,17 +27,6 @@ Display 3D points with combinations of different renderings.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-26
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_point_cloud_001.png
-   :alt: point cloud
-   :srcset: /gallery/images/sphx_glr_point_cloud_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

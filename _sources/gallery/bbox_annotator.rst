@@ -25,17 +25,6 @@ bbox annotator
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-121
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_bbox_annotator_001.png
-   :alt: bbox annotator
-   :srcset: /gallery/images/sphx_glr_bbox_annotator_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

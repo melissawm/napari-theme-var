@@ -34,17 +34,6 @@ and then using the weights in the kernel to add up the final fragment value.
 
 .. GENERATED FROM PYTHON SOURCE LINES 17-83
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_image_custom_kernel_001.png
-   :alt: image custom kernel
-   :srcset: /gallery/images/sphx_glr_image_custom_kernel_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

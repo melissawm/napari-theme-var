@@ -27,17 +27,6 @@ Display a 4-D image and points layer and swap the displayed dimensions
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-44
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_swap_dims_001.png
-   :alt: swap dims
-   :srcset: /gallery/images/sphx_glr_swap_dims_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

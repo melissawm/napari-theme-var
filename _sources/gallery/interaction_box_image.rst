@@ -29,17 +29,6 @@ This allows the user to manipulate the image via the interaction box
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-21
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_interaction_box_image_001.png
-   :alt: interaction box image
-   :srcset: /gallery/images/sphx_glr_interaction_box_image_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

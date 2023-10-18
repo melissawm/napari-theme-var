@@ -27,17 +27,6 @@ Displays an image and sets the theme to 'light'.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-22
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_set_theme_001.png
-   :alt: set theme
-   :srcset: /gallery/images/sphx_glr_set_theme_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

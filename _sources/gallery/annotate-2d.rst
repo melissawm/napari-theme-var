@@ -28,29 +28,6 @@ Display one points layer ontop of one image layer using the ``add_points`` and
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-27
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_annotate-2d_001.png
-   :alt: annotate 2d
-   :srcset: /gallery/images/sphx_glr_annotate-2d_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    click to add points; close the window when finished.
-    you clicked on:
-    []
-
-
-
-
-
-
-|
-
 .. code-block:: default
 
 

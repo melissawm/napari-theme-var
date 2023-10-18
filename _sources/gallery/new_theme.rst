@@ -25,29 +25,7 @@ Displays an image and sets the theme to new custom theme.
 
 .. tags:: experimental
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-41
-
-
-
-.. image-sg:: /gallery/images/sphx_glr_new_theme_001.png
-   :alt: new theme
-   :srcset: /gallery/images/sphx_glr_new_theme_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Originally themes ['dark', 'light', 'system']
-    New themes ['dark', 'light', 'blue', 'system']
-
-
-
-
-
-
-|
+.. GENERATED FROM PYTHON SOURCE LINES 9-42
 
 .. code-block:: default
 
@@ -72,6 +50,7 @@ Displays an image and sets the theme to new custom theme.
     blue_theme.foreground = [45, 52, 71]  # or as list
     blue_theme.primary = '#50586c'  # or as hexes
     blue_theme.current = 'orange'  # or as color name
+    blue_theme.font_size = '10pt'  # you can provide a font size in points (pt) for the application
 
     register_theme('blue', blue_theme, "custom")
 

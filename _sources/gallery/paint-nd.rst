@@ -29,17 +29,6 @@ This is useful e.g. when proofreading segmentations within a time series.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-35
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_paint-nd_001.png
-   :alt: paint nd
-   :srcset: /gallery/images/sphx_glr_paint-nd_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

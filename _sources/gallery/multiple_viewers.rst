@@ -27,29 +27,6 @@ Create multiple viewers from the same script
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-25
 
-
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image-sg:: /gallery/images/sphx_glr_multiple_viewers_001.png
-          :alt: multiple viewers
-          :srcset: /gallery/images/sphx_glr_multiple_viewers_001.png
-          :class: sphx-glr-multi-img
-
-    *
-
-      .. image-sg:: /gallery/images/sphx_glr_multiple_viewers_002.png
-          :alt: multiple viewers
-          :srcset: /gallery/images/sphx_glr_multiple_viewers_002.png
-          :class: sphx-glr-multi-img
-
-
-
-
-
 .. code-block:: default
 
 

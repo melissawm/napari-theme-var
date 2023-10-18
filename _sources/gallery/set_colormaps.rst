@@ -27,17 +27,6 @@ Add named or unnamed vispy colormaps to existing layers.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-36
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_set_colormaps_001.png
-   :alt: set colormaps
-   :srcset: /gallery/images/sphx_glr_set_colormaps_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

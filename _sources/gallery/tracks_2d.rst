@@ -25,17 +25,6 @@ Tracks 2D
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-66
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_tracks_2d_001.png
-   :alt: tracks 2d
-   :srcset: /gallery/images/sphx_glr_tracks_2d_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

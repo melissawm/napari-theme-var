@@ -27,17 +27,6 @@ Display a 3D mesh with normals and wireframe
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-30
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_surface_normals_wireframe_001.png
-   :alt: surface normals wireframe
-   :srcset: /gallery/images/sphx_glr_surface_normals_wireframe_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

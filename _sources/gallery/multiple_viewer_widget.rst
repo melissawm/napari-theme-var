@@ -30,23 +30,13 @@ current dims point (`viewer.dims.point`).
 
 .. tags:: gui
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-465
-
-
-
-.. image-sg:: /gallery/images/sphx_glr_multiple_viewer_widget_001.png
-   :alt: multiple viewer widget
-   :srcset: /gallery/images/sphx_glr_multiple_viewer_widget_001.png
-   :class: sphx-glr-single-img
-
-
-
-
+.. GENERATED FROM PYTHON SOURCE LINES 14-466
 
 .. code-block:: default
 
 
     from copy import deepcopy
+    from typing import Optional
 
     import numpy as np
     from packaging.version import parse as parse_version
@@ -91,7 +81,7 @@ current dims point (`viewer.dims.point`).
 
 
     def copy_layer(layer: Layer, name: str = ""):
-        if NAPARI_GE_4_16:
+        if not NAPARI_GE_4_16:
             return copy_layer_le_4_16(layer, name)
 
         res_layer = Layer.create(*layer.as_layer_data_tuple())
@@ -182,8 +172,8 @@ current dims point (`viewer.dims.point`).
             self,
             filenames: list,
             stack: bool,
-            plugin: str = None,
-            layer_type: str = None,
+            plugin: Optional[str] = None,
+            layer_type: Optional[str] = None,
             **kwargs,
         ):
             """for drag and drop open files"""
