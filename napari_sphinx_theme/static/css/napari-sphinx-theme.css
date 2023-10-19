@@ -139,6 +139,12 @@ h1 {
     align-items: center;
 }
 
+.napari-footer .footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .napari-footer .footer-item--with-napari-copyright {
     width: 100%;
     justify-content: flex-end;
