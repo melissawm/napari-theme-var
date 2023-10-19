@@ -32,6 +32,7 @@ html[data-theme="light"] {
     --pst-color-text-muted: var(--napari-dark-gray);
     --pst-color-border: var(--napari-gray);
     --pst-color-target: var(--napari-gray);
+    --pst-color-accent: var(--napari-primary-blue);
 }
 
 /* Dark theme is currently unset - design/accessibility assessment is needed here */
@@ -49,6 +50,7 @@ html[data-theme="dark"] {
     --pst-color-text-muted: var(--napari-dark-gray);
     --pst-color-border: var(--napari-gray);
     --pst-color-target: var(--napari-gray);
+    --pst-color-accent: var(--napari-primary-blue);
 }
 
 body {
@@ -131,9 +133,10 @@ h1 {
     width: 1em;
 }
 
-.napari-footer a>span {
-    font-weight: 600;
-    font-size: 0.5625rem;
+.napari-footer .footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .napari-footer .footer-item {
@@ -320,13 +323,16 @@ button.version-switcher__button {
     line-height: 1.25rem;
 }
 
+.bd-sidebar-primary .sidebar-primary-items__start {
+    padding: .5rem 1rem;
+}
 .bd-sidebar-primary .sidebar-primary-items__end {
     margin-bottom: 0;
     margin-top: 0;
 }
 
-.bd-search {
-    border: 1px solid transparent;
+.bd-search .search-button__kbd-shortcut {
+    display: none;
 }
 
 .bd-sidebar .toctree-l1 a {
@@ -458,6 +464,14 @@ nav.bd-links li>a:hover {
 
 nav.bd-links .current>a {
     box-shadow: none !important;
+}
+
+/***************************
+search
+***************************/
+
+.form-control {
+    border: 1px transparent;
 }
 
 /***************************
