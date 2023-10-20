@@ -30,17 +30,6 @@ apprearing on each slice.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-58
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_vectors_001.png
-   :alt: nD vectors
-   :srcset: /gallery/images/sphx_glr_nD_vectors_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

@@ -25,17 +25,6 @@ Tracks 3D with graph
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-56
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_tracks_3d_with_graph_001.png
-   :alt: tracks 3d with graph
-   :srcset: /gallery/images/sphx_glr_tracks_3d_with_graph_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

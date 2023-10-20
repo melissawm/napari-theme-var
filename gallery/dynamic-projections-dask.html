@@ -428,7 +428,6 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering-explanation.html">Rendering in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering.html">Asynchronous rendering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/performance.html">napari performance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/events_reference.html">Events reference</a></li>
@@ -655,8 +654,8 @@ them using magicgui.</p>
 </pre></div>
 </div>
 <p>Part 1: using code to view a specific value.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">blobs</span></a> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">binary_blobs</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">n_dim</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">blobs_dask</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">from_array</span><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">blobs</span></a><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">))</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">blobs</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">binary_blobs</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">n_dim</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">blobs_dask</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">from_array</span><span class="p">(</span><span class="n">blobs</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">))</span>
 
 <span class="c1"># original shape [60, 1, 1, 5, 64, 64],</span>
 <span class="c1"># use squeeze to remove singleton axes</span>
@@ -665,19 +664,19 @@ them using magicgui.</p>
     <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
 <span class="p">)</span>
 <span class="n">blobs_sum</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.sum.html#numpy.sum" title="numpy.sum" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">sum</span></a><span class="p">(</span><span class="n">blobs_dask_windows</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><span class="n">blobs_sum</span><span class="p">)</span>
+<span class="n">viewer</span> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><span class="n">blobs_sum</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <a href="../api/napari.html#napari.run" title="napari.run" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">run</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_dynamic-projections-dask_001.png" srcset="../_images/sphx_glr_dynamic-projections-dask_001.png" alt="dynamic projections dask" class = "sphx-glr-single-img"/><p>Part 2: using magicgui to vary the slice thickness.</p>
+<p>Part 2: using magicgui to vary the slice thickness.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">magicgui</span> <span class="kn">import</span> <a href="https://pyapp-kit.github.io/magicgui/api/magicgui/#magicgui.magicgui" title="magicgui.magicgui" class="sphx-glr-backref-module-magicgui sphx-glr-backref-type-py-function"><span class="n">magicgui</span></a>  <span class="c1"># noqa: E402</span>
 
 
 <span class="k">def</span> <span class="nf">sliding_window_mean</span><span class="p">(</span>
-    <span class="n">arr</span><span class="p">:</span> <a href="https://docs.python.org/3/library/typing.html#typing.NewType" title="typing.NewType" class="sphx-glr-backref-module-typing sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">napari</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">ImageData</span></a><span class="p">,</span> <span class="n">size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <a href="https://docs.python.org/3/library/typing.html#typing.NewType" title="typing.NewType" class="sphx-glr-backref-module-typing sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">napari</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">LayerDataTuple</span></a><span class="p">:</span>
+    <span class="n">arr</span><span class="p">:</span> <span class="n">napari</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">ImageData</span><span class="p">,</span> <span class="n">size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">napari</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">LayerDataTuple</span><span class="p">:</span>
     <span class="n">window_shape</span> <span class="o">=</span> <span class="p">(</span><span class="n">size</span><span class="p">,)</span> <span class="o">+</span> <span class="p">(</span><span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
     <span class="n">arr_windows</span> <span class="o">=</span> <span class="n">sliding_window_view</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">window_shape</span><span class="o">=</span><span class="n">window_shape</span><span class="p">)</span>
     <span class="c1"># as before, use squeeze to remove singleton axes</span>
@@ -697,15 +696,15 @@ them using magicgui.</p>
     <span class="p">)</span>
 
 
-<a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><span class="n">blobs_dask</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
-<a href="../api/napari.components.ViewerModel.html#napari.components.ViewerModel.window" title="napari.components.ViewerModel.window" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-attribute"><span class="n">viewer</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">add_dock_widget</span></a><span class="p">(</span><a href="https://pyapp-kit.github.io/magicgui/api/magicgui/#magicgui.magicgui" title="magicgui.magicgui" class="sphx-glr-backref-module-magicgui sphx-glr-backref-type-py-function"><span class="n">magicgui</span></a><span class="p">(</span><span class="n">sliding_window_mean</span><span class="p">,</span> <span class="n">auto_call</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-<a href="../api/napari.components.Dims.html#napari.components.Dims.current_step" title="napari.components.Dims.current_step" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-attribute"><span class="n">viewer</span><span class="o">.</span><span class="n">dims</span><span class="o">.</span><span class="n">current_step</span></a> <span class="o">=</span> <span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">viewer</span> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><span class="n">blobs_dask</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">add_dock_widget</span><span class="p">(</span><a href="https://pyapp-kit.github.io/magicgui/api/magicgui/#magicgui.magicgui" title="magicgui.magicgui" class="sphx-glr-backref-module-magicgui sphx-glr-backref-type-py-function"><span class="n">magicgui</span></a><span class="p">(</span><span class="n">sliding_window_mean</span><span class="p">,</span> <span class="n">auto_call</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">dims</span><span class="o">.</span><span class="n">current_step</span> <span class="o">=</span> <span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <a href="../api/napari.html#napari.run" title="napari.run" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">run</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_dynamic-projections-dask_002.png" srcset="../_images/sphx_glr_dynamic-projections-dask_002.png" alt="dynamic projections dask" class = "sphx-glr-single-img"/><div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-gallery-dynamic-projections-dask-py">
+<div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-gallery-dynamic-projections-dask-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/a15165e51a9c56fbdc4a58c266eafe4b/dynamic-projections-dask.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">dynamic-projections-dask.py</span></code></a></p>
 </div>
@@ -764,8 +763,7 @@ them using magicgui.</p>
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
   <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
 <script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
-
-  <script src="../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
+<footer class="napari-footer">
   
     <div class="footer-item">
       <a href="/">

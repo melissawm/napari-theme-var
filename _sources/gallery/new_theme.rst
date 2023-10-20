@@ -27,28 +27,6 @@ Displays an image and sets the theme to new custom theme.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-42
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_new_theme_001.png
-   :alt: new theme
-   :srcset: /gallery/images/sphx_glr_new_theme_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Originally themes ['dark', 'light', 'system']
-    New themes ['dark', 'light', 'blue', 'system']
-
-
-
-
-
-
-|
-
 .. code-block:: default
 
 

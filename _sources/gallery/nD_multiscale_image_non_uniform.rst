@@ -27,27 +27,6 @@ Displays an nD multiscale image
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-32
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_multiscale_image_non_uniform_001.png
-   :alt: nD multiscale image non uniform
-   :srcset: /gallery/images/sphx_glr_nD_multiscale_image_non_uniform_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    multiscale level shapes:  [(6, 1536, 1536, 3), (6, 768, 768, 3), (6, 384, 384, 3), (6, 192, 192, 3)]
-
-
-
-
-
-
-|
-
 .. code-block:: default
 
 

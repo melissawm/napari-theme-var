@@ -28,17 +28,6 @@ bounding boxes and text
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-137
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_annotate_segmentation_with_text_001.png
-   :alt: annotate segmentation with text
-   :srcset: /gallery/images/sphx_glr_annotate_segmentation_with_text_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
     import numpy as np

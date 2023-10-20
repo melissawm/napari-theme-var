@@ -27,17 +27,6 @@ Add points on nD shapes in 3D using a mouse callback
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-76
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_points_on_nD_shapes_001.png
-   :alt: add points on nD shapes
-   :srcset: /gallery/images/sphx_glr_add_points_on_nD_shapes_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

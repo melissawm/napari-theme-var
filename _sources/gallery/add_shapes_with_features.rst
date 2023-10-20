@@ -29,17 +29,6 @@ your shapes.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-93
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_shapes_with_features_001.png
-   :alt: add shapes with features
-   :srcset: /gallery/images/sphx_glr_add_shapes_with_features_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

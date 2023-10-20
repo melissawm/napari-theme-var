@@ -27,17 +27,6 @@ Display a 3D image layer using the :meth:`add_image` API.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-23
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_3D_image_001.png
-   :alt: add 3D image
-   :srcset: /gallery/images/sphx_glr_add_3D_image_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

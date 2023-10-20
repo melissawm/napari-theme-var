@@ -428,7 +428,6 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering-explanation.html">Rendering in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering.html">Asynchronous rendering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/performance.html">napari performance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/events_reference.html">Events reference</a></li>
@@ -644,20 +643,20 @@ to download the full example code</p>
 <p>Display one shapes layer on top of one image layer using the add_shapes and
 add_image APIs.</p>
 <p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/historical.html">historical</a></p>
-<img src="../_images/sphx_glr_update_console_001.png" srcset="../_images/sphx_glr_update_console_001.png" alt="update console" class = "sphx-glr-single-img"/><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">data</span>
 
 <span class="kn">import</span> <span class="nn">napari</span>
 
 <span class="c1"># create the viewer and window</span>
-<a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class"><span class="n">napari</span><span class="o">.</span><span class="n">Viewer</span></a><span class="p">()</span>
+<span class="n">viewer</span> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">napari</span><span class="o">.</span><span class="n">Viewer</span></a><span class="p">()</span>
 
 <span class="c1"># add the image</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">photographer</span></a> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">camera</span><span class="p">()</span>
-<a href="../api/napari.layers.Image.html#napari.layers.Image" title="napari.layers.Image" class="sphx-glr-backref-module-napari-layers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">image_layer</span></a> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer.add_image" title="napari.Viewer.add_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">add_image</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">photographer</span></a><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;photographer&#39;</span><span class="p">)</span>
+<span class="n">photographer</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">camera</span><span class="p">()</span>
+<span class="n">image_layer</span> <span class="o">=</span> <span class="n">viewer</span><span class="o">.</span><span class="n">add_image</span><span class="p">(</span><span class="n">photographer</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;photographer&#39;</span><span class="p">)</span>
 
 <span class="c1"># create a list of polygons</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">polygons</span></a> <span class="o">=</span> <span class="p">[</span>
+<span class="n">polygons</span> <span class="o">=</span> <span class="p">[</span>
     <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">],</span> <span class="p">[</span><span class="mi">111</span><span class="p">,</span> <span class="mi">113</span><span class="p">],</span> <span class="p">[</span><span class="mi">22</span><span class="p">,</span> <span class="mi">246</span><span class="p">]]),</span>
     <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">(</span>
         <span class="p">[</span>
@@ -700,8 +699,8 @@ add_image APIs.</p>
 <span class="p">]</span>
 
 <span class="c1"># add polygons</span>
-<a href="../api/napari.layers.Shapes.html#napari.layers.Shapes" title="napari.layers.Shapes" class="sphx-glr-backref-module-napari-layers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">shapes_layer</span></a> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer.add_shapes" title="napari.Viewer.add_shapes" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">add_shapes</span></a><span class="p">(</span>
-    <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">polygons</span></a><span class="p">,</span>
+<span class="n">shapes_layer</span> <span class="o">=</span> <span class="n">viewer</span><span class="o">.</span><span class="n">add_shapes</span><span class="p">(</span>
+    <span class="n">polygons</span><span class="p">,</span>
     <span class="n">shape_type</span><span class="o">=</span><span class="s1">&#39;polygon&#39;</span><span class="p">,</span>
     <span class="n">edge_width</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
     <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;coral&#39;</span><span class="p">,</span>
@@ -710,7 +709,7 @@ add_image APIs.</p>
 <span class="p">)</span>
 
 <span class="c1"># Send local variables to the console</span>
-<a href="../api/napari.Viewer.html#napari.Viewer.update_console" title="napari.Viewer.update_console" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">update_console</span></a><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">update_console</span><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <a href="../api/napari.html#napari.run" title="napari.run" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">run</span></a><span class="p">()</span>
@@ -775,8 +774,7 @@ add_image APIs.</p>
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
   <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
 <script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
-
-  <script src="../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
+<footer class="napari-footer">
   
     <div class="footer-item">
       <a href="/">

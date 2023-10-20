@@ -428,7 +428,6 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering-explanation.html">Rendering in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering.html">Asynchronous rendering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/performance.html">napari performance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/events_reference.html">Events reference</a></li>
@@ -643,26 +642,19 @@ to download the full example code</p>
 <span id="sphx-glr-gallery-new-theme-py"></span><h1>New theme<a class="headerlink" href="#new-theme" title="Permalink to this heading">#</a></h1>
 <p>Displays an image and sets the theme to new custom theme.</p>
 <p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/experimental.html">experimental</a></p>
-<img src="../_images/sphx_glr_new_theme_001.png" srcset="../_images/sphx_glr_new_theme_001.png" alt="new theme" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Originally themes [&#39;dark&#39;, &#39;light&#39;, &#39;system&#39;]
-New themes [&#39;dark&#39;, &#39;light&#39;, &#39;blue&#39;, &#39;system&#39;]
-</pre></div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">data</span>
 
 <span class="kn">import</span> <span class="nn">napari</span>
 <span class="kn">from</span> <span class="nn">napari.utils.theme</span> <span class="kn">import</span> <span class="n">available_themes</span><span class="p">,</span> <span class="n">get_theme</span><span class="p">,</span> <span class="n">register_theme</span>
 
 <span class="c1"># create the viewer with an image</span>
-<a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">astronaut</span><span class="p">(),</span> <span class="n">rgb</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;astronaut&#39;</span><span class="p">)</span>
+<span class="n">viewer</span> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">astronaut</span><span class="p">(),</span> <span class="n">rgb</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;astronaut&#39;</span><span class="p">)</span>
 
 <span class="c1"># List themes</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Originally themes&#39;</span><span class="p">,</span> <span class="n">available_themes</span><span class="p">())</span>
 
 <span class="n">blue_theme</span> <span class="o">=</span> <span class="n">get_theme</span><span class="p">(</span><span class="s1">&#39;dark&#39;</span><span class="p">)</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">blue_theme</span><span class="o">.</span><span class="n">id</span></a> <span class="o">=</span> <span class="s2">&quot;blue&quot;</span>
+<span class="n">blue_theme</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="s2">&quot;blue&quot;</span>
 <span class="n">blue_theme</span><span class="o">.</span><span class="n">icon</span> <span class="o">=</span> <span class="p">(</span>
     <span class="s1">&#39;rgb(0, 255, 255)&#39;</span>  <span class="c1"># you can provide colors as rgb(XXX, YYY, ZZZ)</span>
 <span class="p">)</span>
@@ -670,7 +662,7 @@ New themes [&#39;dark&#39;, &#39;light&#39;, &#39;blue&#39;, &#39;system&#39;]
 <span class="n">blue_theme</span><span class="o">.</span><span class="n">foreground</span> <span class="o">=</span> <span class="p">[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">71</span><span class="p">]</span>  <span class="c1"># or as list</span>
 <span class="n">blue_theme</span><span class="o">.</span><span class="n">primary</span> <span class="o">=</span> <span class="s1">&#39;#50586c&#39;</span>  <span class="c1"># or as hexes</span>
 <span class="n">blue_theme</span><span class="o">.</span><span class="n">current</span> <span class="o">=</span> <span class="s1">&#39;orange&#39;</span>  <span class="c1"># or as color name</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">blue_theme</span><span class="o">.</span><span class="n">font_size</span></a> <span class="o">=</span> <span class="s1">&#39;10pt&#39;</span>  <span class="c1"># you can provide a font size in points (pt) for the application</span>
+<span class="n">blue_theme</span><span class="o">.</span><span class="n">font_size</span> <span class="o">=</span> <span class="s1">&#39;10pt&#39;</span>  <span class="c1"># you can provide a font size in points (pt) for the application</span>
 
 <span class="n">register_theme</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">blue_theme</span><span class="p">,</span> <span class="s2">&quot;custom&quot;</span><span class="p">)</span>
 
@@ -678,7 +670,7 @@ New themes [&#39;dark&#39;, &#39;light&#39;, &#39;blue&#39;, &#39;system&#39;]
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;New themes&#39;</span><span class="p">,</span> <span class="n">available_themes</span><span class="p">())</span>
 
 <span class="c1"># Set theme</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span><span class="o">.</span><span class="n">theme</span></a> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">theme</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <a href="../api/napari.html#napari.run" title="napari.run" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">run</span></a><span class="p">()</span>
@@ -743,8 +735,7 @@ New themes [&#39;dark&#39;, &#39;light&#39;, &#39;blue&#39;, &#39;system&#39;]
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
   <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
 <script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
-
-  <script src="../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
+<footer class="napari-footer">
   
     <div class="footer-item">
       <a href="/">

@@ -27,27 +27,6 @@ Displays a multiscale image
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-28
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_multiscale_image_001.png
-   :alt: add multiscale image
-   :srcset: /gallery/images/sphx_glr_add_multiscale_image_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    multiscale level shapes:  [(4096, 4096), (2048, 2048), (1024, 1024), (512, 512), (256, 256)]
-
-
-
-
-
-
-|
-
 .. code-block:: default
 
 

@@ -27,17 +27,6 @@ Display a 2D surface
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-23
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_surface_2D_001.png
-   :alt: add surface 2D
-   :srcset: /gallery/images/sphx_glr_add_surface_2D_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

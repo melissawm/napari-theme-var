@@ -32,17 +32,6 @@ current dims point (`viewer.dims.point`).
 
 .. GENERATED FROM PYTHON SOURCE LINES 14-466
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_multiple_viewer_widget_001.png
-   :alt: multiple viewer widget
-   :srcset: /gallery/images/sphx_glr_multiple_viewer_widget_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

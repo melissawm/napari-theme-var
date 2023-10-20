@@ -428,7 +428,6 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering-explanation.html">Rendering in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering.html">Asynchronous rendering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/performance.html">napari performance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/events_reference.html">Events reference</a></li>
@@ -643,23 +642,23 @@ to download the full example code</p>
 <span id="sphx-glr-gallery-surface-normals-wireframe-py"></span><h1>Surface normals wireframe<a class="headerlink" href="#surface-normals-wireframe" title="Permalink to this heading">#</a></h1>
 <p>Display a 3D mesh with normals and wireframe</p>
 <p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/experimental.html">experimental</a></p>
-<img src="../_images/sphx_glr_surface_normals_wireframe_001.png" srcset="../_images/sphx_glr_surface_normals_wireframe_001.png" alt="surface normals wireframe" class = "sphx-glr-single-img"/><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vispy.io</span> <span class="kn">import</span> <span class="n">load_data_file</span><span class="p">,</span> <span class="n">read_mesh</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vispy.io</span> <span class="kn">import</span> <span class="n">load_data_file</span><span class="p">,</span> <span class="n">read_mesh</span>
 
 <span class="kn">import</span> <span class="nn">napari</span>
 
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vert</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">faces</span></a><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">read_mesh</span><span class="p">(</span><span class="n">load_data_file</span><span class="p">(</span><span class="s1">&#39;orig/triceratops.obj.gz&#39;</span><span class="p">))</span>
+<span class="n">vert</span><span class="p">,</span> <span class="n">faces</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">read_mesh</span><span class="p">(</span><span class="n">load_data_file</span><span class="p">(</span><span class="s1">&#39;orig/triceratops.obj.gz&#39;</span><span class="p">))</span>
 
 <span class="c1"># put the mesh right side up, scale it up (napari#3477) and fix faces handedness</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vert</span></a> <span class="o">*=</span> <span class="o">-</span><span class="mi">100</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">faces</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">faces</span></a><span class="p">[:,</span> <span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">vert</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">100</span>
+<span class="n">faces</span> <span class="o">=</span> <span class="n">faces</span><span class="p">[:,</span> <span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
-<a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class"><span class="n">napari</span><span class="o">.</span><span class="n">Viewer</span></a><span class="p">(</span><span class="n">ndisplay</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<a href="../api/napari.layers.Surface.html#napari.layers.Surface" title="napari.layers.Surface" class="sphx-glr-backref-module-napari-layers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">surface</span></a> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer.add_surface" title="napari.Viewer.add_surface" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">add_surface</span></a><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vert</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">faces</span></a><span class="p">))</span>
+<span class="n">viewer</span> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">napari</span><span class="o">.</span><span class="n">Viewer</span></a><span class="p">(</span><span class="n">ndisplay</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">surface</span> <span class="o">=</span> <span class="n">viewer</span><span class="o">.</span><span class="n">add_surface</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">(</span><span class="n">vert</span><span class="p">,</span> <span class="n">faces</span><span class="p">))</span>
 
 <span class="c1"># enable normals and wireframe</span>
-<a href="../api/napari.layers.Surface.html#napari.layers.Surface.normals" title="napari.layers.Surface.normals" class="sphx-glr-backref-module-napari-layers sphx-glr-backref-type-py-attribute"><span class="n">surface</span><span class="o">.</span><span class="n">normals</span><span class="o">.</span><span class="n">face</span><span class="o">.</span><span class="n">visible</span></a> <span class="o">=</span> <span class="kc">True</span>
-<a href="../api/napari.layers.Surface.html#napari.layers.Surface.normals" title="napari.layers.Surface.normals" class="sphx-glr-backref-module-napari-layers sphx-glr-backref-type-py-attribute"><span class="n">surface</span><span class="o">.</span><span class="n">normals</span><span class="o">.</span><span class="n">vertex</span><span class="o">.</span><span class="n">visible</span></a> <span class="o">=</span> <span class="kc">True</span>
-<a href="../api/napari.layers.Surface.html#napari.layers.Surface.wireframe" title="napari.layers.Surface.wireframe" class="sphx-glr-backref-module-napari-layers sphx-glr-backref-type-py-attribute"><span class="n">surface</span><span class="o">.</span><span class="n">wireframe</span><span class="o">.</span><span class="n">visible</span></a> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">surface</span><span class="o">.</span><span class="n">normals</span><span class="o">.</span><span class="n">face</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">surface</span><span class="o">.</span><span class="n">normals</span><span class="o">.</span><span class="n">vertex</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">surface</span><span class="o">.</span><span class="n">wireframe</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="kc">True</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <a href="../api/napari.html#napari.run" title="napari.run" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">run</span></a><span class="p">()</span>
@@ -724,8 +723,7 @@ to download the full example code</p>
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
   <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
 <script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
-
-  <script src="../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
+<footer class="napari-footer">
   
     <div class="footer-item">
       <a href="/">

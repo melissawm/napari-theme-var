@@ -28,27 +28,6 @@ Display a labels layer above of an image layer using the ``add_labels`` and
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-33
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_labels-2d_001.png
-   :alt: labels 2d
-   :srcset: /gallery/images/sphx_glr_labels-2d_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    The color of label 5 is [0.28053862 0.22821146 0.6264092  1.        ]
-
-
-
-
-
-
-|
-
 .. code-block:: default
 
 

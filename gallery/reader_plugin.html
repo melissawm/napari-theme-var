@@ -428,7 +428,6 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering-explanation.html">Rendering in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering.html">Asynchronous rendering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/performance.html">napari performance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/events_reference.html">Events reference</a></li>
@@ -644,16 +643,16 @@ to download the full example code</p>
 <p>Barebones reader plugin example, using <code class="docutils literal notranslate"><span class="pre">imageio.imread`</span></code></p>
 <p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/historical.html">historical</a></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">imageio</span> <span class="kn">import</span> <span class="n">formats</span><span class="p">,</span> <span class="n">imread</span>
-<span class="kn">from</span> <span class="nn">napari_plugin_engine</span> <span class="kn">import</span> <a href="https://napari-plugin-engine.readthedocs.io/en/latest/api.html#napari_plugin_engine.HookImplementationMarker" title="napari_plugin_engine.HookImplementationMarker" class="sphx-glr-backref-module-napari_plugin_engine sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">napari_hook_implementation</span></a>
+<span class="kn">from</span> <span class="nn">napari_plugin_engine</span> <span class="kn">import</span> <span class="n">napari_hook_implementation</span>
 
-<a href="https://docs.python.org/3/library/stdtypes.html#tuple" title="builtins.tuple" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">readable_extensions</span></a> <span class="o">=</span> <span class="nb">tuple</span><span class="p">({</span><span class="n">x</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">formats</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">extensions</span><span class="p">})</span>
+<span class="n">readable_extensions</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">({</span><span class="n">x</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">formats</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">extensions</span><span class="p">})</span>
 
 
 <span class="nd">@napari_hook_implementation</span>
 <span class="k">def</span> <span class="nf">napari_get_reader</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;A basic implementation of the napari_get_reader hook specification.&quot;&quot;&quot;</span>
     <span class="c1"># if we know we cannot read the file, we immediately return None.</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#tuple" title="builtins.tuple" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">readable_extensions</span></a><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">readable_extensions</span><span class="p">):</span>
         <span class="k">return</span> <span class="kc">None</span>
     <span class="c1"># otherwise we return the *function* that can read ``path``.</span>
     <span class="k">return</span> <span class="n">reader_function</span>
@@ -726,8 +725,7 @@ to download the full example code</p>
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
   <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
 <script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
-
-  <script src="../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
+<footer class="napari-footer">
   
     <div class="footer-item">
       <a href="/">

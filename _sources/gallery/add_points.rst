@@ -28,17 +28,6 @@ Display a points layer on top of an image layer using the ``add_points`` and
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-57
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_points_001.png
-   :alt: add points
-   :srcset: /gallery/images/sphx_glr_add_points_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

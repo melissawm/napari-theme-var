@@ -415,9 +415,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="npe1.html">First generation plugins (<em>Deprecated</em>)</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../technical_references/index.html">Technical references</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../technical_references/manifest.html">Manifest Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../technical_references/contributions.html">Contributions Reference</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../technical_references/index.html">Technical references</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -570,7 +568,7 @@ plugin.  Notable cases include:</p>
 <ul class="simple">
 <li><p>multi-layer writers using the <code class="docutils literal notranslate"><span class="pre">napari_get_writer</span></code> hook specification</p></li>
 <li><p><em>locally</em> scoped functions returned from <code class="docutils literal notranslate"><span class="pre">napari_experimental_provide_function</span></code>.
-All <a class="reference internal" href="../technical_references/contributions.html#contributions-commands"><span class="std std-ref">command contributions</span></a>
+All <span class="xref myst">command contributions</span>
 must have global <code class="docutils literal notranslate"><span class="pre">python_paths</span></code>.</p></li>
 </ul>
 <p>Feel free to contact us on zulip or github if you need help converting!.</p>
@@ -682,7 +680,7 @@ function.</p>
 <code class="docutils literal notranslate"><span class="pre">filename_extensions</span></code> used by your writer. <code class="docutils literal notranslate"><span class="pre">layer_types</span></code> is a set of
 constraints describing the combinations of layer types acceptable by this
 writer. More about layer types can be found in the
-<a class="reference internal" href="../building_a_plugin/guides.html#layer-type-constraints"><span class="std std-ref">Writer contribution guide</span></a>.</p>
+<span class="xref myst">Writer contribution guide</span>.</p>
 <p>In the example below, the svg writer accepts a set of layers with 0 or more
 images, and 0 or more label layers, and so on. It will not accept surface
 layers, so if any surface layer is present this writer won’t be invoked.</p>
@@ -1031,8 +1029,7 @@ adaptor will be removed.</p>
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
   <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
 <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
-
-  <script src="../../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
+<footer class="napari-footer">
   
     <div class="footer-item">
       <a href="/">

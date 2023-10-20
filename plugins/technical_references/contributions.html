@@ -11,7 +11,7 @@
     <link type="image/svg+xml" href="../../_static/favicon/logo-silhouette-dark-light.svg" rel="icon">
     <link sizes="any" href="../../_static/favicon/logo-silhouette-192.png" rel="icon" type="image/png">
     <link rel="apple-touch-icon" sizes="180x180" href="../../_static/favicon/logo-noborder-180.png" type="image/png">
-    <title>Contributions Reference &#8212; napari</title>
+    <title>&lt;no title&gt; &#8212; napari</title>
   
   
   
@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Community" href="../../community/index.html" />
-    <link rel="prev" title="Manifest Reference" href="manifest.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="manifest.html" />
     <script async defer data-domain="napari.org" src="https://plausible.io/js/plausible.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -377,7 +377,7 @@ document.write(`
 </form></div>
         <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
-  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../start_using_plugins/index.html">Start using plugins</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../start_using_plugins/finding_and_installing_plugins.html">Finding and installing plugins</a></li>
 </ul>
@@ -415,9 +415,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../advanced_topics/npe1.html">First generation plugins (<em>Deprecated</em>)</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Technical references</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="manifest.html">Manifest Reference</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Contributions Reference</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Technical references</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -463,7 +461,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Technical references</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Contribution...</li>
+    <li class="breadcrumb-item active" aria-current="page">&lt;no title&gt;</li>
   </ul>
 </nav>
 </div>
@@ -480,447 +478,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="contributions-reference">
-<span id="contributions-ref"></span><h1>Contributions Reference<a class="headerlink" href="#contributions-reference" title="Permalink to this heading">#</a></h1>
-<p><strong>Contributions</strong> are a set of static declarations that you make in the
-<code class="docutils literal notranslate"><span class="pre">contributions</span></code> field of the <a class="reference internal" href="manifest.html"><span class="doc std std-doc">Plugin Manifest</span></a>. Your extension registers
-<strong>Contributions</strong> to extend various functionalities within napari.
-Here is a list of all available <strong>Contributions</strong>:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#contributions-commands"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">commands</span></code></span></a></p></li>
-<li><p><a class="reference internal" href="#contributions-readers"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">readers</span></code></span></a></p></li>
-<li><p><a class="reference internal" href="#contributions-writers"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">writers</span></code></span></a></p></li>
-<li><p><a class="reference internal" href="#contributions-widgets"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">widgets</span></code></span></a></p></li>
-<li><p><a class="reference internal" href="#contributions-sample-data"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">sample_data</span></code></span></a></p></li>
-<li><p><a class="reference internal" href="#contributions-themes"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">themes</span></code></span></a></p></li>
-</ul>
-<p>You may add as many contributions as you’d like to a single manifest. For
-clarity, the following examples include only the specific contribution that
-is being discussed.</p>
-<section id="contributions-commands">
-<span id="id1"></span><h2><code class="docutils literal notranslate"><span class="pre">contributions.commands</span></code><a class="headerlink" href="#contributions-commands" title="Permalink to this heading">#</a></h2>
-<p>Contribute a <strong>command</strong> (a python callable) consisting of a unique <code class="docutils literal notranslate"><span class="pre">id</span></code>,
-a <code class="docutils literal notranslate"><span class="pre">title</span></code> and (optionally) a <code class="docutils literal notranslate"><span class="pre">python_path</span></code> that points to a fully qualified python
-callable.  If a <code class="docutils literal notranslate"><span class="pre">python_path</span></code> is not included in the manifest, it <em>must</em> be
-registered during activation with <code class="docutils literal notranslate"><span class="pre">register_command</span></code>.</p>
-<p>Note, some other contributions (e.g. <code class="docutils literal notranslate"><span class="pre">readers</span></code>, <code class="docutils literal notranslate"><span class="pre">writers</span></code> and <code class="docutils literal notranslate"><span class="pre">widgets</span></code>) will
-<em>point</em> to a specific command.  The command itself (i.e. the callable python
-object) will always appear in the <code class="docutils literal notranslate"><span class="pre">contributions.commands</span></code> section, but those
-contribution types may add additional contribution-specific metadata.</p>
-<div class="admonition-future-plans admonition">
-<p class="admonition-title">Future Plans</p>
-<p>Command contributions will eventually include an <strong>icon</strong>, <strong>category</strong>, and
-<strong>enabled</strong> state. Enablement is expressed with <em>when clauses</em>, that capture a
-conditional expression determining whether the command should be enabled or not,
-based on the current state of the program.  (i.e. “<em>If the active layer is a
-<code class="docutils literal notranslate"><span class="pre">Labels</span></code> layer</em>”)</p>
-<p>Commands will eventually be availble in a Command Palette (accessible with a
-hotkey) but they can also show in other menus.</p>
-</div>
-<p><strong>Fields</strong></p>
-<ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">commands.id</span></code></strong> : A unique identifier used to reference this command. While this may look like a python fully qualified name this does <em>not</em> refer to a python object; this identifier is specific to napari.  It must begin with the name of the package, and include only alphanumeric characters, plus dashes and underscores.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">commands.title</span></code></strong> : User facing title representing the command. This might be used, for example, when searching in a command palette. Examples: ‘Generate lily sample’, ‘Read tiff image’, ‘Open gaussian blur widget’.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">commands.python_name</span></code></strong> :
-<em>(Optional: default=None).</em>
-Fully qualified name to a callable python object implementing this command. This usually takes the form of <code class="docutils literal notranslate"><span class="pre">{obj.__module__}:{obj.__qualname__}</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">my_package.a_module:some_function</span></code>)</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">commands.short_title</span></code></strong> :
-<em>(Optional: default=None).</em>
-Short title by which the command is represented in the UI. Menus pick either <code class="docutils literal notranslate"><span class="pre">title</span></code> or <code class="docutils literal notranslate"><span class="pre">short_title</span></code> depending on the context in which they show commands.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">commands.category</span></code></strong> :
-<em>(Optional: default=None).</em>
-Category string by which the command may be grouped in the UI.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">commands.icon</span></code></strong> :
-<em>(Optional: default=None).</em>
-Icon used to represent this command in the UI, on buttons or in menus. These may be <a class="reference external" href="https://github.com/napari/superqt">superqt</a> fonticon keys, such as <code class="docutils literal notranslate"><span class="pre">'fa6s.arrow_down'</span></code>; though note that plugins are expected to depend on any fonticon libraries they use, e.g <a class="reference external" href="https://github.com/tlambert03/fonticon-fontawesome6">fonticon-fontawesome6</a>.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">commands.enablement</span></code></strong> :
-<em>(Optional: default=None).</em>
-Expression which must evaluate as true to enable the command in the UI (menu and keybindings). Does not prevent executing the command by other means, like the <code class="docutils literal notranslate"><span class="pre">execute_command</span></code> api.</p></li>
-</ul>
-<section id="commands-example">
-<h3>Commands example<a class="headerlink" href="#commands-example" title="Permalink to this heading">#</a></h3>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-0">
-yaml</label><div class="sd-tab-content docutils">
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">contributions</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">commands</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.hello_world</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Hello World</span>
-</pre></div>
-</div>
-</div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-1">
-toml</label><div class="sd-tab-content docutils">
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[contributions]</span>
-<span class="n">commands</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.hello_world&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="contributions-readers">
-<span id="id2"></span><h2><code class="docutils literal notranslate"><span class="pre">contributions.readers</span></code><a class="headerlink" href="#contributions-readers" title="Permalink to this heading">#</a></h2>
-<p>Contribute a file reader.</p>
-<p>Readers may be associated with specific <strong>filename_patterns</strong> (e.g. “<em>.tif”,
-“</em>.zip”) and are invoked whenever <code class="docutils literal notranslate"><span class="pre">viewer.open('some/path')</span></code> is used on the
-command line, or when a user opens a file in the graphical user interface by
-dropping a file into the canvas, or using <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Open...</span></code></p>
-<p>See the <a class="reference internal" href="../building_a_plugin/guides.html#readers-contribution-guide"><span class="std std-ref">Readers Guide</span></a>
-for more details on implementing this contribution.</p>
-<p><strong>Fields</strong></p>
-<ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">readers.command</span></code></strong> : Identifier of the command providing <code class="docutils literal notranslate"><span class="pre">napari_get_reader</span></code>.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">readers.filename_patterns</span></code></strong> : List of filename patterns (for fnmatch) that this reader can accept. Reader will be tried only if <code class="docutils literal notranslate"><span class="pre">fnmatch(filename,</span> <span class="pre">pattern)</span> <span class="pre">==</span> <span class="pre">True</span></code>. Use <code class="docutils literal notranslate"><span class="pre">['*']</span></code> to match all filenames.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">readers.accepts_directories</span></code></strong> :
-<em>(Optional: default=False).</em>
-Whether this reader accepts directories</p></li>
-</ul>
-<section id="readers-example">
-<h3>Readers example<a class="headerlink" href="#readers-example" title="Permalink to this heading">#</a></h3>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-2">
-yaml</label><div class="sd-tab-content docutils">
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">contributions</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">commands</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.read_xyz</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Read &quot;.xyz&quot; files</span>
-<span class="w">    </span><span class="nt">python_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example_plugin.some_module:get_reader</span>
-<span class="w">  </span><span class="nt">readers</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.read_xyz</span>
-<span class="w">    </span><span class="nt">filename_patterns</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;*.xyz&#39;</span>
-<span class="w">    </span><span class="nt">accepts_directories</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
-</pre></div>
-</div>
-</div>
-<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-3">
-toml</label><div class="sd-tab-content docutils">
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.read_xyz&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Read \&quot;.xyz\&quot; files&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:get_reader&quot;</span>
-
-<span class="k">[[contributions.readers]]</span>
-<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.read_xyz&quot;</span>
-<span class="n">filename_patterns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s">&quot;*.xyz&quot;</span><span class="p">,</span>
-<span class="p">]</span>
-<span class="n">accepts_directories</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="contributions-writers">
-<span id="id3"></span><h2><code class="docutils literal notranslate"><span class="pre">contributions.writers</span></code><a class="headerlink" href="#contributions-writers" title="Permalink to this heading">#</a></h2>
-<p>Contribute a layer writer.</p>
-<p>Writers accept data from one or more layers and write them to file. Writers declare
-support for writing one or more <strong>layer_types</strong>, may be associated with specific
-<strong>filename_patterns</strong> (e.g. “*.tif”, “*.zip”) and are invoked whenever
-<code class="docutils literal notranslate"><span class="pre">viewer.layers.save('some/path.ext')</span></code> is used on the command line, or when a user
-requests to save one or more layers in the graphical user interface with <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Layer(s)...</span></code> or <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">All</span> <span class="pre">Layers...</span></code></p>
-<p>See the <a class="reference internal" href="../building_a_plugin/guides.html#writers-contribution-guide"><span class="std std-ref">Writers Guide</span></a>
-for more details on implementing this contribution.</p>
-<p><strong>Fields</strong></p>
-<ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">writers.command</span></code></strong> : Identifier of the command providing a writer.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">writers.layer_types</span></code></strong> : List of layer type constraints. These determine what layers (or combinations thereof) this writer handles.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">writers.filename_extensions</span></code></strong> :
-<em>(Optional: default=None).</em>
-List of filename extensions compatible with this writer. The first entry is used as the default if necessary. Empty by default. When empty, any filename extension is accepted.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">writers.display_name</span></code></strong> :
-<em>(Optional: default=).</em>
-Brief text used to describe this writer when presented. Empty by default. When present, this string is presented in the save dialog along side the plugin name and may be used to distinguish the kind of writer for the user. E.g. “lossy” or “lossless”.</p></li>
-</ul>
-<section id="writers-example">
-<h3>Writers example<a class="headerlink" href="#writers-example" title="Permalink to this heading">#</a></h3>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-2" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-4">
-yaml</label><div class="sd-tab-content docutils">
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">contributions</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">commands</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.write_points</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Save points layer to csv</span>
-<span class="w">    </span><span class="nt">python_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example_plugin.some_module:write_points</span>
-<span class="w">  </span><span class="nt">writers</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.write_points</span>
-<span class="w">    </span><span class="nt">layer_types</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">points</span>
-<span class="w">    </span><span class="nt">filename_extensions</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.csv</span>
-</pre></div>
-</div>
-</div>
-<input id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-5">
-toml</label><div class="sd-tab-content docutils">
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.write_points&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Save points layer to csv&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:write_points&quot;</span>
-
-<span class="k">[[contributions.writers]]</span>
-<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.write_points&quot;</span>
-<span class="n">layer_types</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s">&quot;points&quot;</span><span class="p">,</span>
-<span class="p">]</span>
-<span class="n">filename_extensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s">&quot;.csv&quot;</span><span class="p">,</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="contributions-widgets">
-<span id="id4"></span><h2><code class="docutils literal notranslate"><span class="pre">contributions.widgets</span></code><a class="headerlink" href="#contributions-widgets" title="Permalink to this heading">#</a></h2>
-<p>Contribute a widget that can be added to the napari viewer.</p>
-<p>Widget contributions point to a <strong>command</strong> that, when called, returns a widget
-<em>instance</em>; this includes functions that return a widget instance, (e.g. those
-decorated with <code class="docutils literal notranslate"><span class="pre">magicgui.magic_factory</span></code>) and subclasses of either
-<a class="reference external" href="https://doc.qt.io/qt-5/qwidget.html"><code class="docutils literal notranslate"><span class="pre">QtWidgets.QWidget</span></code></a> or
-<a class="reference external" href="https://napari.org/magicgui/api/_autosummary/magicgui.widgets._bases.Widget.html"><code class="docutils literal notranslate"><span class="pre">magicgui.widgets.Widget</span></code></a>.</p>
-<p>Optionally, <strong>autogenerate</strong> may be used to create a widget (using
-<a class="reference external" href="https://napari.org/magicgui/">magicgui</a>) from a command.  (In this case, the
-command needn’t return a widget instance; it can be any function suitable as an
-argument to <code class="docutils literal notranslate"><span class="pre">magicgui.magicgui()</span></code>.)</p>
-<p>See the <a class="reference internal" href="../building_a_plugin/guides.html#widgets-contribution-guide"><span class="std std-ref">Widgets Guide</span></a>
-for more details on implementing this contribution.</p>
-<p><strong>Fields</strong></p>
-<ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">widgets.command</span></code></strong> : Identifier of a command that returns a widget instance.  Or, if <code class="docutils literal notranslate"><span class="pre">autogenerate</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, any command suitable as an argument to <code class="docutils literal notranslate"><span class="pre">magicgui.magicgui()</span></code>.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">widgets.display_name</span></code></strong> : Name for the widget, as presented in the UI.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">widgets.autogenerate</span></code></strong> :
-<em>(Optional: default=False).</em>
-If true, a widget will be autogenerated from the signature of the associated command using <a class="reference external" href="https://napari.org/magicgui/">magicgui</a>.</p></li>
-</ul>
-<section id="widgets-example">
-<h3>Widgets example<a class="headerlink" href="#widgets-example" title="Permalink to this heading">#</a></h3>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-3" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-6">
-yaml</label><div class="sd-tab-content docutils">
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">contributions</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">commands</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.my_widget</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Open my widget</span>
-<span class="w">    </span><span class="nt">python_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example_plugin.some_module:MyWidget</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.threshold_widget</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Make threshold widget with magic_factory</span>
-<span class="w">    </span><span class="nt">python_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example_plugin.some_module:widget_factory</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.do_threshold</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Perform threshold on image, return new image</span>
-<span class="w">    </span><span class="nt">python_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example_plugin.some_module:threshold</span>
-<span class="w">  </span><span class="nt">widgets</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.my_widget</span>
-<span class="w">    </span><span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Wizard</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.threshold_widget</span>
-<span class="w">    </span><span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Threshold</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.do_threshold</span>
-<span class="w">    </span><span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Threshold</span>
-<span class="w">    </span><span class="nt">autogenerate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</pre></div>
-</div>
-</div>
-<input id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-7">
-toml</label><div class="sd-tab-content docutils">
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[contributions]</span>
-<span class="n">widgets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.my_widget&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Wizard&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.threshold_widget&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Threshold&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.do_threshold&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Threshold&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">autogenerate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">true</span><span class="w"> </span><span class="p">},</span>
-<span class="p">]</span>
-
-<span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.my_widget&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Open my widget&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:MyWidget&quot;</span>
-
-<span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.threshold_widget&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Make threshold widget with magic_factory&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:widget_factory&quot;</span>
-
-<span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.do_threshold&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Perform threshold on image, return new image&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:threshold&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="contributions-sample-data">
-<span id="id5"></span><h2><code class="docutils literal notranslate"><span class="pre">contributions.sample_data</span></code><a class="headerlink" href="#contributions-sample-data" title="Permalink to this heading">#</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>This contribution accepts 2 schema types</p>
-</div>
-<section id="sample-data-function">
-<h3>1. Sample Data Function<a class="headerlink" href="#sample-data-function" title="Permalink to this heading">#</a></h3>
-<p>Contribute a callable command that creates data on demand.</p>
-<p>See the <a class="reference internal" href="../building_a_plugin/guides.html#sample-data-contribution-guide"><span class="std std-ref">Sample Data Guide</span></a>
-for more details on implementing this contribution.</p>
-<p><strong>Fields</strong></p>
-<ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">sample_data.command</span></code></strong> : Identifier of a command that returns layer data tuple.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">sample_data.key</span></code></strong> : A unique key to identify this sample.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">sample_data.display_name</span></code></strong> : String to show in the UI when referring to this sample</p></li>
-</ul>
-</section>
-<section id="sample-data-uri">
-<h3>2. Sample Data URI<a class="headerlink" href="#sample-data-uri" title="Permalink to this heading">#</a></h3>
-<p>Contribute a URI to static local or remote data. This can be data included in
-the plugin package, or a URL to remote data.  The URI must be readable by either
-napari’s builtin reader, or by a plugin that is included/required.</p>
-<p>See the <a class="reference internal" href="../building_a_plugin/guides.html#sample-data-contribution-guide"><span class="std std-ref">Sample Data Guide</span></a>
-for more details on implementing this contribution.</p>
-<p><strong>Fields</strong></p>
-<ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">sample_data.key</span></code></strong> : A unique key to identify this sample.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">sample_data.display_name</span></code></strong> : String to show in the UI when referring to this sample</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">sample_data.uri</span></code></strong> : Path or URL to a data resource. This URI should be a valid input to <code class="docutils literal notranslate"><span class="pre">io_utils.read</span></code></p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">sample_data.reader_plugin</span></code></strong> :
-<em>(Optional: default=None).</em>
-Name of plugin to use to open URI</p></li>
-</ul>
-</section>
-<section id="sample-data-example">
-<h3>Sample Data example<a class="headerlink" href="#sample-data-example" title="Permalink to this heading">#</a></h3>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-8" name="sd-tab-set-4" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-8">
-yaml</label><div class="sd-tab-content docutils">
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">contributions</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">commands</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.data.fractal</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Create fractal image</span>
-<span class="w">    </span><span class="nt">python_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example_plugin.some_module:create_fractal</span>
-<span class="w">  </span><span class="nt">sample_data</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin.data.fractal</span>
-<span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fractal</span>
-<span class="w">    </span><span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Fractal</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">napari</span>
-<span class="w">    </span><span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Tabueran Kiribati</span>
-<span class="w">    </span><span class="nt">uri</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://en.wikipedia.org/wiki/Napari#/media/File:Tabuaeran_Kiribati.jpg</span>
-</pre></div>
-</div>
-</div>
-<input id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-9">
-toml</label><div class="sd-tab-content docutils">
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.data.fractal&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Create fractal image&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:create_fractal&quot;</span>
-
-<span class="k">[[contributions.sample_data]]</span>
-<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.data.fractal&quot;</span>
-<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;fractal&quot;</span>
-<span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Fractal&quot;</span>
-
-<span class="k">[[contributions.sample_data]]</span>
-<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;napari&quot;</span>
-<span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Tabueran Kiribati&quot;</span>
-<span class="n">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://en.wikipedia.org/wiki/Napari#/media/File:Tabuaeran_Kiribati.jpg&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="contributions-themes">
-<span id="id6"></span><h2><code class="docutils literal notranslate"><span class="pre">contributions.themes</span></code><a class="headerlink" href="#contributions-themes" title="Permalink to this heading">#</a></h2>
-<p>Contribute a color theme to napari.</p>
-<p>You must specify an <strong>id</strong>, <strong>label</strong>, and whether the theme is a dark theme or a
-light theme <strong>type</strong> (such that the rest of napari changes to match your theme).
-Any color keys omitted from the theme contribution will use the default napari
-dark/light theme colors.</p>
-<p><strong>Fields</strong></p>
-<ul class="simple">
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">themes.id</span></code></strong> : Identifier of the color theme as used in the user settings.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">themes.label</span></code></strong> : Label of the color theme as shown in the UI.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">themes.type</span></code></strong> : Base theme type, used for icons and filling in unprovided colors. Must be either <code class="docutils literal notranslate"><span class="pre">'dark'</span></code> or  <code class="docutils literal notranslate"><span class="pre">'light'</span></code>.</p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">themes.syntax_style</span></code></strong> :
-<em>(Optional: default=None).</em></p></li>
-<li><p><strong><code class="docutils literal notranslate"><span class="pre">themes.colors</span></code></strong> : Theme colors. Valid keys include: <code class="docutils literal notranslate"><span class="pre">canvas</span></code>, <code class="docutils literal notranslate"><span class="pre">console</span></code>, <code class="docutils literal notranslate"><span class="pre">background</span></code>, <code class="docutils literal notranslate"><span class="pre">foreground</span></code>, <code class="docutils literal notranslate"><span class="pre">primary</span></code>, <code class="docutils literal notranslate"><span class="pre">secondary</span></code>, <code class="docutils literal notranslate"><span class="pre">highlight</span></code>, <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">icon</span></code>, <code class="docutils literal notranslate"><span class="pre">warning</span></code>, <code class="docutils literal notranslate"><span class="pre">current</span></code>. All keys are optional. Color values can be defined via:</p>
-<ul>
-<li><p>name: <code class="docutils literal notranslate"><span class="pre">&quot;Black&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;azure&quot;</span></code></p></li>
-<li><p>hexadecimal value: <code class="docutils literal notranslate"><span class="pre">&quot;0x000&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;#FFFFFF&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;7fffd4&quot;</span></code></p></li>
-<li><p>RGB/RGBA tuples: <code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">255,</span> <span class="pre">255)</span></code>, <code class="docutils literal notranslate"><span class="pre">(255,</span> <span class="pre">255,</span> <span class="pre">255,</span> <span class="pre">0.5)</span></code></p></li>
-<li><p>RGB/RGBA strings: <code class="docutils literal notranslate"><span class="pre">&quot;rgb(255,</span> <span class="pre">255,</span> <span class="pre">255)&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;rgba(255,</span> <span class="pre">255,</span> <span class="pre">255,</span> <span class="pre">0.5)</span></code>”</p></li>
-<li><p>HSL strings: “<code class="docutils literal notranslate"><span class="pre">hsl(270,</span> <span class="pre">60%,</span> <span class="pre">70%)&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;hsl(270,</span> <span class="pre">60%,</span> <span class="pre">70%,</span> <span class="pre">.5)</span></code>”</p></li>
-</ul>
-</li>
-</ul>
-<section id="themes-example">
-<h3>Themes example<a class="headerlink" href="#themes-example" title="Permalink to this heading">#</a></h3>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-10" name="sd-tab-set-5" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-10">
-yaml</label><div class="sd-tab-content docutils">
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">contributions</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">themes</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">monokai</span>
-<span class="w">    </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Monokai</span>
-<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dark</span>
-<span class="w">    </span><span class="nt">syntax_style</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">monokai</span>
-<span class="w">    </span><span class="nt">colors</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">canvas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
-<span class="w">      </span><span class="nt">console</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
-<span class="w">      </span><span class="nt">background</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#272822&#39;</span>
-<span class="w">      </span><span class="nt">foreground</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#75715e&#39;</span>
-<span class="w">      </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#cfcfc2&#39;</span>
-<span class="w">      </span><span class="nt">secondary</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#f8f8f2&#39;</span>
-<span class="w">      </span><span class="nt">highlight</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#e6db74&#39;</span>
-<span class="w">      </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#a1ef34&#39;</span>
-<span class="w">      </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#a1ef34&#39;</span>
-<span class="w">      </span><span class="nt">warning</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#f92672&#39;</span>
-<span class="w">      </span><span class="nt">current</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;#66d9ef&#39;</span>
-</pre></div>
-</div>
-</div>
-<input id="sd-tab-item-11" name="sd-tab-set-5" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-11">
-toml</label><div class="sd-tab-content docutils">
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[contributions.themes]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;monokai&quot;</span>
-<span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Monokai&quot;</span>
-<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;dark&quot;</span>
-<span class="n">syntax_style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;monokai&quot;</span>
-
-<span class="k">[contributions.themes.colors]</span>
-<span class="n">canvas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;black&quot;</span>
-<span class="n">console</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;black&quot;</span>
-<span class="n">background</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#272822&quot;</span>
-<span class="n">foreground</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#75715e&quot;</span>
-<span class="n">primary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#cfcfc2&quot;</span>
-<span class="n">secondary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#f8f8f2&quot;</span>
-<span class="n">highlight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#e6db74&quot;</span>
-<span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#a1ef34&quot;</span>
-<span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#a1ef34&quot;</span>
-<span class="n">warning</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#f92672&quot;</span>
-<span class="n">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#66d9ef&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-</section>
-</section>
-
+  <span class="target" id="contributions-ref"></span>
 
                 </article>
               
@@ -937,7 +495,7 @@ toml</label><div class="sd-tab-content docutils">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Manifest Reference</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
     </a>
     <a class="right-next"
@@ -963,34 +521,9 @@ toml</label><div class="sd-tab-content docutils">
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-commands"><code class="docutils literal notranslate"><span class="pre">contributions.commands</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commands-example">Commands example</a></li>
+    <ul class="simple visible nav section-nav flex-column">
 </ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-readers"><code class="docutils literal notranslate"><span class="pre">contributions.readers</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#readers-example">Readers example</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-writers"><code class="docutils literal notranslate"><span class="pre">contributions.writers</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#writers-example">Writers example</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-widgets"><code class="docutils literal notranslate"><span class="pre">contributions.widgets</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#widgets-example">Widgets example</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-sample-data"><code class="docutils literal notranslate"><span class="pre">contributions.sample_data</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-data-function">1. Sample Data Function</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-data-uri">2. Sample Data URI</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-data-example">Sample Data example</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributions-themes"><code class="docutils literal notranslate"><span class="pre">contributions.themes</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#themes-example">Themes example</a></li>
-</ul>
-</li>
-</ul>
+
   </nav></div>
 
 </div></div>
@@ -1008,8 +541,7 @@ toml</label><div class="sd-tab-content docutils">
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
   <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
 <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
-
-  <script src="../../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
+<footer class="napari-footer">
   
     <div class="footer-item">
       <a href="/">

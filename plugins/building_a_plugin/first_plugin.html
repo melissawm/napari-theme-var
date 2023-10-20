@@ -415,9 +415,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../advanced_topics/npe1.html">First generation plugins (<em>Deprecated</em>)</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../technical_references/index.html">Technical references</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../technical_references/manifest.html">Manifest Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../technical_references/contributions.html">Contributions Reference</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../technical_references/index.html">Technical references</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -621,7 +619,7 @@ for more.</p>
 <h2>3. Implement the plugin<a class="headerlink" href="#implement-the-plugin" title="Permalink to this heading">#</a></h2>
 <p>So far, we’ve done nothing napari-specific.  Let’s create the actual plugin and add
 some Python code. We’re going to add a
-<a class="reference internal" href="../technical_references/contributions.html#contributions-widgets"><span class="std std-ref">Widget contribution</span></a>
+<span class="xref myst">Widget contribution</span>
 with a single button that shows a “Hello, world!” message when clicked.</p>
 <section id="add-plugin-functionality-to-napari-hello-init-py">
 <h3>Add plugin functionality to <code class="docutils literal notranslate"><span class="pre">napari_hello/__init__.py</span></code><a class="headerlink" href="#add-plugin-functionality-to-napari-hello-init-py" title="Permalink to this heading">#</a></h3>
@@ -641,12 +639,12 @@ autogeneration capabilities to turn this function into a widget)</em></p>
 <p>If you haven’t already, create an empty <a class="reference internal" href="../technical_references/manifest.html"><span class="doc std std-doc">plugin manifest</span></a> file at <code class="docutils literal notranslate"><span class="pre">napari_hello/napari.yaml</span></code>
 We will use this file to tell napari:</p>
 <ol class="arabic simple">
-<li><p>That our plugin contributes a <a class="reference internal" href="../technical_references/contributions.html#contributions-commands"><span class="std std-ref"><strong>command</strong></span></a>
+<li><p>That our plugin contributes a <span class="xref myst"><strong>command</strong></span>
 (we give the command an ID of <code class="docutils literal notranslate"><span class="pre">napari-hello.say_hi</span></code>. It must start with our plugin
 name, and be unique).</p></li>
 <li><p>The location of the function that executes the command (the <code class="docutils literal notranslate"><span class="pre">python_name</span></code>, pointing
 to the <code class="docutils literal notranslate"><span class="pre">show_hello_message</span></code> function in the <code class="docutils literal notranslate"><span class="pre">napari_hello</span></code> module).</p></li>
-<li><p>That our plugin contributes a <a class="reference internal" href="../technical_references/contributions.html#contributions-widgets"><span class="std std-ref"><strong>widget</strong></span></a>,
+<li><p>That our plugin contributes a <span class="xref myst"><strong>widget</strong></span>,
 and that we’d like napari to <strong>autogenerate</strong> the widget from the command signature
 (so we don’t need to deal with any GUI code).</p></li>
 </ol>
@@ -831,8 +829,7 @@ when you’re ready to share your plugin, see <a class="reference internal" href
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
   <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
 <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
-
-  <script src="../../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
+<footer class="napari-footer">
   
     <div class="footer-item">
       <a href="/">

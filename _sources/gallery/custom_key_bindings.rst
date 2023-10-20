@@ -27,17 +27,6 @@ Display one 4-D image layer using the ``add_image`` API
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-60
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_custom_key_bindings_001.png
-   :alt: custom key bindings
-   :srcset: /gallery/images/sphx_glr_custom_key_bindings_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 

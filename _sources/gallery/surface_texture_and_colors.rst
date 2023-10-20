@@ -38,17 +38,6 @@ This example demonstrates how surfaces may be colored by:
 
 .. GENERATED FROM PYTHON SOURCE LINES 20-77
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_surface_texture_and_colors_001.png
-   :alt: surface texture and colors
-   :srcset: /gallery/images/sphx_glr_surface_texture_and_colors_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. code-block:: default
 
 
