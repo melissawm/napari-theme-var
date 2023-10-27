@@ -1,7 +1,6 @@
 import os
 from pathlib import Path
 
-from .calendar import CalendarDirective
 from .napari_code_theme import *
 
 __version__ = "0.0.1dev"
@@ -79,7 +78,6 @@ def setup(app):
     app.add_html_theme("napari_sphinx_theme", str(here))
     app.connect("builder-inited", set_config_defaults)
     app.connect("html-page-context", update_templates)
-    app.add_directive('calendar', CalendarDirective)
 
     # Include templates for sidebar
     app.config.templates_path.append(str(here / "_templates"))
