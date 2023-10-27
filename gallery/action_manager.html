@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,9 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -58,7 +58,7 @@
     <script src="../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'gallery/action_manager';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.1';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.2';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -209,12 +209,21 @@
 <script>
 document.write(`
   <div class="version-switcher__container dropdown">
-    <button id="versionswitcherbutton" type="button" role="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="listbox" aria-controls="versionswitcherlist" aria-label="Version switcher list">
+    <button id="pst-version-switcher-button-2"
+      type="button"
+      class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-2"
+      aria-label="Version switcher list"
+    >
       Choose version  <!-- this text may get changed later by javascript -->
       <span class="caret"></span>
     </button>
-    <div id="versionswitcherlist" class="version-switcher__menu dropdown-menu list-group-flush py-0" role="listbox" aria-labelledby="versionswitcherbutton">
-    <!-- dropdown will be populated by javascript on page load -->
+    <div id="pst-version-switcher-list-2"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-2">
+      <!-- dropdown will be populated by javascript on page load -->
     </div>
   </div>
 `);
@@ -322,12 +331,21 @@ document.write(`
 <script>
 document.write(`
   <div class="version-switcher__container dropdown">
-    <button id="versionswitcherbutton" type="button" role="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="listbox" aria-controls="versionswitcherlist" aria-label="Version switcher list">
+    <button id="pst-version-switcher-button-3"
+      type="button"
+      class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-3"
+      aria-label="Version switcher list"
+    >
       Choose version  <!-- this text may get changed later by javascript -->
       <span class="caret"></span>
     </button>
-    <div id="versionswitcherlist" class="version-switcher__menu dropdown-menu list-group-flush py-0" role="listbox" aria-labelledby="versionswitcherbutton">
-    <!-- dropdown will be populated by javascript on page load -->
+    <div id="pst-version-switcher-list-3"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-3">
+      <!-- dropdown will be populated by javascript on page load -->
     </div>
   </div>
 `);
@@ -428,6 +446,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering-explanation.html">Rendering in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering.html">Asynchronous rendering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/performance.html">napari performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/events_reference.html">Events reference</a></li>
@@ -491,7 +510,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="fourier_transform_playground.html">Fourier transform playground</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/layers.html">layers (5)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/layers.html">layers (6)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="add_3D_image.html">Add 3D image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_labels_with_features.html">Add labels with features</a></li>
@@ -499,7 +518,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="3D_paths.html">3D Paths</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-advanced.html">visualization-advanced (13)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-advanced.html">visualization-advanced (14)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="add_vectors_color_by_angle.html">Add vectors color by angle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="to_screenshot.html">To screenshot</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tracks_3d.html">Tracks 3D</a></li>
@@ -641,6 +660,19 @@ to download the full example code</p>
 <section class="sphx-glr-example-title" id="action-manager">
 <span id="sphx-glr-gallery-action-manager-py"></span><h1>Action manager<a class="headerlink" href="#action-manager" title="Permalink to this heading">#</a></h1>
 <p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/gui.html">gui</a><span>, </span><a class="reference external" href="../_tags/experimental.html">experimental</a></p>
+<img src="../_images/sphx_glr_action_manager_001.png" srcset="../_images/sphx_glr_action_manager_001.png" alt="action manager" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/melissa/projects/napari/examples/action_manager.py:43: FutureWarning: Public access to Window.qt_viewer is deprecated and will be removed in
+v0.6.0. It is considered an &quot;implementation detail&quot; of the napari
+application, not part of the napari viewer model. If your use case
+requires access to qt_viewer, please open an issue to discuss.
+  layer_buttons = viewer.window.qt_viewer.layerButtons
+calling &lt;function register_action at 0x7f9117ffb880&gt;
+calling &lt;function bind_shortcut at 0x7f9117ff8940&gt;
+calling &lt;function bind_button at 0x7f9117ffb130&gt;
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <a href="https://docs.python.org/3/library/random.html#random.shuffle" title="random.shuffle" class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function"><span class="n">shuffle</span></a>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -648,11 +680,11 @@ to download the full example code</p>
 
 <span class="kn">import</span> <span class="nn">napari</span>
 <span class="kn">from</span> <span class="nn">napari._qt.widgets.qt_viewer_buttons</span> <span class="kn">import</span> <span class="n">QtViewerPushButton</span>
-<span class="kn">from</span> <span class="nn">napari.components</span> <span class="kn">import</span> <a href="../api/napari.components.ViewerModel.html#napari.components.ViewerModel" title="napari.components.ViewerModel" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ViewerModel</span></a>
+<span class="kn">from</span> <span class="nn">napari.components</span> <span class="kn">import</span> <a href="../api/napari.components.ViewerModel.html#napari.components.ViewerModel" title="napari.components.ViewerModel" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-class"><span class="n">ViewerModel</span></a>
 <span class="kn">from</span> <span class="nn">napari.utils.action_manager</span> <span class="kn">import</span> <span class="n">action_manager</span>
 
 
-<span class="k">def</span> <span class="nf">rotate45</span><span class="p">(</span><span class="n">viewer</span><span class="p">:</span> <a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">napari</span><span class="o">.</span><span class="n">Viewer</span></a><span class="p">):</span>
+<span class="k">def</span> <span class="nf">rotate45</span><span class="p">(</span><a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a><span class="p">:</span> <a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class"><span class="n">napari</span><span class="o">.</span><span class="n">Viewer</span></a><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Rotate layer 0 of the viewer by 45º</span>
 
@@ -666,18 +698,18 @@ to download the full example code</p>
 <span class="sd">    The `viewer` parameter needs to be named `viewer`, the action manager will</span>
 <span class="sd">    infer that we need an instance of viewer.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">angle</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/constants.html#numpy.pi" title="numpy.pi" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-data"><span class="n">np</span><span class="o">.</span><span class="n">pi</span></a> <span class="o">/</span> <span class="mi">4</span>
+    <span class="n">angle</span> <span class="o">=</span> <a href="https://docs.python.org/3/library/functions.html#float" title="builtins.float" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">np</span><span class="o">.</span><span class="n">pi</span></a> <span class="o">/</span> <span class="mi">4</span>
     <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.cos.html#numpy.cos" title="numpy.cos" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-data"><span class="n">cos</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.sin.html#numpy.sin" title="numpy.sin" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-data"><span class="n">sin</span></a>
 
     <span class="n">r</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([[</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.cos.html#numpy.cos" title="numpy.cos" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-data"><span class="n">cos</span></a><span class="p">(</span><span class="n">angle</span><span class="p">),</span> <span class="o">-</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.sin.html#numpy.sin" title="numpy.sin" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-data"><span class="n">sin</span></a><span class="p">(</span><span class="n">angle</span><span class="p">)],</span> <span class="p">[</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.sin.html#numpy.sin" title="numpy.sin" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-data"><span class="n">sin</span></a><span class="p">(</span><span class="n">angle</span><span class="p">),</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.cos.html#numpy.cos" title="numpy.cos" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-data"><span class="n">cos</span></a><span class="p">(</span><span class="n">angle</span><span class="p">)]])</span>
-    <span class="n">layer</span> <span class="o">=</span> <span class="n">viewer</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">layer</span> <span class="o">=</span> <a href="../api/napari.components.LayerList.html#napari.components.LayerList" title="napari.components.LayerList" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span><span class="o">.</span><span class="n">layers</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">layer</span><span class="o">.</span><span class="n">rotate</span> <span class="o">=</span> <span class="n">layer</span><span class="o">.</span><span class="n">rotate</span> <span class="o">@</span> <span class="n">r</span>
 
 
 <span class="c1"># create the viewer with an image</span>
-<span class="n">viewer</span> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">astronaut</span><span class="p">(),</span> <span class="n">rgb</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">astronaut</span><span class="p">(),</span> <span class="n">rgb</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="n">layer_buttons</span> <span class="o">=</span> <span class="n">viewer</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">qt_viewer</span><span class="o">.</span><span class="n">layerButtons</span>
+<span class="n">layer_buttons</span> <span class="o">=</span> <a href="../api/napari.components.ViewerModel.html#napari.components.ViewerModel.window" title="napari.components.ViewerModel.window" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-attribute"><span class="n">viewer</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">qt_viewer</span><span class="o">.</span><span class="n">layerButtons</span></a>
 
 <span class="c1"># Button do not need to do anything, just need to be pretty; all the action</span>
 <span class="c1"># binding and (un) binding will be done with the action manager, idem for</span>
@@ -699,7 +731,7 @@ to download the full example code</p>
         <span class="n">name</span><span class="o">=</span><span class="s1">&#39;napari:rotate45&#39;</span><span class="p">,</span>
         <span class="n">command</span><span class="o">=</span><span class="n">rotate45</span><span class="p">,</span>
         <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Rotate layer 0 by 45deg&#39;</span><span class="p">,</span>
-        <span class="n">keymapprovider</span><span class="o">=</span><a href="../api/napari.components.ViewerModel.html#napari.components.ViewerModel" title="napari.components.ViewerModel" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ViewerModel</span></a><span class="p">,</span>
+        <span class="n">keymapprovider</span><span class="o">=</span><a href="../api/napari.components.ViewerModel.html#napari.components.ViewerModel" title="napari.components.ViewerModel" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-class"><span class="n">ViewerModel</span></a><span class="p">,</span>
     <span class="p">)</span>
 
 
@@ -716,10 +748,10 @@ to download the full example code</p>
 
 <span class="c1"># we can all bind_shortcut or register_action or bind_button in any order;</span>
 <span class="c1"># this let us configure shortcuts even if plugins are loaded / unloaded.</span>
-<span class="n">callbacks</span> <span class="o">=</span> <span class="p">[</span><span class="n">register_action</span><span class="p">,</span> <span class="n">bind_shortcut</span><span class="p">,</span> <span class="n">bind_button</span><span class="p">]</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">callbacks</span></a> <span class="o">=</span> <span class="p">[</span><span class="n">register_action</span><span class="p">,</span> <span class="n">bind_shortcut</span><span class="p">,</span> <span class="n">bind_button</span><span class="p">]</span>
 
-<a href="https://docs.python.org/3/library/random.html#random.shuffle" title="random.shuffle" class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function"><span class="n">shuffle</span></a><span class="p">(</span><span class="n">callbacks</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">callbacks</span><span class="p">:</span>
+<a href="https://docs.python.org/3/library/random.html#random.shuffle" title="random.shuffle" class="sphx-glr-backref-module-random sphx-glr-backref-type-py-function"><span class="n">shuffle</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">callbacks</span></a><span class="p">)</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">callbacks</span></a><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;calling&#39;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
     <span class="n">c</span><span class="p">()</span>
 
@@ -739,15 +771,15 @@ to download the full example code</p>
 <span class="c1"># be implemented in settings, though you could imagine a plugin that would</span>
 <span class="c1"># allow toggling between many keymaps.</span>
 
-<span class="n">settings</span> <span class="o">=</span> <span class="p">{</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">settings</span></a> <span class="o">=</span> <span class="p">{</span>
         <span class="s1">&#39;napari:activate_points_add_mode&#39;</span> <span class="p">:</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span>
         <span class="s1">&#39;napari:activate_points_select_mode&#39;</span><span class="p">:</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span>
 <span class="p">}</span>
 
 
-<span class="k">for</span> <span class="n">action</span><span class="p">,</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">settings</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-   <span class="n">_old_shortcut</span> <span class="o">=</span> <span class="n">action_manager</span><span class="o">.</span><span class="n">unbind_shortcut</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
-   <span class="n">action_manager</span><span class="o">.</span><span class="n">bind_shortcut</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+<span class="k">for</span> <a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">action</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">key</span></a> <span class="ow">in</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">settings</span></a><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+   <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">_old_shortcut</span></a> <span class="o">=</span> <span class="n">action_manager</span><span class="o">.</span><span class="n">unbind_shortcut</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">action</span></a><span class="p">)</span>
+   <span class="n">action_manager</span><span class="o">.</span><span class="n">bind_shortcut</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">action</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">key</span></a><span class="p">)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <a href="../api/napari.html#napari.run" title="napari.run" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">run</span></a><span class="p">()</span>
@@ -810,9 +842,10 @@ to download the full example code</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
-<footer class="napari-footer">
+  <script src="../_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
+
+  <script src="../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
   
     <div class="footer-item">
       <a href="/">

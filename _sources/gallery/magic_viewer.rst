@@ -27,6 +27,17 @@ Example showing how to access the current viewer from a function widget.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-26
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_magic_viewer_001.png
+   :alt: magic viewer
+   :srcset: /gallery/images/sphx_glr_magic_viewer_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

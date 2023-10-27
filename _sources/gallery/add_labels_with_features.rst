@@ -27,6 +27,17 @@ Display a labels layer with various features
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-64
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_add_labels_with_features_001.png
+   :alt: add labels with features
+   :srcset: /gallery/images/sphx_glr_add_labels_with_features_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

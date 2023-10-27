@@ -29,6 +29,17 @@ across the dimensions, specified by their size
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-59
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_nD_points_with_features_001.png
+   :alt: nD points with features
+   :srcset: /gallery/images/sphx_glr_nD_points_with_features_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

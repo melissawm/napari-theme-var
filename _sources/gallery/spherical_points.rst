@@ -25,6 +25,17 @@ Spherical points
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-34
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_spherical_points_001.png
+   :alt: spherical points
+   :srcset: /gallery/images/sphx_glr_spherical_points_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
     import numpy as np

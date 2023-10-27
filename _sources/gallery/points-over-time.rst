@@ -25,6 +25,17 @@ Points over time
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-45
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_points-over-time_001.png
+   :alt: points over time
+   :srcset: /gallery/images/sphx_glr_points-over-time_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
     import dask.array as da

@@ -30,6 +30,29 @@ the "gui_qt()" context manager.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-41
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_without_gui_qt_001.png
+   :alt: without gui qt
+   :srcset: /gallery/images/sphx_glr_without_gui_qt_001.png
+   :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    Maximum value 255
+    Your viewer has the following layers:
+       Image  : 1
+
+
+
+
+
+
+|
+
 .. code-block:: default
 
 

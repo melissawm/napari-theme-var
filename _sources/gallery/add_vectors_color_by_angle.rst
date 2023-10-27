@@ -28,6 +28,17 @@ The color of the vectors is mapped to their 'angle' feature.
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-62
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_add_vectors_color_by_angle_001.png
+   :alt: add vectors color by angle
+   :srcset: /gallery/images/sphx_glr_add_vectors_color_by_angle_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

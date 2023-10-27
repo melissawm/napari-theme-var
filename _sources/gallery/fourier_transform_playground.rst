@@ -29,6 +29,17 @@ by the changes. Threading is used to smoothly animate the waves.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-152
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_fourier_transform_playground_001.png
+   :alt: fourier transform playground
+   :srcset: /gallery/images/sphx_glr_fourier_transform_playground_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

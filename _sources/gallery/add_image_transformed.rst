@@ -27,6 +27,17 @@ Display one image and transform it using the :func:`view_image` API.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-19
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_add_image_transformed_001.png
+   :alt: add image transformed
+   :srcset: /gallery/images/sphx_glr_add_image_transformed_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

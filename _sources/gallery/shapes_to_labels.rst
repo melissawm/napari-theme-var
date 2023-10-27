@@ -29,6 +29,17 @@ your shapes.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-104
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_shapes_to_labels_001.png
+   :alt: shapes to labels
+   :srcset: /gallery/images/sphx_glr_shapes_to_labels_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

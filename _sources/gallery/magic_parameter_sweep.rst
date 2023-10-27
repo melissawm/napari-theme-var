@@ -31,6 +31,17 @@ It demonstrates:
 
 .. GENERATED FROM PYTHON SOURCE LINES 13-54
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_magic_parameter_sweep_001.png
+   :alt: magic parameter sweep
+   :srcset: /gallery/images/sphx_glr_magic_parameter_sweep_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
     import typing

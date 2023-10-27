@@ -25,6 +25,17 @@ nD shapes with text
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-33
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_nD_shapes_with_text_001.png
+   :alt: nD shapes with text
+   :srcset: /gallery/images/sphx_glr_nD_shapes_with_text_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
     from skimage import data

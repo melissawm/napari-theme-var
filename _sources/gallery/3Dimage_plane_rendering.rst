@@ -28,6 +28,17 @@ with a simple widget for modifying plane parameters.
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-57
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_3Dimage_plane_rendering_001.png
+   :alt: 3Dimage plane rendering
+   :srcset: /gallery/images/sphx_glr_3Dimage_plane_rendering_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
     import numpy as np

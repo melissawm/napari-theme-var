@@ -28,6 +28,17 @@ Display a labels layer above of an image layer using the ``add_labels`` and
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-23
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_nD_labels_001.png
+   :alt: nD labels
+   :srcset: /gallery/images/sphx_glr_nD_labels_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

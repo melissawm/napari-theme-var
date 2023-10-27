@@ -31,6 +31,17 @@ Each vector position is defined by an (x, y, x-proj, y-proj) element where
 
 .. GENERATED FROM PYTHON SOURCE LINES 13-43
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_add_vectors_001.png
+   :alt: add vectors
+   :srcset: /gallery/images/sphx_glr_add_vectors_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

@@ -18,4 +18,5 @@ caption: With this tag
 ../gallery/3D_paths.rst
 ../gallery/dynamic-projections-dask.rst
 ../gallery/show_points_based_on_feature.rst
+../gallery/vortex.rst
 ```

@@ -24,13 +24,17 @@ If you are using napari or interested in how napari could be used in your work, 
         center: "title",
         right: "dayGridMonth,listWeek",
       },
-      googleCalendarApiKey: 'AIzaSyBfsK6RTxAsMO3D3U9PxIqkBv_rP2UXDNU',
+      googleCalendarApiKey: api_key,
       events: {
           googleCalendarId: 'c_35r93ec6vtp8smhm7dv5uot0v4@group.calendar.google.com',
       },
       eventClick: function (info) {
         info.jsEvent.preventDefault();
-        alert('Event: ' + info.event.title + '\n' + info.event.extendedProps.description + '\n' + 'URL: ' + info.event.url);
+        var eventObj = info.event;
+        alert(
+          'Event: ' + eventObj.title + '\n\n'
+          + 'Description: ' + eventObj.extendedProps.description + '\n\n'
+          + 'URL: ' + eventObj.url);
       },
       eventDisplay: 'block',
     });

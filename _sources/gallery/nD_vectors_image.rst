@@ -30,6 +30,27 @@ which are vector projections centered on a pixel of the MxNxP grid
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-38
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_nD_vectors_image_001.png
+   :alt: nD vectors image
+   :srcset: /gallery/images/sphx_glr_nD_vectors_image_001.png
+   :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    (10, 20, 40) (10, 20, 40, 3)
+
+
+
+
+
+
+|
+
 .. code-block:: default
 
 

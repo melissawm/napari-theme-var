@@ -27,6 +27,17 @@ Display a 3D surface
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-26
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_nD_surface_001.png
+   :alt: nD surface
+   :srcset: /gallery/images/sphx_glr_nD_surface_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

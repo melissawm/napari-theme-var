@@ -27,6 +27,17 @@ Display one grayscale image using the add_image API.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-22
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_add_grayscale_image_001.png
+   :alt: add grayscale image
+   :srcset: /gallery/images/sphx_glr_add_grayscale_image_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

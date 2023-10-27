@@ -28,6 +28,17 @@ add_image APIs.
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-81
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_update_console_001.png
+   :alt: update console
+   :srcset: /gallery/images/sphx_glr_update_console_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

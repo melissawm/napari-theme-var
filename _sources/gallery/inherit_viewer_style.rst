@@ -28,6 +28,17 @@ from main napari window.
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-85
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_inherit_viewer_style_001.png
+   :alt: inherit viewer style
+   :srcset: /gallery/images/sphx_glr_inherit_viewer_style_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

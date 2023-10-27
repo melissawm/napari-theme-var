@@ -34,6 +34,17 @@ ChrisLUTs: https://github.com/cleterrier/ChrisLUTs .
 
 .. GENERATED FROM PYTHON SOURCE LINES 16-37
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_minimum_blending_001.png
+   :alt: minimum blending
+   :srcset: /gallery/images/sphx_glr_minimum_blending_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 .. code-block:: default
 
 

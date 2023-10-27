@@ -30,6 +30,27 @@ appearing on each slice.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-38
 
+
+
+.. image-sg:: /gallery/images/sphx_glr_3D_paths_001.png
+   :alt: 3D paths
+   :srcset: /gallery/images/sphx_glr_3D_paths_001.png
+   :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    Path (2, 6, 3)
+
+
+
+
+
+
+|
+
 .. code-block:: default
 
 
