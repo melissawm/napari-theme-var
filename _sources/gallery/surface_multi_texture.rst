@@ -271,7 +271,7 @@ sphinx_gallery_thumbnail_number = 2
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 18.306 seconds)
+   **Total running time of the script:** (0 minutes 31.025 seconds)
 
 
 .. _sphx_glr_download_gallery_surface_multi_texture.py:

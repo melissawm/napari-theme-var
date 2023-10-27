@@ -71,6 +71,11 @@ Displays a multiscale image
         napari.run()
 
 
+.. rst-class:: sphx-glr-timing
+
+   **Total running time of the script:** (0 minutes 10.308 seconds)
+
+
 .. _sphx_glr_download_gallery_add_multiscale_image.py:
 
 .. only:: html
