@@ -187,7 +187,7 @@ current scikit-image output.
         cb(event)
       File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/site-packages/napari/_qt/layer_controls/qt_layer_controls_container.py", line 130, in _display
         controls = self.widgets[layer]
-    KeyError: <Vectors layer 'optical flow' at 0x7f9093132800>
+    KeyError: <Vectors layer 'optical flow' at 0x7f0e703cdcc0>
 
 
 
