@@ -31,6 +31,7 @@ def update_templates(app, pagename, templatename, context, doctree):
                 if not os.path.splitext(template)[1]:
                     context[section][ii] = template + ".html"
 
+
 def set_config_defaults(app):
 
     try:
@@ -47,26 +48,6 @@ def set_config_defaults(app):
 def get_html_theme_path():
     """Return list of HTML theme paths."""
     return [str(Path(__file__).parent.parent.resolve())]
-
-GOOGLE_CALENDAR_API_KEY = os.environ.get('GOOGLE_CALENDAR_API_KEY', '')
-
-def add_google_calendar_secrets(app, exception):
-    if exception is not None:
-        return
-
-    script_path = os.path.join(
-        app.builder.outdir,
-        '_static',
-        'scripts',
-        'napari-sphinx-theme.js'
-    )
-
-    with open(script_path, 'r', encoding="utf8") as f:
-        source = f.read()
-        source = source.replace('{google_calendar_api_key}', GOOGLE_CALENDAR_API_KEY)
-
-    with open(script_path, 'w', encoding="utf8") as f:
-        f.write(source)
 
 
 # For more details, see:
