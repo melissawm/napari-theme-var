@@ -32,7 +32,6 @@ html[data-theme="light"] {
     --pst-color-text-muted: var(--napari-dark-gray);
     --pst-color-border: var(--napari-gray);
     --pst-color-target: var(--napari-gray);
-    --pst-color-accent: var(--napari-primary-blue);
 }
 
 /* Dark theme is currently unset - design/accessibility assessment is needed here */
@@ -50,7 +49,6 @@ html[data-theme="dark"] {
     --pst-color-text-muted: var(--napari-dark-gray);
     --pst-color-border: var(--napari-gray);
     --pst-color-target: var(--napari-gray);
-    --pst-color-accent: var(--napari-primary-blue);
 }
 
 body {
@@ -323,16 +321,13 @@ button.version-switcher__button {
     line-height: 1.25rem;
 }
 
-.bd-sidebar-primary .sidebar-primary-items__start {
-    padding: .5rem 1rem;
-}
 .bd-sidebar-primary .sidebar-primary-items__end {
     margin-bottom: 0;
     margin-top: 0;
 }
 
-.bd-search .search-button__kbd-shortcut {
-    display: none;
+.bd-search {
+    border: 1px solid transparent;
 }
 
 .bd-sidebar .toctree-l1 a {

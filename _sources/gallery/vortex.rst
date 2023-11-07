@@ -169,25 +169,25 @@ current scikit-image output.
     Traceback (most recent call last):
       File "/home/melissa/projects/napari/examples/vortex.py", line 59, in <module>
         flow_layer = viewer.add_vectors(
-      File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/site-packages/napari/components/viewer_model.py", line 5, in add_vectors
+      File "/home/melissa/projects/napari/napari/components/viewer_model.py", line 5, in add_vectors
         import os
       File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/_collections_abc.py", line 1128, in append
         self.insert(len(self), value)
-      File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/site-packages/napari/components/layerlist.py", line 194, in insert
+      File "/home/melissa/projects/napari/napari/components/layerlist.py", line 194, in insert
         super().insert(index, new_layer)
-      File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/site-packages/napari/utils/events/containers/_selectable_list.py", line 71, in insert
+      File "/home/melissa/projects/napari/napari/utils/events/containers/_selectable_list.py", line 71, in insert
         self.selection.active = value
-      File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/site-packages/napari/utils/events/containers/_selection.py", line 108, in active
+      File "/home/melissa/projects/napari/napari/utils/events/containers/_selection.py", line 108, in active
         self.events.active(value=value)
-      File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/site-packages/napari/utils/events/event.py", line 771, in __call__
+      File "/home/melissa/projects/napari/napari/utils/events/event.py", line 771, in __call__
         self._invoke_callback(cb, event if pass_event else None)
-      File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/site-packages/napari/utils/events/event.py", line 809, in _invoke_callback
+      File "/home/melissa/projects/napari/napari/utils/events/event.py", line 809, in _invoke_callback
         _handle_exception(
-      File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/site-packages/napari/utils/events/event.py", line 796, in _invoke_callback
+      File "/home/melissa/projects/napari/napari/utils/events/event.py", line 796, in _invoke_callback
         cb(event)
-      File "/home/melissa/micromamba/envs/napari-dev/lib/python3.10/site-packages/napari/_qt/layer_controls/qt_layer_controls_container.py", line 130, in _display
+      File "/home/melissa/projects/napari/napari/_qt/layer_controls/qt_layer_controls_container.py", line 130, in _display
         controls = self.widgets[layer]
-    KeyError: <Vectors layer 'optical flow' at 0x7fbc159739d0>
+    KeyError: <Vectors layer 'optical flow' at 0x7fd0bb459390>
 
 
 
