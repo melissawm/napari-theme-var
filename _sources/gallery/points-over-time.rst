@@ -25,18 +25,7 @@ Points over time
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-45
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_points-over-time_001.png
-   :alt: points over time
-   :srcset: /gallery/images/sphx_glr_points-over-time_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
     import dask.array as da
     import numpy as np
@@ -84,16 +73,13 @@ Points over time
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: points-over-time.ipynb <points-over-time.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: points-over-time.py <points-over-time.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: points-over-time.ipynb <points-over-time.ipynb>`
 
 
 .. only:: html

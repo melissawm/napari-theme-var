@@ -26,21 +26,9 @@ Display a labels layer above of an image layer using the ``add_labels`` and
 
 .. tags:: layers, visualization-basic
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-39
+.. GENERATED FROM PYTHON SOURCE LINES 10-38
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_labels_001.png
-   :alt: add labels
-   :srcset: /gallery/images/sphx_glr_add_labels_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
-
+.. code-block:: Python
 
     from skimage import data
     from skimage.filters import threshold_otsu
@@ -60,7 +48,7 @@ Display a labels layer above of an image layer using the ``add_labels`` and
     cleared = remove_small_objects(clear_border(bw), 20)
 
     # label image regions
-    label_image = label(cleared)
+    label_image = label(cleared).astype("uint8")
 
     # initialise viewer with coins image
     viewer = napari.view_image(image, name='coins', rgb=False)
@@ -78,16 +66,13 @@ Display a labels layer above of an image layer using the ``add_labels`` and
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: add_labels.ipynb <add_labels.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: add_labels.py <add_labels.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: add_labels.ipynb <add_labels.ipynb>`
 
 
 .. only:: html

@@ -28,18 +28,7 @@ bounding boxes and text
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-137
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_annotate_segmentation_with_text_001.png
-   :alt: annotate segmentation with text
-   :srcset: /gallery/images/sphx_glr_annotate_segmentation_with_text_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
     import numpy as np
     from skimage import data
@@ -176,16 +165,13 @@ bounding boxes and text
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: annotate_segmentation_with_text.ipynb <annotate_segmentation_with_text.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: annotate_segmentation_with_text.py <annotate_segmentation_with_text.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: annotate_segmentation_with_text.ipynb <annotate_segmentation_with_text.ipynb>`
 
 
 .. only:: html

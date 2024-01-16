@@ -29,18 +29,7 @@ your shapes.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-93
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_shapes_with_features_001.png
-   :alt: add shapes with features
-   :srcset: /gallery/images/sphx_glr_add_shapes_with_features_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -132,16 +121,13 @@ your shapes.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: add_shapes_with_features.ipynb <add_shapes_with_features.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: add_shapes_with_features.py <add_shapes_with_features.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: add_shapes_with_features.ipynb <add_shapes_with_features.ipynb>`
 
 
 .. only:: html

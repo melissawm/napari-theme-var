@@ -28,18 +28,7 @@ The color of the vectors is mapped to their 'angle' feature.
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-62
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_vectors_color_by_angle_001.png
-   :alt: add vectors color by angle
-   :srcset: /gallery/images/sphx_glr_add_vectors_color_by_angle_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -101,16 +90,13 @@ The color of the vectors is mapped to their 'angle' feature.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: add_vectors_color_by_angle.ipynb <add_vectors_color_by_angle.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: add_vectors_color_by_angle.py <add_vectors_color_by_angle.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: add_vectors_color_by_angle.ipynb <add_vectors_color_by_angle.ipynb>`
 
 
 .. only:: html

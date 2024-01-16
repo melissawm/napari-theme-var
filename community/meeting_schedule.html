@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,9 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -58,7 +58,7 @@
     <script src="../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'community/meeting_schedule';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -135,6 +135,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="../index.html">
   napari
@@ -146,7 +167,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -268,7 +290,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -463,6 +486,17 @@ document.write(`
 <p>If you are using napari or interested in how napari could be used in your work, please join one of our regular community meetings. If you’re interested in diving deep on particular topic you could join the closest working group meeting. We currently have four working groups ‘Bundled Application’, ‘Plugins’, ‘Architecture’, and ‘Documentation’ that meet on a semi-regular candence. You can learn more about our working groups and community meetings in the corresponding discussion streams on the <a class="reference external" href="https://napari.zulipchat.com/login/">napari Zulip</a>.</p>
 <div id='community_calendar'></div>
 <div id='timezone'></div>
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h3>Event details</h3>
+    </div>
+    <div id="details" class="modal-body">
+    </div>
+  </div>
+</div>
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.9/index.global.min.js"></script>
 <script>
@@ -486,10 +520,21 @@ document.write(`
       eventClick: function (info) {
         info.jsEvent.preventDefault();
         var eventObj = info.event;
-        alert(
-          'Event: ' + eventObj.title + '\n\n'
-          + 'Description: ' + eventObj.extendedProps.description + '\n\n'
-          + 'URL: ' + eventObj.url);
+        // alert(
+        //   'Event: ' + eventObj.title + '\n\n'
+        //   + 'Description: \n' + eventObj.extendedProps.description + '\n\n'
+        //   + 'URL: ' + eventObj.url);
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
+        var eventTitle = eventObj.title.charAt(0).toUpperCase() + eventObj.title.slice(1);
+        document.getElementById("details").innerHTML = '<b>' + eventTitle + '</b>' + '<br>' + eventObj.extendedProps.description;
+        //When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
       },
       eventDisplay: 'block',
     });
@@ -506,7 +551,7 @@ document.write(`
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="working_groups.html"
@@ -544,12 +589,12 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

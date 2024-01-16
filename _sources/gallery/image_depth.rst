@@ -25,18 +25,7 @@ Image depth
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-28
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_image_depth_001.png
-   :alt: image depth
-   :srcset: /gallery/images/sphx_glr_image_depth_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -67,16 +56,13 @@ Image depth
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: image_depth.ipynb <image_depth.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: image_depth.py <image_depth.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: image_depth.ipynb <image_depth.ipynb>`
 
 
 .. only:: html

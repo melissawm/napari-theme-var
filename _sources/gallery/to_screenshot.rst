@@ -29,18 +29,7 @@ your shapes.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-132
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_to_screenshot_001.png
-   :alt: to screenshot
-   :srcset: /gallery/images/sphx_glr_to_screenshot_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -171,16 +160,13 @@ your shapes.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: to_screenshot.ipynb <to_screenshot.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: to_screenshot.py <to_screenshot.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: to_screenshot.ipynb <to_screenshot.ipynb>`
 
 
 .. only:: html

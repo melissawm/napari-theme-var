@@ -25,18 +25,7 @@ Interactive scripting
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-34
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_interactive_scripting_001.png
-   :alt: interactive scripting
-   :srcset: /gallery/images/sphx_glr_interactive_scripting_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import time
@@ -73,16 +62,13 @@ Interactive scripting
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: interactive_scripting.ipynb <interactive_scripting.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: interactive_scripting.py <interactive_scripting.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: interactive_scripting.ipynb <interactive_scripting.ipynb>`
 
 
 .. only:: html

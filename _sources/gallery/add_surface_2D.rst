@@ -27,18 +27,7 @@ Display a 2D surface
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-23
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_surface_2D_001.png
-   :alt: add surface 2D
-   :srcset: /gallery/images/sphx_glr_add_surface_2D_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -62,16 +51,13 @@ Display a 2D surface
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: add_surface_2D.ipynb <add_surface_2D.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: add_surface_2D.py <add_surface_2D.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: add_surface_2D.ipynb <add_surface_2D.ipynb>`
 
 
 .. only:: html

@@ -28,18 +28,7 @@ Display a labels layer above of an image layer using the ``add_labels`` and
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-23
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_labels_001.png
-   :alt: nD labels
-   :srcset: /gallery/images/sphx_glr_nD_labels_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     from scipy import ndimage as ndi
@@ -62,16 +51,13 @@ Display a labels layer above of an image layer using the ``add_labels`` and
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: nD_labels.ipynb <nD_labels.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: nD_labels.py <nD_labels.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: nD_labels.ipynb <nD_labels.ipynb>`
 
 
 .. only:: html

@@ -28,18 +28,7 @@ multiple face colors mapped from features for the points and text.
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-56
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_points_with_multicolor_text_001.png
-   :alt: add points with multicolor text
-   :srcset: /gallery/images/sphx_glr_add_points_with_multicolor_text_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -95,16 +84,13 @@ multiple face colors mapped from features for the points and text.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: add_points_with_multicolor_text.ipynb <add_points_with_multicolor_text.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: add_points_with_multicolor_text.py <add_points_with_multicolor_text.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: add_points_with_multicolor_text.ipynb <add_points_with_multicolor_text.ipynb>`
 
 
 .. only:: html

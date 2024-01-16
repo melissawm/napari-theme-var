@@ -95,6 +95,7 @@ napari.layers.Tracks
       ~Tracks.head_length
       ~Tracks.help
       ~Tracks.interactive
+      ~Tracks.keymap
       ~Tracks.loaded
       ~Tracks.metadata
       ~Tracks.mode
@@ -120,6 +121,7 @@ napari.layers.Tracks
       ~Tracks.translate
       ~Tracks.use_fade
       ~Tracks.visible
+      
       
       
       

@@ -28,30 +28,7 @@ Display one points layer ontop of one image layer using the ``add_points`` and
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-27
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_annotate-2d_001.png
-   :alt: annotate 2d
-   :srcset: /gallery/images/sphx_glr_annotate-2d_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    click to add points; close the window when finished.
-    you clicked on:
-    []
-
-
-
-
-
-
-|
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -78,16 +55,13 @@ Display one points layer ontop of one image layer using the ``add_points`` and
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: annotate-2d.ipynb <annotate-2d.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: annotate-2d.py <annotate-2d.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: annotate-2d.ipynb <annotate-2d.ipynb>`
 
 
 .. only:: html

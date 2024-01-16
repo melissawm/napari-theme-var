@@ -34,18 +34,7 @@ ChrisLUTs: https://github.com/cleterrier/ChrisLUTs .
 
 .. GENERATED FROM PYTHON SOURCE LINES 16-37
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_minimum_blending_001.png
-   :alt: minimum blending
-   :srcset: /gallery/images/sphx_glr_minimum_blending_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     from skimage import data
@@ -76,16 +65,13 @@ ChrisLUTs: https://github.com/cleterrier/ChrisLUTs .
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: minimum_blending.ipynb <minimum_blending.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: minimum_blending.py <minimum_blending.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: minimum_blending.ipynb <minimum_blending.ipynb>`
 
 
 .. only:: html

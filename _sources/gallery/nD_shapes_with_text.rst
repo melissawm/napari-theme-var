@@ -25,18 +25,7 @@ nD shapes with text
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-33
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_shapes_with_text_001.png
-   :alt: nD shapes with text
-   :srcset: /gallery/images/sphx_glr_nD_shapes_with_text_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
     from skimage import data
 
@@ -72,16 +61,13 @@ nD shapes with text
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: nD_shapes_with_text.ipynb <nD_shapes_with_text.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: nD_shapes_with_text.py <nD_shapes_with_text.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: nD_shapes_with_text.ipynb <nD_shapes_with_text.ipynb>`
 
 
 .. only:: html

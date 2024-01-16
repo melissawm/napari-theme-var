@@ -30,18 +30,7 @@ viewer when the viewer is out of scope.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-23
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_get_current_viewer_001.png
-   :alt: get current viewer
-   :srcset: /gallery/images/sphx_glr_get_current_viewer_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import napari
@@ -62,16 +51,13 @@ viewer when the viewer is out of scope.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: get_current_viewer.ipynb <get_current_viewer.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: get_current_viewer.py <get_current_viewer.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: get_current_viewer.ipynb <get_current_viewer.ipynb>`
 
 
 .. only:: html

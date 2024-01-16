@@ -27,30 +27,7 @@ Create multiple viewers from the same script
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-25
 
-
-
-.. rst-class:: sphx-glr-horizontal
-
-
-    *
-
-      .. image-sg:: /gallery/images/sphx_glr_multiple_viewers_001.png
-          :alt: multiple viewers
-          :srcset: /gallery/images/sphx_glr_multiple_viewers_001.png
-          :class: sphx-glr-multi-img
-
-    *
-
-      .. image-sg:: /gallery/images/sphx_glr_multiple_viewers_002.png
-          :alt: multiple viewers
-          :srcset: /gallery/images/sphx_glr_multiple_viewers_002.png
-          :class: sphx-glr-multi-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     from skimage import data
@@ -76,16 +53,13 @@ Create multiple viewers from the same script
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: multiple_viewers.ipynb <multiple_viewers.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: multiple_viewers.py <multiple_viewers.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: multiple_viewers.ipynb <multiple_viewers.ipynb>`
 
 
 .. only:: html

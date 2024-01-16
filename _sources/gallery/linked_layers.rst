@@ -31,18 +31,7 @@ linked layers, all of the other layers follow.
 
 .. GENERATED FROM PYTHON SOURCE LINES 13-33
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_linked_layers_001.png
-   :alt: linked layers
-   :srcset: /gallery/images/sphx_glr_linked_layers_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
     import numpy as np
 
@@ -72,16 +61,13 @@ linked layers, all of the other layers follow.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: linked_layers.ipynb <linked_layers.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: linked_layers.py <linked_layers.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: linked_layers.ipynb <linked_layers.ipynb>`
 
 
 .. only:: html

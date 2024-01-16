@@ -27,18 +27,7 @@ Display 3D points with combinations of different renderings.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-26
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_point_cloud_001.png
-   :alt: point cloud
-   :srcset: /gallery/images/sphx_glr_point_cloud_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -65,16 +54,13 @@ Display 3D points with combinations of different renderings.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: point_cloud.ipynb <point_cloud.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: point_cloud.py <point_cloud.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: point_cloud.ipynb <point_cloud.ipynb>`
 
 
 .. only:: html

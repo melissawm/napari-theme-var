@@ -25,35 +25,7 @@ Action manager
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-117
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_action_manager_001.png
-   :alt: action manager
-   :srcset: /gallery/images/sphx_glr_action_manager_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    /home/melissa/projects/napari/examples/action_manager.py:43: FutureWarning: Public access to Window.qt_viewer is deprecated and will be removed in
-    v0.6.0. It is considered an "implementation detail" of the napari
-    application, not part of the napari viewer model. If your use case
-    requires access to qt_viewer, please open an issue to discuss.
-      layer_buttons = viewer.window.qt_viewer.layerButtons
-    calling <function bind_button at 0x7fd0efa08820>
-    calling <function bind_shortcut at 0x7fd0efa085e0>
-    calling <function register_action at 0x7fd0dbf752d0>
-
-
-
-
-
-
-|
-
-.. code-block:: default
+.. code-block:: Python
 
     from random import shuffle
 
@@ -173,16 +145,13 @@ Action manager
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: action_manager.ipynb <action_manager.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: action_manager.py <action_manager.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: action_manager.ipynb <action_manager.ipynb>`
 
 
 .. only:: html

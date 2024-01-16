@@ -27,18 +27,7 @@ Display a labels layer with various features
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-64
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_labels_with_features_001.png
-   :alt: add labels with features
-   :srcset: /gallery/images/sphx_glr_add_labels_with_features_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
 
@@ -103,16 +92,13 @@ Display a labels layer with various features
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: add_labels_with_features.ipynb <add_labels_with_features.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: add_labels_with_features.py <add_labels_with_features.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: add_labels_with_features.ipynb <add_labels_with_features.ipynb>`
 
 
 .. only:: html

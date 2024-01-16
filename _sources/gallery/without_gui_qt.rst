@@ -30,30 +30,7 @@ the "gui_qt()" context manager.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-41
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_without_gui_qt_001.png
-   :alt: without gui qt
-   :srcset: /gallery/images/sphx_glr_without_gui_qt_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Maximum value 255
-    Your viewer has the following layers:
-       Image  : 1
-
-
-
-
-
-
-|
-
-.. code-block:: default
+.. code-block:: Python
 
 
     from collections import Counter
@@ -92,16 +69,13 @@ the "gui_qt()" context manager.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: without_gui_qt.ipynb <without_gui_qt.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: without_gui_qt.py <without_gui_qt.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: without_gui_qt.ipynb <without_gui_qt.ipynb>`
 
 
 .. only:: html

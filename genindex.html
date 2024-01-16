@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -40,9 +40,9 @@
     <link rel="stylesheet" type="text/css" href="_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -55,7 +55,7 @@
     <script src="_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -130,6 +130,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="index.html">
   napari
@@ -141,7 +162,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -263,7 +285,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -451,6 +474,8 @@ document.write(`
 </li>
       <li><a href="api/napari.utils.events.Selection.html#napari.utils.events.Selection._current">_current (napari.utils.events.Selection attribute)</a>
 </li>
+      <li><a href="api/napari.utils.Colormap.html#napari.utils.Colormap._display_name">_display_name (napari.utils.Colormap attribute)</a>
+</li>
       <li><a href="api/napari.qt.QtViewer.html#napari.qt.QtViewer._key_map_handler">_key_map_handler (napari.qt.QtViewer attribute)</a>
 </li>
   </ul></td>
@@ -607,14 +632,14 @@ document.write(`
 </li>
       <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.add_rectangles">add_rectangles() (napari.layers.Shapes method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.add_shapes">add_shapes() (napari.components.ViewerModel method)</a>
 
       <ul>
         <li><a href="api/napari.Viewer.html#napari.Viewer.add_shapes">(napari.Viewer method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.add_surface">add_surface() (napari.components.ViewerModel method)</a>
 
       <ul>
@@ -685,14 +710,10 @@ document.write(`
 </li>
       <li><a href="api/napari.components.Camera.html#napari.components.Camera.angles">angles (napari.components.Camera attribute)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.antialiasing">antialiasing (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.antialiasing">antialiasing (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.antialiasing">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id1">(napari.layers.Points property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.antialiasing">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.components.LayerList.html#napari.components.LayerList.append">append() (napari.components.LayerList method)</a>
@@ -715,8 +736,6 @@ document.write(`
 
       <ul>
         <li><a href="api/napari.layers.Image.html#id0">(napari.layers.Image property)</a>
-</li>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.attenuation">(napari.layers.Labels property)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.threading.FunctionWorker.html#napari.qt.threading.FunctionWorker.autoDelete">autoDelete() (napari.qt.threading.FunctionWorker method)</a>
@@ -861,14 +880,10 @@ document.write(`
         <li><a href="api/napari.qt.threading.WorkerBaseSignals.html#napari.qt.threading.WorkerBaseSignals.blockSignals">(napari.qt.threading.WorkerBaseSignals method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.brush_size">brush_size (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.brush_size">brush_size (napari.layers.Labels attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.brush_size">(napari.layers.Labels attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#id0">(napari.layers.Labels property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.brush_size">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.buddy">buddy() (napari.qt.QtToolTipLabel method)</a>
@@ -911,14 +926,10 @@ document.write(`
 </li>
       <li><a href="api/napari.qt.QtViewer.html#napari.qt.QtViewer.canvas">canvas (napari.qt.QtViewer attribute)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.canvas_size_limits">canvas_size_limits (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.canvas_size_limits">canvas_size_limits (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.canvas_size_limits">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id2">(napari.layers.Points property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.canvas_size_limits">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.utils.perf.PerfEvent.html#napari.utils.perf.PerfEvent.category">category (napari.utils.perf.PerfEvent attribute)</a>
@@ -1081,14 +1092,10 @@ document.write(`
       </ul></li>
       <li><a href="api/napari.qt.QtViewer.html#napari.qt.QtViewer.closestLegalPosition">closestLegalPosition() (napari.qt.QtViewer method)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.color">color (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.color">color (napari.layers.Labels attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.color">(napari.layers.Labels attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#id1">(napari.layers.Labels property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.color">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.color_mode">color_mode (napari.layers.Labels property)</a>
@@ -1103,28 +1110,20 @@ document.write(`
       </ul></li>
       <li><a href="api/napari.utils.Colormap.html#napari.utils.Colormap">Colormap (class in napari.utils)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.colormap">colormap (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.colormap">colormap (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.colormap">(napari.layers.Image attribute)</a>
-</li>
         <li><a href="api/napari.layers.Image.html#id1">(napari.layers.Image property)</a>
-</li>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.colormap">(napari.layers.Labels property)</a>
 </li>
         <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.colormap">(napari.layers.Surface attribute)</a>
 </li>
         <li><a href="api/napari.layers.Surface.html#id0">(napari.layers.Surface property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.colormap">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Image.html#napari.layers.Image.colormaps">colormaps (napari.layers.Image attribute)</a>
 
       <ul>
         <li><a href="api/napari.layers.Image.html#id2">(napari.layers.Image property)</a>
-</li>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.colormaps">(napari.layers.Labels property)</a>
 </li>
         <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.colormaps">(napari.layers.Surface property)</a>
 </li>
@@ -1179,6 +1178,8 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.contentsMargins">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.contentsRect">contentsRect() (napari.qt.QtToolTipLabel method)</a>
 
       <ul>
@@ -1187,8 +1188,6 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.contentsRect">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.contextMenuEvent">contextMenuEvent() (napari.qt.QtToolTipLabel method)</a>
 
       <ul>
@@ -1205,48 +1204,32 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.contextMenuPolicy">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.contiguous">contiguous (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.contiguous">contiguous (napari.layers.Labels attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.contiguous">(napari.layers.Labels attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#id2">(napari.layers.Labels property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.contiguous">(napari.Viewer attribute)</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.contour">contour (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.contour">contour (napari.layers.Labels attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.contour">(napari.layers.Labels attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#id3">(napari.layers.Labels property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.contour">(napari.Viewer attribute)</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.contrast_limits">contrast_limits (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.contrast_limits">contrast_limits (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.contrast_limits">(napari.layers.Image attribute)</a>
-</li>
         <li><a href="api/napari.layers.Image.html#id3">(napari.layers.Image property)</a>
-</li>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.contrast_limits">(napari.layers.Labels property)</a>
 </li>
         <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.contrast_limits">(napari.layers.Surface attribute)</a>
 </li>
         <li><a href="api/napari.layers.Surface.html#id1">(napari.layers.Surface property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.contrast_limits">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Image.html#napari.layers.Image.contrast_limits_range">contrast_limits_range (napari.layers.Image attribute)</a>
 
       <ul>
         <li><a href="api/napari.layers.Image.html#id4">(napari.layers.Image property)</a>
-</li>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.contrast_limits_range">(napari.layers.Labels property)</a>
 </li>
         <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.contrast_limits_range">(napari.layers.Surface property)</a>
 </li>
@@ -1353,46 +1336,34 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.createWindowContainer">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id14">current_edge_color (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.current_edge_color">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_edge_color">current_edge_color (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_edge_color">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id3">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.current_edge_color">(napari.layers.Shapes attribute)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#id0">(napari.layers.Shapes property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id14">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.current_edge_color">[1]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id13">current_edge_width (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.current_edge_width">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_edge_width">current_edge_width (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_edge_width">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id4">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.current_edge_width">(napari.layers.Shapes attribute)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#id1">(napari.layers.Shapes property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id13">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.current_edge_width">[1]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id15">current_face_color (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.current_face_color">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_face_color">current_face_color (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_face_color">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id5">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.current_face_color">(napari.layers.Shapes attribute)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#id2">(napari.layers.Shapes property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#id15">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.current_face_color">[1]</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_properties">current_properties (napari.layers.Points property)</a>
@@ -1401,26 +1372,18 @@ document.write(`
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.current_properties">(napari.layers.Shapes property)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.current_size">current_size (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_size">current_size (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_size">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id6">(napari.layers.Points property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.current_size">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.components.Dims.html#napari.components.Dims.current_step">current_step (napari.components.Dims attribute)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.current_symbol">current_symbol (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_symbol">current_symbol (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.current_symbol">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id7">(napari.layers.Points property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.current_symbol">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Tracks.html#napari.layers.Tracks.current_time">current_time (napari.layers.Tracks property)</a>
@@ -1497,11 +1460,9 @@ document.write(`
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/napari.components.ViewerModel.html#id0">data (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#id18">[1]</a>, <a href="api/napari.components.ViewerModel.html#id20">[2]</a>, <a href="api/napari.components.ViewerModel.html#id5">[3]</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.data">[4]</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.data">data (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.data">(napari.layers.Image attribute)</a>
-</li>
         <li><a href="api/napari.layers.Image.html#id5">(napari.layers.Image property)</a>
 </li>
         <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.data">(napari.layers.Labels attribute)</a>
@@ -1523,8 +1484,6 @@ document.write(`
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.data">(napari.layers.Vectors attribute)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#id0">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#id0">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#id18">[1]</a>, <a href="api/napari.Viewer.html#id20">[2]</a>, <a href="api/napari.Viewer.html#id5">[3]</a>, <a href="api/napari.Viewer.html#napari.Viewer.data">[4]</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Image.html#napari.layers.Image.data_level">data_level (napari.layers.Image property)</a>
@@ -1655,10 +1614,10 @@ document.write(`
         <li><a href="api/napari.utils.events.Selection.html#napari.utils.events.Selection.difference_update">(napari.utils.events.Selection method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.components.Dims.html#napari.components.Dims">Dims (class in napari.components)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.dims">dims (napari.components.ViewerModel attribute)</a>
 
       <ul>
@@ -1710,8 +1669,6 @@ document.write(`
       <li><a href="api/napari.layers.Tracks.html#napari.layers.Tracks.display_graph">display_graph (napari.layers.Tracks property)</a>
 </li>
       <li><a href="api/napari.layers.Tracks.html#napari.layers.Tracks.display_id">display_id (napari.layers.Tracks property)</a>
-</li>
-      <li><a href="api/napari.utils.Colormap.html#napari.utils.Colormap.display_name">display_name (napari.utils.Colormap attribute)</a>
 </li>
       <li><a href="api/napari.layers.Tracks.html#napari.layers.Tracks.display_tail">display_tail (napari.layers.Tracks property)</a>
 </li>
@@ -1823,11 +1780,9 @@ document.write(`
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/napari.components.ViewerModel.html#id10">edge_color (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#id25">[1]</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.edge_color">[2]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_color">edge_color (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_color">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id9">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.edge_color">(napari.layers.Shapes attribute)</a>
@@ -1838,14 +1793,10 @@ document.write(`
 </li>
         <li><a href="api/napari.layers.Vectors.html#id1">(napari.layers.Vectors property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id10">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#id25">[1]</a>, <a href="api/napari.Viewer.html#napari.Viewer.edge_color">[2]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id26">edge_color_cycle (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.edge_color_cycle">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_color_cycle">edge_color_cycle (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_color_cycle">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id10">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.edge_color_cycle">(napari.layers.Shapes property)</a>
@@ -1854,28 +1805,20 @@ document.write(`
 </li>
         <li><a href="api/napari.layers.Vectors.html#id2">(napari.layers.Vectors property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id26">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.edge_color_cycle">[1]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.edge_color_mode">edge_color_mode (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_color_mode">edge_color_mode (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_color_mode">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id11">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.edge_color_mode">(napari.layers.Shapes property)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.edge_color_mode">(napari.layers.Vectors property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.edge_color_mode">(napari.Viewer attribute)</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id27">edge_colormap (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.edge_colormap">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_colormap">edge_colormap (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_colormap">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id12">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.edge_colormap">(napari.layers.Shapes property)</a>
@@ -1884,14 +1827,10 @@ document.write(`
 </li>
         <li><a href="api/napari.layers.Vectors.html#id3">(napari.layers.Vectors property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id27">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.edge_colormap">[1]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id28">edge_contrast_limits (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.edge_contrast_limits">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_contrast_limits">edge_contrast_limits (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_contrast_limits">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id13">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.edge_contrast_limits">(napari.layers.Shapes property)</a>
@@ -1900,14 +1839,10 @@ document.write(`
 </li>
         <li><a href="api/napari.layers.Vectors.html#id4">(napari.layers.Vectors property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id28">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.edge_contrast_limits">[1]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id12">edge_width (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#id24">[1]</a>, <a href="api/napari.components.ViewerModel.html#id3">[2]</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.edge_width">[3]</a>
+      <li><a href="api/napari.layers.Points.html#id0">edge_width (napari.layers.Points attribute)</a>, <a href="api/napari.layers.Points.html#napari.layers.Points.edge_width">[1]</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#id0">(napari.layers.Points attribute)</a>, <a href="api/napari.layers.Points.html#napari.layers.Points.edge_width">[1]</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id14">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.edge_width">(napari.layers.Shapes attribute)</a>
@@ -1917,8 +1852,6 @@ document.write(`
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.edge_width">(napari.layers.Vectors attribute)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#id5">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#id12">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#id24">[1]</a>, <a href="api/napari.Viewer.html#id3">[2]</a>, <a href="api/napari.Viewer.html#napari.Viewer.edge_width">[3]</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Points.html#napari.layers.Points.edge_width_is_relative">edge_width_is_relative (napari.layers.Points property)</a>
@@ -1949,8 +1882,6 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.effectiveWinId">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.utils.events.EmitterGroup.html#napari.utils.events.EmitterGroup">EmitterGroup (class in napari.utils.events)</a>
 </li>
       <li><a href="api/napari.utils.events.EmitterGroup.html#napari.utils.events.EmitterGroup.emitters">emitters (napari.utils.events.EmitterGroup property)</a>
@@ -1965,6 +1896,8 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.ensurePolished">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.enterEvent">enterEvent() (napari.qt.QtToolTipLabel method)</a>
 
       <ul>
@@ -2033,14 +1966,10 @@ document.write(`
         <li><a href="api/napari.Viewer.html#napari.Viewer.experimental">(napari.Viewer property)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.experimental_clipping_planes">experimental_clipping_planes (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.experimental_clipping_planes">experimental_clipping_planes (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.experimental_clipping_planes">(napari.layers.Image attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.experimental_clipping_planes">(napari.layers.Labels attribute)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.experimental_clipping_planes">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.components.LayerList.html#napari.components.LayerList.extend">extend() (napari.components.LayerList method)</a>
@@ -2087,99 +2016,71 @@ document.write(`
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/napari.components.ViewerModel.html#id11">face_color (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.face_color">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_color">face_color (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_color">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id15">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.face_color">(napari.layers.Shapes attribute)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#id6">(napari.layers.Shapes property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id11">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.face_color">[1]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.face_color_cycle">face_color_cycle (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_color_cycle">face_color_cycle (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_color_cycle">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id16">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.face_color_cycle">(napari.layers.Shapes property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.face_color_cycle">(napari.Viewer attribute)</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.face_color_mode">face_color_mode (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_color_mode">face_color_mode (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_color_mode">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id17">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.face_color_mode">(napari.layers.Shapes property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.face_color_mode">(napari.Viewer attribute)</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.face_colormap">face_colormap (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_colormap">face_colormap (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_colormap">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id18">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.face_colormap">(napari.layers.Shapes property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.face_colormap">(napari.Viewer attribute)</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.face_contrast_limits">face_contrast_limits (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_contrast_limits">face_contrast_limits (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.face_contrast_limits">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id19">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.face_contrast_limits">(napari.layers.Shapes property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.face_contrast_limits">(napari.Viewer attribute)</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.faces">faces (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.faces">faces (napari.layers.Surface attribute)</a>
+</li>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.feature_defaults">feature_defaults (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.faces">(napari.layers.Surface attribute)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.faces">(napari.Viewer attribute)</a>
-</li>
-      </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id22">feature_defaults (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#id7">[1]</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.feature_defaults">[2]</a>
-
-      <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.feature_defaults">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id20">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.feature_defaults">(napari.layers.Shapes attribute)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#id7">(napari.layers.Shapes property)</a>
 </li>
+        <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.feature_defaults">(napari.layers.Surface attribute)</a>
+</li>
+        <li><a href="api/napari.layers.Surface.html#id2">(napari.layers.Surface property)</a>
+</li>
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.feature_defaults">(napari.layers.Vectors attribute)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#id6">(napari.layers.Vectors property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id22">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#id7">[1]</a>, <a href="api/napari.Viewer.html#napari.Viewer.feature_defaults">[2]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id1">features (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#id21">[1]</a>, <a href="api/napari.components.ViewerModel.html#id6">[2]</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.features">[3]</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.features">features (napari.layers.Labels attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.features">(napari.layers.Labels attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#id6">(napari.layers.Labels property)</a>
 </li>
         <li><a href="api/napari.layers.Points.html#napari.layers.Points.features">(napari.layers.Points attribute)</a>
@@ -2190,13 +2091,15 @@ document.write(`
 </li>
         <li><a href="api/napari.layers.Shapes.html#id8">(napari.layers.Shapes property)</a>
 </li>
+        <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.features">(napari.layers.Surface attribute)</a>
+</li>
+        <li><a href="api/napari.layers.Surface.html#id3">(napari.layers.Surface property)</a>
+</li>
         <li><a href="api/napari.layers.Tracks.html#napari.layers.Tracks.features">(napari.layers.Tracks property)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.features">(napari.layers.Vectors attribute)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#id7">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#id1">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#id21">[1]</a>, <a href="api/napari.Viewer.html#id6">[2]</a>, <a href="api/napari.Viewer.html#napari.Viewer.features">[3]</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.Window.html#napari.qt.Window.file_menu">file_menu (napari.qt.Window attribute)</a>
@@ -2247,8 +2150,6 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.focusInEvent">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.focusNextChild">focusNextChild() (napari.qt.QtToolTipLabel method)</a>
 
       <ul>
@@ -2265,6 +2166,8 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.focusNextPrevChild">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.focusOutEvent">focusOutEvent() (napari.qt.QtToolTipLabel method)</a>
 
       <ul>
@@ -2433,14 +2336,10 @@ document.write(`
 <h2 id="G">G</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.gamma">gamma (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.gamma">gamma (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.gamma">(napari.layers.Image attribute)</a>
-</li>
         <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.gamma">(napari.layers.Surface attribute)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.gamma">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.threading.GeneratorWorker.html#napari.qt.threading.GeneratorWorker">GeneratorWorker (class in napari.qt.threading)</a>
@@ -2897,16 +2796,16 @@ document.write(`
         <li><a href="api/napari.layers.Layer.html#napari.layers.Layer.interactive">(napari.layers.Layer attribute)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.layers.Image.html#napari.layers.Image.interpolation">interpolation (napari.layers.Image attribute)</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.interpolation">interpolation (napari.layers.Image property)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#id7">(napari.layers.Image property)</a>
-</li>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.interpolation">(napari.layers.Labels property)</a>
-</li>
         <li><a href="api/napari.utils.Colormap.html#napari.utils.Colormap.interpolation">(napari.utils.Colormap attribute)</a>
 </li>
       </ul></li>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.interpolation2d">interpolation2d (napari.layers.Image attribute)</a>
+</li>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.interpolation3d">interpolation3d (napari.layers.Image attribute)</a>
+</li>
       <li><a href="api/napari.utils.events.EventedSet.html#napari.utils.events.EventedSet.intersection">intersection() (napari.utils.events.EventedSet method)</a>
 
       <ul>
@@ -3022,9 +2921,7 @@ document.write(`
       <li><a href="api/napari.layers.Image.html#napari.layers.Image.iso_threshold">iso_threshold (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#id8">(napari.layers.Image property)</a>
-</li>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.iso_threshold">(napari.layers.Labels property)</a>
+        <li><a href="api/napari.layers.Image.html#id7">(napari.layers.Image property)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.isRightToLeft">isRightToLeft() (napari.qt.QtToolTipLabel method)</a>
@@ -3245,14 +3142,10 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.leaveEvent">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.length">length (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.length">length (napari.layers.Vectors attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.length">(napari.layers.Vectors attribute)</a>
-</li>
         <li><a href="api/napari.layers.Vectors.html#id8">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.length">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Image.html#napari.layers.Image.level_shapes">level_shapes (napari.layers.Image property)</a>
@@ -3333,6 +3226,8 @@ document.write(`
         <li><a href="api/napari.window.Window.html#napari.window.Window.main_menu">(napari.window.Window attribute)</a>
 </li>
       </ul></li>
+      <li><a href="api/napari.utils.LabelColormap.html#napari.utils.LabelColormap.map">map() (napari.utils.LabelColormap method)</a>
+</li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.mapFrom">mapFrom() (napari.qt.QtToolTipLabel method)</a>
 
       <ul>
@@ -3421,12 +3316,10 @@ document.write(`
       </ul></li>
       <li><a href="api/napari.plugins.html#napari.plugins.menu_item_template">menu_item_template (napari.plugins attribute)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.metadata">metadata (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.metadata">metadata (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.metadata">(napari.layers.Image attribute)</a>
-</li>
-        <li><a href="api/napari.layers.Image.html#id9">(napari.layers.Image property)</a>
+        <li><a href="api/napari.layers.Image.html#id8">(napari.layers.Image property)</a>
 </li>
         <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.metadata">(napari.layers.Labels attribute)</a>
 </li>
@@ -3443,8 +3336,6 @@ document.write(`
         <li><a href="api/napari.layers.Tracks.html#napari.layers.Tracks.metadata">(napari.layers.Tracks property)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.metadata">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.metadata">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.metaObject">metaObject() (napari.qt.QtToolTipLabel method)</a>
@@ -3507,12 +3398,10 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.minimumWidth">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id17">mode (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#id4">[1]</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.mode">[2]</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.mode">mode (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.mode">(napari.layers.Image attribute)</a>
-</li>
-        <li><a href="api/napari.layers.Image.html#id10">(napari.layers.Image property)</a>
+        <li><a href="api/napari.layers.Image.html#id9">(napari.layers.Image property)</a>
 </li>
         <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.mode">(napari.layers.Labels attribute)</a>
 </li>
@@ -3533,8 +3422,6 @@ document.write(`
         <li><a href="api/napari.layers.Tracks.html#napari.layers.Tracks.mode">(napari.layers.Tracks property)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.mode">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#id17">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#id4">[1]</a>, <a href="api/napari.Viewer.html#napari.Viewer.mode">[2]</a>
 </li>
       </ul></li>
   </ul></td>
@@ -3716,16 +3603,12 @@ document.write(`
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.movie">movie() (napari.qt.QtToolTipLabel method)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.multiscale">multiscale (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.multiscale">multiscale (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.multiscale">(napari.layers.Image attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.multiscale">(napari.layers.Labels attribute)</a>
 </li>
         <li><a href="api/napari.layers.Layer.html#napari.layers.Layer.multiscale">(napari.layers.Layer attribute)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.multiscale">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -3736,14 +3619,8 @@ document.write(`
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.layers.Points.html#napari.layers.Points.n_dimensional">n_dimensional (napari.layers.Points property)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.n_edit_dimensions">n_edit_dimensions (napari.components.ViewerModel attribute)</a>
-
-      <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.n_edit_dimensions">(napari.layers.Labels attribute)</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.n_edit_dimensions">n_edit_dimensions (napari.layers.Labels attribute)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.n_edit_dimensions">(napari.Viewer attribute)</a>
-</li>
-      </ul></li>
       <li><a href="api/napari.layers.Image.html#napari.layers.Image.name">name (napari.layers.Image property)</a>
 
       <ul>
@@ -3869,12 +3746,12 @@ document.write(`
 </li>
       <li><a href="plugins/advanced_topics/npe1.html#napari.plugins.hook_specifications.napari_get_writer">napari_get_writer() (in module napari.plugins.hook_specifications)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="plugins/advanced_topics/npe1.html#napari.plugins.hook_specifications.napari_provide_sample_data">napari_provide_sample_data() (in module napari.plugins.hook_specifications)</a>
 </li>
       <li><a href="plugins/advanced_topics/npe1.html#napari.plugins.hook_specifications.napari_write_image">napari_write_image() (in module napari.plugins.hook_specifications)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="plugins/advanced_topics/npe1.html#napari.plugins.hook_specifications.napari_write_labels">napari_write_labels() (in module napari.plugins.hook_specifications)</a>
 </li>
       <li><a href="plugins/advanced_topics/npe1.html#napari.plugins.hook_specifications.napari_write_points">napari_write_points() (in module napari.plugins.hook_specifications)</a>
@@ -3949,14 +3826,8 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.normalGeometry">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.normals">normals (napari.components.ViewerModel attribute)</a>
-
-      <ul>
-        <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.normals">(napari.layers.Surface attribute)</a>
+      <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.normals">normals (napari.layers.Surface attribute)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.normals">(napari.Viewer attribute)</a>
-</li>
-      </ul></li>
       <li><a href="api/napari.components.Dims.html#napari.components.Dims.not_displayed">not_displayed (napari.components.Dims attribute)</a>
 
       <ul>
@@ -3969,26 +3840,18 @@ document.write(`
 </li>
       <li><a href="api/napari.utils.notifications.NotificationSeverity.html#napari.utils.notifications.NotificationSeverity">NotificationSeverity (class in napari.utils.notifications)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.nshapes">nshapes (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.nshapes">nshapes (napari.layers.Shapes attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.nshapes">(napari.layers.Shapes attribute)</a>
-</li>
         <li><a href="api/napari.layers.Shapes.html#id10">(napari.layers.Shapes property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.nshapes">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.components.Dims.html#napari.components.Dims.nsteps">nsteps (napari.components.Dims attribute)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.num_colors">num_colors (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.num_colors">num_colors (napari.layers.Labels attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.num_colors">(napari.layers.Labels attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#id9">(napari.layers.Labels property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.num_colors">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -4009,11 +3872,9 @@ document.write(`
         <li><a href="api/napari.qt.threading.WorkerBaseSignals.html#napari.qt.threading.WorkerBaseSignals.objectName">(napari.qt.threading.WorkerBaseSignals method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.opacity">opacity (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.opacity">opacity (napari.layers.Image property)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.opacity">(napari.layers.Image property)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.opacity">(napari.layers.Labels attribute)</a>
 </li>
         <li><a href="api/napari.layers.Labels.html#id10">(napari.layers.Labels property)</a>
@@ -4031,8 +3892,6 @@ document.write(`
         <li><a href="api/napari.layers.Tracks.html#napari.layers.Tracks.opacity">(napari.layers.Tracks property)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.opacity">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.opacity">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.QtViewer.html#napari.qt.QtViewer.opaqueResize">opaqueResize() (napari.qt.QtViewer method)</a>
@@ -4061,18 +3920,14 @@ document.write(`
 </li>
       <li><a href="api/napari.utils.perf.PerfEvent.html#napari.utils.perf.PerfEvent.origin">origin (napari.utils.perf.PerfEvent attribute)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#id29">out_of_slice_display (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.out_of_slice_display">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.out_of_slice_display">out_of_slice_display (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.out_of_slice_display">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id23">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.out_of_slice_display">(napari.layers.Vectors attribute)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#id9">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#id29">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.out_of_slice_display">[1]</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.overrideWindowFlags">overrideWindowFlags() (napari.qt.QtToolTipLabel method)</a>
@@ -4189,14 +4044,10 @@ document.write(`
 </li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.pixmap">pixmap() (napari.qt.QtToolTipLabel method)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.plane">plane (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Image.html#napari.layers.Image.plane">plane (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#napari.layers.Image.plane">(napari.layers.Image attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.plane">(napari.layers.Labels attribute)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.plane">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.plugins.html#napari.plugins.plugin_manager">plugin_manager (napari.plugins attribute)</a>
@@ -4299,11 +4150,9 @@ document.write(`
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.projection_mode">(napari.layers.Vectors property)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id2">properties (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#id23">[1]</a>, <a href="api/napari.components.ViewerModel.html#id8">[2]</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.properties">[3]</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.properties">properties (napari.layers.Labels attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.properties">(napari.layers.Labels attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#id11">(napari.layers.Labels property)</a>
 </li>
         <li><a href="api/napari.layers.Points.html#napari.layers.Points.properties">(napari.layers.Points attribute)</a>
@@ -4319,8 +4168,6 @@ document.write(`
         <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.properties">(napari.layers.Vectors attribute)</a>
 </li>
         <li><a href="api/napari.layers.Vectors.html#id10">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#id2">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#id23">[1]</a>, <a href="api/napari.Viewer.html#id8">[2]</a>, <a href="api/napari.Viewer.html#napari.Viewer.properties">[3]</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Tracks.html#napari.layers.Tracks.properties_to_color_by">properties_to_color_by (napari.layers.Tracks property)</a>
@@ -4570,7 +4417,7 @@ document.write(`
       <li><a href="api/napari.layers.Image.html#napari.layers.Image.rendering">rendering (napari.layers.Image attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Image.html#id11">(napari.layers.Image property)</a>
+        <li><a href="api/napari.layers.Image.html#id10">(napari.layers.Image property)</a>
 </li>
         <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.rendering">(napari.layers.Labels property)</a>
 </li>
@@ -4608,16 +4455,12 @@ document.write(`
       <li><a href="api/napari.layers.Image.html#napari.layers.Image.reset_contrast_limits">reset_contrast_limits() (napari.layers.Image method)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.reset_contrast_limits">(napari.layers.Labels method)</a>
-</li>
         <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.reset_contrast_limits">(napari.layers.Surface method)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Image.html#napari.layers.Image.reset_contrast_limits_range">reset_contrast_limits_range() (napari.layers.Image method)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.reset_contrast_limits_range">(napari.layers.Labels method)</a>
-</li>
         <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.reset_contrast_limits_range">(napari.layers.Surface method)</a>
 </li>
       </ul></li>
@@ -4801,16 +4644,12 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.scroll">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.seed">seed (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.seed">seed (napari.layers.Labels attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.seed">(napari.layers.Labels attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#id12">(napari.layers.Labels property)</a>
 </li>
         <li><a href="api/napari.utils.LabelColormap.html#napari.utils.LabelColormap.seed">(napari.utils.LabelColormap attribute)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.seed">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.components.LayerList.html#napari.components.LayerList.select_all">select_all() (napari.components.LayerList method)</a>
@@ -4835,28 +4674,20 @@ document.write(`
       </ul></li>
       <li><a href="api/napari.utils.events.SelectableEventedList.html#napari.utils.events.SelectableEventedList">SelectableEventedList (class in napari.utils.events)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#id16">selected_data (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.selected_data">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.selected_data">selected_data (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.selected_data">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id25">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.selected_data">(napari.layers.Shapes attribute)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#id12">(napari.layers.Shapes property)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id16">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.selected_data">[1]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.selected_label">selected_label (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.selected_label">selected_label (napari.layers.Labels attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.selected_label">(napari.layers.Labels attribute)</a>
-</li>
         <li><a href="api/napari.layers.Labels.html#id13">(napari.layers.Labels property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.selected_label">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.selectedText">selectedText() (napari.qt.QtToolTipLabel method)</a>
@@ -5307,6 +5138,8 @@ document.write(`
 </li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.setNum">setNum() (napari.qt.QtToolTipLabel method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.setObjectName">setObjectName() (napari.qt.QtToolTipLabel method)</a>
 
       <ul>
@@ -5319,8 +5152,6 @@ document.write(`
         <li><a href="api/napari.qt.threading.WorkerBaseSignals.html#napari.qt.threading.WorkerBaseSignals.setObjectName">(napari.qt.threading.WorkerBaseSignals method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.qt.QtViewer.html#napari.qt.QtViewer.setOpaqueResize">setOpaqueResize() (napari.qt.QtViewer method)</a>
 </li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.setOpenExternalLinks">setOpenExternalLinks() (napari.qt.QtToolTipLabel method)</a>
@@ -5581,26 +5412,18 @@ document.write(`
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.setWordWrap">setWordWrap() (napari.qt.QtToolTipLabel method)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#id19">shading (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.shading">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.shading">shading (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.shading">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id26">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.shading">(napari.layers.Surface attribute)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#id19">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.shading">[1]</a>
-</li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.shape_type">shape_type (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.shape_type">shape_type (napari.layers.Shapes attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.shape_type">(napari.layers.Shapes attribute)</a>
-</li>
         <li><a href="api/napari.layers.Shapes.html#id13">(napari.layers.Shapes property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.shape_type">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes">Shapes (class in napari.layers)</a>
@@ -5693,14 +5516,10 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.showMinimized">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.shown">shown (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.shown">shown (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.shown">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id27">(napari.layers.Points property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.shown">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.showNormal">showNormal() (napari.qt.QtToolTipLabel method)</a>
@@ -5727,14 +5546,10 @@ document.write(`
         <li><a href="api/napari.qt.threading.WorkerBaseSignals.html#napari.qt.threading.WorkerBaseSignals.signalsBlocked">(napari.qt.threading.WorkerBaseSignals method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.size">size (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.size">size (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.size">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id28">(napari.layers.Points property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.size">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.size">size() (napari.qt.QtToolTipLabel method)</a>
@@ -5869,14 +5684,10 @@ document.write(`
 </li>
       <li><a href="api/napari.layers.Labels.html#napari.layers.Labels.swap_selected_and_background_labels">swap_selected_and_background_labels() (napari.layers.Labels method)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.symbol">symbol (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.symbol">symbol (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.symbol">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id29">(napari.layers.Points property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.symbol">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.utils.events.EventedSet.html#napari.utils.events.EventedSet.symmetric_difference">symmetric_difference() (napari.utils.events.EventedSet method)</a>
@@ -5923,18 +5734,14 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.testAttribute">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#id9">text (napari.components.ViewerModel attribute)</a>, <a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.text">[1]</a>
+      <li><a href="api/napari.layers.Points.html#napari.layers.Points.text">text (napari.layers.Points attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Points.html#napari.layers.Points.text">(napari.layers.Points attribute)</a>
-</li>
         <li><a href="api/napari.layers.Points.html#id30">(napari.layers.Points property)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.text">(napari.layers.Shapes attribute)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#id14">(napari.layers.Shapes property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#id9">(napari.Viewer attribute)</a>, <a href="api/napari.Viewer.html#napari.Viewer.text">[1]</a>
 </li>
       </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.text">text() (napari.qt.QtToolTipLabel method)</a>
@@ -6251,34 +6058,18 @@ document.write(`
         <li><a href="api/napari.utils.events.EventedDict.html#napari.utils.events.EventedDict.values">(napari.utils.events.EventedDict method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.vector_style">vector_style (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.vector_style">vector_style (napari.layers.Vectors attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors.vector_style">(napari.layers.Vectors attribute)</a>
-</li>
         <li><a href="api/napari.layers.Vectors.html#id11">(napari.layers.Vectors property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.vector_style">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
       <li><a href="api/napari.layers.Vectors.html#napari.layers.Vectors">Vectors (class in napari.layers)</a>
 </li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.vertex_values">vertex_values (napari.components.ViewerModel attribute)</a>
-
-      <ul>
-        <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.vertex_values">(napari.layers.Surface attribute)</a>
+      <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.vertex_values">vertex_values (napari.layers.Surface attribute)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.vertex_values">(napari.Viewer attribute)</a>
+      <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.vertices">vertices (napari.layers.Surface attribute)</a>
 </li>
-      </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.vertices">vertices (napari.components.ViewerModel attribute)</a>
-
-      <ul>
-        <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.vertices">(napari.layers.Surface attribute)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.vertices">(napari.Viewer attribute)</a>
-</li>
-      </ul></li>
       <li><a href="api/napari.qt.QtViewer.html#napari.qt.QtViewer.view">view (napari.qt.QtViewer property)</a>
 </li>
       <li><a href="api/napari.components.Camera.html#napari.components.Camera.view_direction">view_direction (napari.components.Camera property)</a>
@@ -6313,14 +6104,14 @@ document.write(`
         <li><a href="api/napari.view_layers.html#napari.view_layers.view_points">(in module napari.view_layers)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.html#napari.view_shapes">view_shapes() (in module napari)</a>
 
       <ul>
         <li><a href="api/napari.view_layers.html#napari.view_layers.view_shapes">(in module napari.view_layers)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/napari.html#napari.view_surface">view_surface() (in module napari)</a>
 
       <ul>
@@ -6541,14 +6332,8 @@ document.write(`
         <li><a href="api/napari.qt.QtViewerButtons.html#napari.qt.QtViewerButtons.winId">(napari.qt.QtViewerButtons method)</a>
 </li>
       </ul></li>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.wireframe">wireframe (napari.components.ViewerModel attribute)</a>
-
-      <ul>
-        <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.wireframe">(napari.layers.Surface attribute)</a>
+      <li><a href="api/napari.layers.Surface.html#napari.layers.Surface.wireframe">wireframe (napari.layers.Surface attribute)</a>
 </li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.wireframe">(napari.Viewer attribute)</a>
-</li>
-      </ul></li>
       <li><a href="api/napari.qt.QtToolTipLabel.html#napari.qt.QtToolTipLabel.wordWrap">wordWrap() (napari.qt.QtToolTipLabel method)</a>
 </li>
       <li><a href="api/napari.qt.threading.FunctionWorker.html#napari.qt.threading.FunctionWorker.work">work() (napari.qt.threading.FunctionWorker method)</a>
@@ -6627,16 +6412,12 @@ document.write(`
 <h2 id="Z">Z</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/napari.components.ViewerModel.html#napari.components.ViewerModel.z_index">z_index (napari.components.ViewerModel attribute)</a>
+      <li><a href="api/napari.layers.Layer.html#napari.layers.Layer.z_index">z_index (napari.layers.Layer attribute)</a>
 
       <ul>
-        <li><a href="api/napari.layers.Layer.html#napari.layers.Layer.z_index">(napari.layers.Layer attribute)</a>
-</li>
         <li><a href="api/napari.layers.Shapes.html#napari.layers.Shapes.z_index">(napari.layers.Shapes attribute)</a>
 </li>
         <li><a href="api/napari.layers.Shapes.html#id15">(napari.layers.Shapes property)</a>
-</li>
-        <li><a href="api/napari.Viewer.html#napari.Viewer.z_index">(napari.Viewer attribute)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -6655,7 +6436,7 @@ document.write(`
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
 </div>
                 </footer>
@@ -6675,12 +6456,12 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

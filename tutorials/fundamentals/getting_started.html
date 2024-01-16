@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,9 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -58,7 +58,7 @@
     <script src="../../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/fundamentals/getting_started';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -135,6 +135,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="../../index.html">
   napari
@@ -146,7 +167,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -272,7 +294,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -399,7 +422,7 @@ document.write(`
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../start_index.html">Getting started</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="quick_start.html">Quick start</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html">How to install napari</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">How to launch napari</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">How to launch <code class="docutils literal notranslate"><span class="pre">napari</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="viewer.html">Viewer tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/layers.html">Layers at a glance</a></li>
 </ul>
@@ -434,17 +457,19 @@ document.write(`
 <li class="toctree-l3"><a class="reference internal" href="../../howtos/layers/vectors.html">Using the vectors layer</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../howtos/connecting_events.html">Hooking up your own events</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../howtos/extending/index.html">Extending napari</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../howtos/extending/magicgui.html">Creating widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../howtos/extending/connecting_events.html">Hooking up your own events</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../howtos/napari_imageJ.html">napari + ImageJ how-to guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../howtos/docker.html">Napari in Docker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../howtos/perfmon.html">Performance monitoring</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../howtos/headless.html">Running napari headlessly</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../guides/index.html">In-depth explanations</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/magicgui.html">Using <code class="docutils literal notranslate"><span class="pre">magicgui</span></code> in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/event_loop.html">An introduction to the event loop in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/napari_models.html">Napari models and events</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../guides/index.html">In-depth explanations</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/event_loop.html">napari event loop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/threading.html">Multithreading in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/3D_interactivity.html">3D interactivity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/rendering-explanation.html">Rendering in napari</a></li>
@@ -452,23 +477,22 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../../guides/performance.html">napari performance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/events_reference.html">Events reference</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../further-resources/glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../further-resources/napari-workshops.html">napari workshops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../further-resources/sample_data.html">Sample databases</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../gallery.html">Gallery</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../_tags/tagsindex.html">Tags</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/analysis.html">analysis (4)</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../gallery.html">Gallery</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../_tags/tagsindex.html">Tags</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/analysis.html">analysis (4)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_labels_with_features.html">Add labels with features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/annotate-2d.html">Annotate 2D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/annotate_segmentation_with_text.html">Annotate segmentation with text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/paint-nd.html">Paint nD</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/experimental.html">experimental (9)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/experimental.html">experimental (9)</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/action_manager.html">Action manager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/interaction_box_image.html">Interaction box image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/interactive_move_rectangle_3d.html">Interactive move rectangle</a></li>
@@ -480,7 +504,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/viewer_fps_label.html">Viewer FPS label</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/gui.html">gui (16)</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/gui.html">gui (16)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/action_manager.html">Action manager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/bbox_annotator.html">bbox annotator</a></li>
@@ -499,14 +523,14 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/set_theme.html">Set theme</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/historical.html">historical (4)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/historical.html">historical (4)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/reader_plugin.html">Reader plugin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/shapes_to_labels.html">Shapes to labels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/update_console.html">Update console</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/without_gui_qt.html">napari without gui_qt</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/interactivity.html">interactivity (5)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/interactivity.html">interactivity (5)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/cursor_position.html">Cursor position</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/cursor_ray.html">Cursor ray</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/fourier_transform_playground.html">Fourier transform playground</a></li>
@@ -514,15 +538,16 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/interactive_scripting.html">Interactive scripting</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/layers.html">layers (6)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/layers.html">layers (6)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3D_paths.html">3D Paths</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_3D_image.html">Add 3D image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_labels.html">Add labels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_labels_with_features.html">Add labels with features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../gallery/vortex.html">Visualizing optical flow in napari</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-advanced.html">visualization-advanced (14)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-advanced.html">visualization-advanced (14)</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3D_paths.html">3D Paths</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_multiscale_image.html">Add multiscale image</a></li>
@@ -536,9 +561,10 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/to_screenshot.html">To screenshot</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/tracks_3d.html">Tracks 3D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/tracks_3d_with_graph.html">Tracks 3D with graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../gallery/vortex.html">Visualizing optical flow in napari</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-basic.html">visualization-basic (22)</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-basic.html">visualization-basic (22)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_grayscale_image.html">Add grayscale image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_image.html">Add image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_image_transformed.html">Add image transformed</a></li>
@@ -563,7 +589,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/tracks_2d.html">Tracks 2D</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-nd.html">visualization-nD (21)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-nd.html">visualization-nD (21)</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add-points-3d.html">Add points 3D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_3D_image.html">Add 3D image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_points_on_nD_shapes.html">Add points on nD shapes</a></li>
@@ -634,7 +660,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../start_index.html" class="nav-link">Getting started</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">How to launch napari</li>
+    <li class="breadcrumb-item active" aria-current="page">How to...</li>
   </ul>
 </nav>
 </div>
@@ -652,25 +678,25 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="how-to-launch-napari">
-<span id="getting-started"></span><h1>How to launch napari<a class="headerlink" href="#how-to-launch-napari" title="Permalink to this heading">#</a></h1>
-<p>This tutorial assumes you have already installed napari.
+<span id="getting-started"></span><h1>How to launch <code class="docutils literal notranslate"><span class="pre">napari</span></code><a class="headerlink" href="#how-to-launch-napari" title="Permalink to this heading">#</a></h1>
+<p>This tutorial assumes you have already installed <code class="docutils literal notranslate"><span class="pre">napari</span></code>.
 For help with installation see our <a class="reference internal" href="installation.html"><span class="doc std std-doc">installation tutorial</span></a>.</p>
-<p>This tutorial will teach you all the different ways to launch napari.
-At the end of the tutorial you should be able to launch napari and see the viewer your favorite way.</p>
+<p>This tutorial will teach you all the different ways to launch <code class="docutils literal notranslate"><span class="pre">napari</span></code>.
+At the end of the tutorial you should be able to launch <code class="docutils literal notranslate"><span class="pre">napari</span></code> and see the viewer your favorite way.</p>
 <section id="launching-napari">
-<h2>Launching napari<a class="headerlink" href="#launching-napari" title="Permalink to this heading">#</a></h2>
-<p>There are four ways to launch the <strong>napari</strong> viewer:</p>
+<h2>Launching <code class="docutils literal notranslate"><span class="pre">napari</span></code><a class="headerlink" href="#launching-napari" title="Permalink to this heading">#</a></h2>
+<p>There are four ways to launch the <code class="docutils literal notranslate"><span class="pre">napari</span></code> viewer:</p>
 <ul class="simple">
-<li><p>command line</p></li>
-<li><p>python script</p></li>
-<li><p>IPython console</p></li>
-<li><p>jupyter notebook</p></li>
+<li><p><a class="reference internal" href="#launch-command"><span class="std std-ref">command line</span></a></p></li>
+<li><p><a class="reference internal" href="#launch-script"><span class="std std-ref">python script</span></a></p></li>
+<li><p><a class="reference internal" href="#launch-ipython"><span class="std std-ref">IPython console</span></a></p></li>
+<li><p><a class="reference internal" href="#launch-jupyter"><span class="std std-ref">jupyter notebook</span></a></p></li>
 </ul>
-<p>All four of these methods will launch the same napari viewer
+<p>All four of these methods will launch the same <code class="docutils literal notranslate"><span class="pre">napari</span></code> viewer
 but depending on your use-case different ones may be preferable.</p>
 <section id="command-line-usage">
-<h3>Command line usage<a class="headerlink" href="#command-line-usage" title="Permalink to this heading">#</a></h3>
-<p>To launch napari from the command line simply run</p>
+<span id="launch-command"></span><h3>Command line usage<a class="headerlink" href="#command-line-usage" title="Permalink to this heading">#</a></h3>
+<p>To launch <code class="docutils literal notranslate"><span class="pre">napari</span></code> from the command line simply run</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>napari
 </pre></div>
 </div>
@@ -687,14 +713,17 @@ We plan on adding support for more exotic file types shortly - see <a class="ref
 </div>
 <p>If the image is <code class="docutils literal notranslate"><span class="pre">RGB</span></code> or <code class="docutils literal notranslate"><span class="pre">RGBA</span></code> use the <code class="docutils literal notranslate"><span class="pre">-r</span></code> or <code class="docutils literal notranslate"><span class="pre">--rgb</span></code> flag.</p>
 <p><img alt="image: napari viewer displaying an image layer" src="../../_images/launch_cli_image.png" /></p>
-<p>Launching napari directly from the command line is the simplest and fastest way to open the viewer,
+<p>Launching <code class="docutils literal notranslate"><span class="pre">napari</span></code> directly from the command line is the simplest and fastest way to open the viewer,
 but it doesn’t allow you to preprocess your images before opening them.
 It is also currently not possible to save images or other layer types directly from the viewer,
 but we’ll be adding support for this functionality soon as discussed in <a class="reference external" href="https://github.com/napari/napari/issues/379">#379</a>.</p>
+<p>If you wish to interact with your open viewer programmatically you can open an IPython
+console via <strong>Window</strong> &gt; <strong>console</strong> or clicking the ‘Show/Hide IPython console’ button
+within the <a class="reference internal" href="viewer.html#viewer-layout"><span class="std std-ref">viewer buttons</span></a>.</p>
 </section>
 <section id="python-script-usage">
-<h3>Python script usage<a class="headerlink" href="#python-script-usage" title="Permalink to this heading">#</a></h3>
-<p>To launch napari from a python script, inside your script you can import <code class="docutils literal notranslate"><span class="pre">napari</span></code>,
+<span id="launch-script"></span><h3>Python script usage<a class="headerlink" href="#python-script-usage" title="Permalink to this heading">#</a></h3>
+<p>To launch <code class="docutils literal notranslate"><span class="pre">napari</span></code> from a python script, inside your script you can import <code class="docutils literal notranslate"><span class="pre">napari</span></code>,
 then create a <a class="reference internal" href="../../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Viewer</span></code></a> and <a class="reference internal" href="../../api/napari.layers.Image.html#napari.layers.Image" title="napari.layers.Image"><code class="xref py py-class docutils literal notranslate"><span class="pre">Image</span></code></a>
 layer by adding some image data, using <a class="reference internal" href="../../api/napari.html#napari.imshow" title="napari.imshow"><code class="xref py py-func docutils literal notranslate"><span class="pre">imshow</span></code></a>.
 The <a class="reference internal" href="../../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Viewer</span></code></a> is representative of the napari viewer GUI
@@ -736,12 +765,15 @@ equivalent to:</p>
 <p>The <a class="reference internal" href="../../gallery.html"><span class="doc std std-doc">examples gallery</span></a> consists of code examples which can be
 downloaded as <code class="docutils literal notranslate"><span class="pre">.py</span></code> (and <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files) and run as above.</p>
 <p><img alt="image: napari launched from a python script" src="../../_images/launch_script.png" /></p>
-<p>An advantage of launching napari from a python script
+<p>An advantage of launching <code class="docutils literal notranslate"><span class="pre">napari</span></code> from a python script
 is that you can preprocess your images and add multiple layers before displaying the viewer.</p>
+<p>As above, if you wish to interact with your open viewer programmatically you can open
+an IPython console via <strong>Window</strong> &gt; <strong>console</strong> or clicking the ‘Show/Hide IPython
+console’ button within the <a class="reference internal" href="viewer.html#viewer-layout"><span class="std std-ref">viewer buttons</span></a>.</p>
 </section>
 <section id="ipython-console-usage">
-<h3>IPython console usage<a class="headerlink" href="#ipython-console-usage" title="Permalink to this heading">#</a></h3>
-<p>To launch napari from an IPython console import <code class="docutils literal notranslate"><span class="pre">napari</span></code> and create a
+<span id="launch-ipython"></span><h3>IPython console usage<a class="headerlink" href="#ipython-console-usage" title="Permalink to this heading">#</a></h3>
+<p>To launch <code class="docutils literal notranslate"><span class="pre">napari</span></code> from an IPython console import <code class="docutils literal notranslate"><span class="pre">napari</span></code> and create a
 <a class="reference internal" href="../../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Viewer</span></code></a> and <a class="reference internal" href="../../api/napari.layers.Image.html#napari.layers.Image" title="napari.layers.Image"><code class="xref py py-class docutils literal notranslate"><span class="pre">Image</span></code></a> object.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import sample data</span>
 <span class="kn">from</span> <span class="nn">skimage.data</span> <span class="kn">import</span> <span class="n">cells3d</span>
@@ -752,7 +784,7 @@ is that you can preprocess your images and add multiple layers before displaying
 <span class="n">viewer</span><span class="p">,</span> <span class="n">image_layer</span> <span class="o">=</span> <span class="n">napari</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">cells3d</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>Napari will automatically use the interactive <a class="reference external" href="https://ipython.readthedocs.io/en/stable/config/eventloops.html#integrating-with-gui-event-loops"><code class="docutils literal notranslate"><span class="pre">%gui</span> <span class="pre">qt</span></code> event
+<p><code class="docutils literal notranslate"><span class="pre">napari</span></code> will automatically use the interactive <a class="reference external" href="https://ipython.readthedocs.io/en/stable/config/eventloops.html#integrating-with-gui-event-loops"><code class="docutils literal notranslate"><span class="pre">%gui</span> <span class="pre">qt</span></code> event
 loop</a>
 from IPython</p>
 <p><img alt="image: napari launched from ipython" src="../../_images/launch_ipython.png" /></p>
@@ -762,14 +794,14 @@ including bidirectional communication, where code run in the console will update
 and where data changed in the GUI will be accessible in the console.</p>
 </section>
 <section id="jupyter-notebook-usage">
-<h3>Jupyter notebook usage<a class="headerlink" href="#jupyter-notebook-usage" title="Permalink to this heading">#</a></h3>
-<p>You can also launch napari from a Jupyter notebook. The
+<span id="launch-jupyter"></span><h3>Jupyter notebook usage<a class="headerlink" href="#jupyter-notebook-usage" title="Permalink to this heading">#</a></h3>
+<p>You can also launch <code class="docutils literal notranslate"><span class="pre">napari</span></code> from a Jupyter notebook. The
 <a class="reference internal" href="../../gallery.html"><span class="doc std std-doc">examples gallery</span></a>, as mentioned above, can also be downloaded as
 <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> which can be run from a Jupyter notebook.</p>
 <p>Below, we launch the <a class="reference external" href="https://github.com/napari/napari/tree/main/examples/notebook.ipynb">notebook example</a> from a Jupyter notebook.</p>
 <p><img alt="image: napari launched from a Jupyter notebook" src="../../_images/launch_jupyter.png" /></p>
 <p>Similar to launching from the IPython console,
-an advantage of launching napari from a Jupyter notebook
+an advantage of launching <code class="docutils literal notranslate"><span class="pre">napari</span></code> from a Jupyter notebook
 is that you can continue to programmatically interact with the viewer from Jupyter notebook,
 including bidirectional communication, where code run in the notebook will update the current viewer
 and where data changed in the GUI will be accessible in the notebook.</p>
@@ -779,9 +811,9 @@ and where data changed in the GUI will be accessible in the notebook.</p>
 <h2>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this heading">#</a></h2>
 <p>To learn more about:</p>
 <ul class="simple">
-<li><p>how to use the napari viewer graphical user interface (GUI),
+<li><p>how to use the <code class="docutils literal notranslate"><span class="pre">napari</span></code> viewer graphical user interface (GUI),
 checkout the <a class="reference internal" href="viewer.html"><span class="doc std std-doc">viewer tutorial</span></a></p></li>
-<li><p>how to use the napari viewer with different types of napari layers, see
+<li><p>how to use the <code class="docutils literal notranslate"><span class="pre">napari</span></code> viewer with different types of <code class="docutils literal notranslate"><span class="pre">napari</span></code> layers, see
 <a class="reference internal" href="../../guides/layers.html"><span class="doc std std-doc">layers at a glance</span></a></p></li>
 </ul>
 </section>
@@ -795,7 +827,7 @@ checkout the <a class="reference internal" href="viewer.html"><span class="doc s
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="installation.html"
@@ -825,12 +857,13 @@ checkout the <a class="reference internal" href="viewer.html"><span class="doc s
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#launching-napari">Launching napari</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#launching-napari">Launching <code class="docutils literal notranslate"><span class="pre">napari</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#command-line-usage">Command line usage</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-usage">Python script usage</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ipython-console-usage">IPython console usage</a></li>
@@ -854,12 +887,12 @@ checkout the <a class="reference internal" href="viewer.html"><span class="doc s
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

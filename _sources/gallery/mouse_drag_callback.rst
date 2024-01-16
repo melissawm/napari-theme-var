@@ -28,18 +28,7 @@ lines around in a shapes layer.
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-55
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_mouse_drag_callback_001.png
-   :alt: mouse drag callback
-   :srcset: /gallery/images/sphx_glr_mouse_drag_callback_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -94,16 +83,13 @@ lines around in a shapes layer.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: mouse_drag_callback.ipynb <mouse_drag_callback.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: mouse_drag_callback.py <mouse_drag_callback.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: mouse_drag_callback.ipynb <mouse_drag_callback.ipynb>`
 
 
 .. only:: html

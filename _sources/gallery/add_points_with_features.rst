@@ -28,18 +28,7 @@ Display a points layer on top of an image layer using the ``add_points`` and
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-68
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_points_with_features_001.png
-   :alt: add points with features
-   :srcset: /gallery/images/sphx_glr_add_points_with_features_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -107,16 +96,13 @@ Display a points layer on top of an image layer using the ``add_points`` and
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: add_points_with_features.ipynb <add_points_with_features.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: add_points_with_features.py <add_points_with_features.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: add_points_with_features.ipynb <add_points_with_features.ipynb>`
 
 
 .. only:: html

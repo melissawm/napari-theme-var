@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,9 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -58,7 +58,7 @@
     <script src="../../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'plugins/building_a_plugin/debug_plugins';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -135,6 +135,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="../../index.html">
   napari
@@ -146,7 +167,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -272,7 +294,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -552,7 +575,7 @@ The following commands will report any issues napari detects with your plugin th
 <p>You should also ensure that:</p>
 <ol class="arabic simple">
 <li><p>Your plugin package is visible when you run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span></code> (depending on your environment setup).</p></li>
-<li><p>Your entry point is correctly configured, see the <a class="reference internal" href="first_plugin.html#update-setup-cfg"><span class="std std-doc">first steps</span></a> for information.</p></li>
+<li><p>Your entry point is correctly configured, see the <a class="reference internal" href="first_plugin.html#update-setup-cfg"><span class="std std-ref">first steps</span></a> for information.</p></li>
 </ol>
 <p>For example if <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span></code> does show the package is installed, and <code class="docutils literal notranslate"><span class="pre">npe2</span> <span class="pre">validate</span></code> reports success, but napari can’t see your plugin, your entry point may be ill-configured.</p>
 </section>
@@ -585,7 +608,7 @@ Dropping into the debugger will open the built in <a class="reference external" 
 </section>
 <section id="a-simple-plugin-for-following-examples">
 <h2>A simple plugin for following examples<a class="headerlink" href="#a-simple-plugin-for-following-examples" title="Permalink to this heading">#</a></h2>
-<p>To demonstrate these reloading and debugging options, we will create a small plugin called <code class="docutils literal notranslate"><span class="pre">napari-simple-reload</span></code> that prints the text entered into a box by the user. The plugin will provide an autogenerated widget, a <code class="docutils literal notranslate"><span class="pre">magic_factory</span></code> widget, and a <code class="docutils literal notranslate"><span class="pre">QWidget</span></code> - see the <a class="reference internal" href="guides.html#widgets"><span class="std std-doc">contribution guides</span></a> for more detail.</p>
+<p>To demonstrate these reloading and debugging options, we will create a small plugin called <code class="docutils literal notranslate"><span class="pre">napari-simple-reload</span></code> that prints the text entered into a box by the user. The plugin will provide an autogenerated widget, a <code class="docutils literal notranslate"><span class="pre">magic_factory</span></code> widget, and a <code class="docutils literal notranslate"><span class="pre">QWidget</span></code> - see the <a class="reference internal" href="guides.html#widgets"><span class="std std-ref">contribution guides</span></a> for more detail.</p>
 <p>Firstly, clone the code with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/seankmartin/napari-plugin-debug.git</span></code>, or download the code <a class="reference external" href="https://github.com/seankmartin/napari-plugin-debug">here</a>. Then install the package into an environment already containing napari by:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>napari-plugin-debug/napari-simple-reload
 python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
@@ -689,7 +712,7 @@ To continue with the example plugin shown in the last step, we want to make sure
 </section>
 <section id="isolate-the-issue-from-napari">
 <h2>Isolate the issue from napari<a class="headerlink" href="#isolate-the-issue-from-napari" title="Permalink to this heading">#</a></h2>
-<p>This solution ties in with the idea of test-driven development (see the <a class="reference internal" href="../testing_and_publishing/test.html#prefer-smaller-unit-tests-when-possible"><span class="std std-doc">napari testing guidelines</span></a>). The idea is to trust that napari will provide the information you expect it to, and test your widgets independently of the viewer. In the case above we can verify that input values work as expected like so:</p>
+<p>This solution ties in with the idea of test-driven development (see the <a class="reference internal" href="../testing_and_publishing/test.html#prefer-smaller-unit-tests-when-possible"><span class="std std-ref">napari testing guidelines</span></a>). The idea is to trust that napari will provide the information you expect it to, and test your widgets independently of the viewer. In the case above we can verify that input values work as expected like so:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># test_print.py</span>
 <span class="kn">from</span> <span class="nn">napari_simple_reload._widget</span> <span class="kn">import</span> <span class="n">example_factory</span>
 
@@ -826,7 +849,7 @@ in the main thread. For more details you could read the <a class="reference exte
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="guides.html"
@@ -856,6 +879,7 @@ in the main thread. For more details you could read the <a class="reference exte
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
@@ -904,12 +928,12 @@ in the main thread. For more details you could read the <a class="reference exte
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

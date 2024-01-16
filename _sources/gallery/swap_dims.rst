@@ -27,18 +27,7 @@ Display a 4-D image and points layer and swap the displayed dimensions
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-44
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_swap_dims_001.png
-   :alt: swap dims
-   :srcset: /gallery/images/sphx_glr_swap_dims_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -83,16 +72,13 @@ Display a 4-D image and points layer and swap the displayed dimensions
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: swap_dims.ipynb <swap_dims.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: swap_dims.py <swap_dims.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: swap_dims.ipynb <swap_dims.ipynb>`
 
 
 .. only:: html

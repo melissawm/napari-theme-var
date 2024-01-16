@@ -27,18 +27,7 @@ Depict a ray through a layer in 3D to demonstrate interactive 3D functionality
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-68
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_cursor_ray_001.png
-   :alt: cursor ray
-   :srcset: /gallery/images/sphx_glr_cursor_ray_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
     import numpy as np
 
@@ -107,16 +96,13 @@ Depict a ray through a layer in 3D to demonstrate interactive 3D functionality
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: cursor_ray.ipynb <cursor_ray.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: cursor_ray.py <cursor_ray.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: cursor_ray.ipynb <cursor_ray.ipynb>`
 
 
 .. only:: html

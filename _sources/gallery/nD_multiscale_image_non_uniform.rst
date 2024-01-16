@@ -27,28 +27,7 @@ Displays an nD multiscale image
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-32
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_multiscale_image_non_uniform_001.png
-   :alt: nD multiscale image non uniform
-   :srcset: /gallery/images/sphx_glr_nD_multiscale_image_non_uniform_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    multiscale level shapes:  [(6, 1536, 1536, 3), (6, 768, 768, 3), (6, 384, 384, 3), (6, 192, 192, 3)]
-
-
-
-
-
-
-|
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -81,16 +60,13 @@ Displays an nD multiscale image
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: nD_multiscale_image_non_uniform.ipynb <nD_multiscale_image_non_uniform.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: nD_multiscale_image_non_uniform.py <nD_multiscale_image_non_uniform.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: nD_multiscale_image_non_uniform.ipynb <nD_multiscale_image_non_uniform.ipynb>`
 
 
 .. only:: html

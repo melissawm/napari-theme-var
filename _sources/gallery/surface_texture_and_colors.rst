@@ -38,18 +38,7 @@ This example demonstrates how surfaces may be colored by:
 
 .. GENERATED FROM PYTHON SOURCE LINES 20-77
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_surface_texture_and_colors_001.png
-   :alt: surface texture and colors
-   :srcset: /gallery/images/sphx_glr_surface_texture_and_colors_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -116,16 +105,13 @@ This example demonstrates how surfaces may be colored by:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: surface_texture_and_colors.ipynb <surface_texture_and_colors.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: surface_texture_and_colors.py <surface_texture_and_colors.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: surface_texture_and_colors.ipynb <surface_texture_and_colors.ipynb>`
 
 
 .. only:: html

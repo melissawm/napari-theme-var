@@ -27,29 +27,7 @@ Displays an image and sets the theme to new custom theme.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-42
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_new_theme_001.png
-   :alt: new theme
-   :srcset: /gallery/images/sphx_glr_new_theme_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Originally themes ['dark', 'light', 'system']
-    New themes ['dark', 'light', 'blue', 'system']
-
-
-
-
-
-
-|
-
-.. code-block:: default
+.. code-block:: Python
 
 
     from skimage import data
@@ -92,16 +70,13 @@ Displays an image and sets the theme to new custom theme.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: new_theme.ipynb <new_theme.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: new_theme.py <new_theme.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: new_theme.ipynb <new_theme.ipynb>`
 
 
 .. only:: html

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,9 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -58,7 +58,7 @@
     <script src="../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'gallery/affine_transforms';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -135,6 +135,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="../index.html">
   napari
@@ -146,7 +167,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -268,7 +290,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -395,7 +418,7 @@ document.write(`
 <li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials/start_index.html">Getting started</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/quick_start.html">Quick start</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/installation.html">How to install napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/getting_started.html">How to launch napari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/getting_started.html">How to launch <code class="docutils literal notranslate"><span class="pre">napari</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/viewer.html">Viewer tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/layers.html">Layers at a glance</a></li>
 </ul>
@@ -430,17 +453,19 @@ document.write(`
 <li class="toctree-l3"><a class="reference internal" href="../howtos/layers/vectors.html">Using the vectors layer</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../howtos/connecting_events.html">Hooking up your own events</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../howtos/extending/index.html">Extending napari</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../howtos/extending/magicgui.html">Creating widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../howtos/extending/connecting_events.html">Hooking up your own events</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../howtos/napari_imageJ.html">napari + ImageJ how-to guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../howtos/docker.html">Napari in Docker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../howtos/perfmon.html">Performance monitoring</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../howtos/headless.html">Running napari headlessly</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/index.html">In-depth explanations</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../guides/magicgui.html">Using <code class="docutils literal notranslate"><span class="pre">magicgui</span></code> in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/event_loop.html">An introduction to the event loop in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/napari_models.html">Napari models and events</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/index.html">In-depth explanations</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/event_loop.html">napari event loop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/threading.html">Multithreading in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/3D_interactivity.html">3D interactivity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering-explanation.html">Rendering in napari</a></li>
@@ -448,23 +473,22 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../guides/performance.html">napari performance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/events_reference.html">Events reference</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../further-resources/glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../further-resources/napari-workshops.html">napari workshops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../further-resources/sample_data.html">Sample databases</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../gallery.html">Gallery</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../_tags/tagsindex.html">Tags</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/analysis.html">analysis (4)</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../gallery.html">Gallery</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../_tags/tagsindex.html">Tags</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/analysis.html">analysis (4)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="add_labels_with_features.html">Add labels with features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="annotate-2d.html">Annotate 2D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="annotate_segmentation_with_text.html">Annotate segmentation with text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="paint-nd.html">Paint nD</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/experimental.html">experimental (9)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/experimental.html">experimental (9)</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="action_manager.html">Action manager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interaction_box_image.html">Interaction box image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interactive_move_rectangle_3d.html">Interactive move rectangle</a></li>
@@ -476,7 +500,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="viewer_fps_label.html">Viewer FPS label</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/gui.html">gui (16)</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/gui.html">gui (16)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="action_manager.html">Action manager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bbox_annotator.html">bbox annotator</a></li>
@@ -495,14 +519,14 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="set_theme.html">Set theme</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/historical.html">historical (4)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/historical.html">historical (4)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="reader_plugin.html">Reader plugin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="shapes_to_labels.html">Shapes to labels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="update_console.html">Update console</a></li>
 <li class="toctree-l4"><a class="reference internal" href="without_gui_qt.html">napari without gui_qt</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/interactivity.html">interactivity (5)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/interactivity.html">interactivity (5)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="cursor_position.html">Cursor position</a></li>
 <li class="toctree-l4"><a class="reference internal" href="cursor_ray.html">Cursor ray</a></li>
 <li class="toctree-l4"><a class="reference internal" href="fourier_transform_playground.html">Fourier transform playground</a></li>
@@ -510,15 +534,16 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="interactive_scripting.html">Interactive scripting</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/layers.html">layers (6)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/layers.html">layers (6)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="3D_paths.html">3D Paths</a></li>
 <li class="toctree-l4"><a class="reference internal" href="3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_3D_image.html">Add 3D image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_labels.html">Add labels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_labels_with_features.html">Add labels with features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="vortex.html">Visualizing optical flow in napari</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current active has-children"><a class="reference internal" href="../_tags/visualization-advanced.html">visualization-advanced (14)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="../_tags/visualization-advanced.html">visualization-advanced (14)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="3D_paths.html">3D Paths</a></li>
 <li class="toctree-l4"><a class="reference internal" href="3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_multiscale_image.html">Add multiscale image</a></li>
@@ -532,9 +557,10 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="to_screenshot.html">To screenshot</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tracks_3d.html">Tracks 3D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tracks_3d_with_graph.html">Tracks 3D with graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="vortex.html">Visualizing optical flow in napari</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-basic.html">visualization-basic (22)</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-basic.html">visualization-basic (22)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="add_grayscale_image.html">Add grayscale image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_image.html">Add image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_image_transformed.html">Add image transformed</a></li>
@@ -559,7 +585,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="tracks_2d.html">Tracks 2D</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-nd.html">visualization-nD (21)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-nd.html">visualization-nD (21)</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="add-points-3d.html">Add points 3D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_3D_image.html">Add 3D image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_points_on_nD_shapes.html">Add points on nD shapes</a></li>
@@ -661,30 +687,30 @@ to download the full example code</p>
 <span id="sphx-glr-gallery-affine-transforms-py"></span><h1>Affine transforms<a class="headerlink" href="#affine-transforms" title="Permalink to this heading">#</a></h1>
 <p>Display an image and its corners before and after an affine transform</p>
 <p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/visualization-advanced.html">visualization-advanced</a></p>
-<img src="../_images/sphx_glr_affine_transforms_001.png" srcset="../_images/sphx_glr_affine_transforms_001.png" alt="affine transforms" class = "sphx-glr-single-img"/><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">scipy.ndimage</span> <span class="k">as</span> <span class="nn">ndi</span>
 
 <span class="kn">import</span> <span class="nn">napari</span>
 
 <span class="c1"># Create a random image</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">image</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.random.html#numpy.random.random" title="numpy.random.random" class="sphx-glr-backref-module-numpy-random sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span></a><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">image</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.random.html#numpy.random.random" title="numpy.random.random" class="sphx-glr-backref-module-numpy-random sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span></a><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 
 <span class="c1"># Define an affine transform</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">affine</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+<span class="n">affine</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
 
 <span class="c1"># Define the corners of the image, including in homogeneous space</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">corners</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">corners_h</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html#numpy.concatenate" title="numpy.concatenate" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span></a><span class="p">([</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">corners</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ones.html#numpy.ones" title="numpy.ones" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">ones</span></a><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">))],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">corners</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">corners_h</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html#numpy.concatenate" title="numpy.concatenate" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span></a><span class="p">([</span><span class="n">corners</span><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ones.html#numpy.ones" title="numpy.ones" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">ones</span></a><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">))],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-<a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class"><span class="n">napari</span><span class="o">.</span><span class="n">Viewer</span></a><span class="p">()</span>
+<span class="n">viewer</span> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">napari</span><span class="o">.</span><span class="n">Viewer</span></a><span class="p">()</span>
 
 <span class="c1"># Add the original image and its corners</span>
-<a href="../api/napari.Viewer.html#napari.Viewer.add_image" title="napari.Viewer.add_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">add_image</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">image</span></a><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;background&#39;</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">)</span>
-<a href="../api/napari.Viewer.html#napari.Viewer.add_points" title="napari.Viewer.add_points" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">add_points</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">corners_h</span></a><span class="p">[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">face_color</span><span class="o">=</span><span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;bg corners&#39;</span><span class="p">)</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">add_image</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;background&#39;</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">)</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">add_points</span><span class="p">(</span><span class="n">corners_h</span><span class="p">[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">face_color</span><span class="o">=</span><span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;bg corners&#39;</span><span class="p">)</span>
 
 <span class="c1"># Add another copy of the image, now with a transform, and add its transformed corners</span>
-<a href="../api/napari.Viewer.html#napari.Viewer.add_image" title="napari.Viewer.add_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">add_image</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">image</span></a><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;moving&#39;</span><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">affine</span></a><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">affine</span></a><span class="p">)</span>
-<a href="../api/napari.Viewer.html#napari.Viewer.add_points" title="napari.Viewer.add_points" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">add_points</span></a><span class="p">((</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">corners_h</span></a> <span class="o">@</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">affine</span><span class="o">.</span><span class="n">T</span></a><span class="p">)[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">face_color</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;mv corners&#39;</span><span class="p">)</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">add_image</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;moving&#39;</span><span class="p">,</span> <span class="n">affine</span><span class="o">=</span><span class="n">affine</span><span class="p">)</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">add_points</span><span class="p">((</span><span class="n">corners_h</span> <span class="o">@</span> <span class="n">affine</span><span class="o">.</span><span class="n">T</span><span class="p">)[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">face_color</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;mv corners&#39;</span><span class="p">)</span>
 
 <span class="c1"># Note how the transformed corner points remain at the corners of the transformed image</span>
 
@@ -692,22 +718,22 @@ to download the full example code</p>
 <span class="c1"># Note that we have to use the inverse of the affine as scipy does `pull` (or `backward`) resampling,</span>
 <span class="c1"># transforming the output space to the input to locate data, but napari does `push` (or `forward`) direction,</span>
 <span class="c1"># transforming input to output.</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scipy_affine</span></a> <span class="o">=</span> <span class="n">ndi</span><span class="o">.</span><span class="n">affine_transform</span><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">image</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html#numpy.linalg.inv" title="numpy.linalg.inv" class="sphx-glr-backref-module-numpy-linalg sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">affine</span></a><span class="p">),</span> <span class="n">output_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span> <span class="n">order</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<a href="../api/napari.Viewer.html#napari.Viewer.add_image" title="napari.Viewer.add_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">add_image</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scipy_affine</span></a><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;scipy&#39;</span><span class="p">)</span>
+<span class="n">scipy_affine</span> <span class="o">=</span> <span class="n">ndi</span><span class="o">.</span><span class="n">affine_transform</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html#numpy.linalg.inv" title="numpy.linalg.inv" class="sphx-glr-backref-module-numpy-linalg sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span></a><span class="p">(</span><span class="n">affine</span><span class="p">),</span> <span class="n">output_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">25</span><span class="p">),</span> <span class="n">order</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">add_image</span><span class="p">(</span><span class="n">scipy_affine</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;scipy&#39;</span><span class="p">)</span>
 
 <span class="c1"># Reset the view</span>
-<a href="../api/napari.Viewer.html#napari.Viewer.reset_view" title="napari.Viewer.reset_view" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">reset_view</span></a><span class="p">()</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">reset_view</span><span class="p">()</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <a href="../api/napari.html#napari.run" title="napari.run" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">run</span></a><span class="p">()</span>
 </pre></div>
 </div>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-gallery-affine-transforms-py">
-<div class="sphx-glr-download sphx-glr-download-python docutils container">
-<p><a class="reference download internal" download="" href="../_downloads/40ac3ac8f4bdf597fad5bd017d7897c9/affine_transforms.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">affine_transforms.py</span></code></a></p>
-</div>
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/3e4262f71b7b3428f6ea64d0137f9b0e/affine_transforms.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">affine_transforms.ipynb</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/40ac3ac8f4bdf597fad5bd017d7897c9/affine_transforms.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">affine_transforms.py</span></code></a></p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
@@ -721,7 +747,7 @@ to download the full example code</p>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="add_vectors_color_by_angle.html"
@@ -759,12 +785,12 @@ to download the full example code</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

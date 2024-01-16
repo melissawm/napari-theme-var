@@ -34,18 +34,7 @@ and then using the weights in the kernel to add up the final fragment value.
 
 .. GENERATED FROM PYTHON SOURCE LINES 17-83
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_image_custom_kernel_001.png
-   :alt: image custom kernel
-   :srcset: /gallery/images/sphx_glr_image_custom_kernel_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -121,16 +110,13 @@ and then using the weights in the kernel to add up the final fragment value.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: image_custom_kernel.ipynb <image_custom_kernel.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: image_custom_kernel.py <image_custom_kernel.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: image_custom_kernel.ipynb <image_custom_kernel.ipynb>`
 
 
 .. only:: html

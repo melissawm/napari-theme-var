@@ -29,18 +29,7 @@ across the dimensions, specified by their size
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-59
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_points_with_features_001.png
-   :alt: nD points with features
-   :srcset: /gallery/images/sphx_glr_nD_points_with_features_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -98,16 +87,13 @@ across the dimensions, specified by their size
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: nD_points_with_features.ipynb <nD_points_with_features.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: nD_points_with_features.py <nD_points_with_features.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: nD_points_with_features.ipynb <nD_points_with_features.ipynb>`
 
 
 .. only:: html

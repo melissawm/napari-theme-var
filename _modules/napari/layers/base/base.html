@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -40,9 +40,9 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
@@ -55,7 +55,7 @@
     <script src="../../../../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_modules/napari/layers/base/base';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -130,6 +130,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="../../../../_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="../../../../index.html">
   napari
@@ -141,7 +162,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -263,7 +285,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -441,11 +464,13 @@ document.write(`
   <h1>Source code for napari.layers.base.base</h1><div class="highlight"><pre>
 <span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
 
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
 <span class="kn">import</span> <span class="nn">itertools</span>
 <span class="kn">import</span> <span class="nn">logging</span>
 <span class="kn">import</span> <span class="nn">os.path</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
-<span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
+<span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">ABCMeta</span><span class="p">,</span> <span class="n">abstractmethod</span>
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 <span class="kn">from</span> <span class="nn">contextlib</span> <span class="kn">import</span> <span class="n">contextmanager</span>
 <span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">cached_property</span>
@@ -541,8 +566,21 @@ document.write(`
     <span class="k">return</span>
 
 
+<span class="k">class</span> <span class="nc">PostInit</span><span class="p">(</span><span class="n">ABCMeta</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">sig</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">signature</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="fm">__init__</span><span class="p">)</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">sig</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__signature__</span> <span class="o">=</span> <span class="n">sig</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">parameters</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+
+    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">obj</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__call__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">obj</span><span class="o">.</span><span class="n">_post_init</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">obj</span>
+
+
 <div class="viewcode-block" id="Layer"><a class="viewcode-back" href="../../../../api/napari.layers.Layer.html#napari.layers.Layer">[docs]</a><span class="nd">@mgui</span><span class="o">.</span><span class="n">register_type</span><span class="p">(</span><span class="n">choices</span><span class="o">=</span><span class="n">get_layers</span><span class="p">,</span> <span class="n">return_callback</span><span class="o">=</span><span class="n">add_layer_to_viewer</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">Layer</span><span class="p">(</span><span class="n">KeymapProvider</span><span class="p">,</span> <span class="n">MousemapProvider</span><span class="p">,</span> <span class="n">ABC</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">Layer</span><span class="p">(</span><span class="n">KeymapProvider</span><span class="p">,</span> <span class="n">MousemapProvider</span><span class="p">,</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">metaclass</span><span class="o">=</span><span class="n">PostInit</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Base layer class.</span>
 
 <span class="sd">    Parameters</span>
@@ -713,6 +751,7 @@ document.write(`
         <span class="n">Mode</span><span class="o">.</span><span class="n">PAN_ZOOM</span><span class="p">:</span> <span class="s1">&#39;standard&#39;</span><span class="p">,</span>
         <span class="n">Mode</span><span class="o">.</span><span class="n">TRANSFORM</span><span class="p">:</span> <span class="s1">&#39;standard&#39;</span><span class="p">,</span>
     <span class="p">}</span>
+    <span class="n">events</span><span class="p">:</span> <span class="n">EmitterGroup</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
@@ -726,7 +765,7 @@ document.write(`
         <span class="n">rotate</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">shear</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">affine</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">opacity</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
         <span class="n">blending</span><span class="o">=</span><span class="s1">&#39;translucent&#39;</span><span class="p">,</span>
         <span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
         <span class="n">multiscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
@@ -772,6 +811,7 @@ document.write(`
         <span class="bp">self</span><span class="o">.</span><span class="n">_experimental_clipping_planes</span> <span class="o">=</span> <span class="n">ClippingPlaneList</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_mode</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_modeclass</span><span class="p">(</span><span class="s1">&#39;pan_zoom&#39;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_projection_mode</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_projectionclass</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">projection_mode</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_refresh_blocked</span> <span class="o">=</span> <span class="kc">False</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_ndim</span> <span class="o">=</span> <span class="n">ndim</span>
 
@@ -887,6 +927,9 @@ document.write(`
         <span class="c1"># TODO: we try to avoid inner event connection, but this might be the only way</span>
         <span class="c1">#       until we figure out nested evented objects</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_overlays</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">_overlays</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_post_init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Post init hook for subclasses to use.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return self.name.&quot;&quot;&quot;</span>
@@ -1083,7 +1126,7 @@ document.write(`
                 <span class="p">)</span>
             <span class="p">)</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">_opacity</span> <span class="o">=</span> <span class="n">opacity</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_opacity</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">opacity</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_update_thumbnail</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">opacity</span><span class="p">()</span>
 
@@ -1841,8 +1884,21 @@ document.write(`
 <span class="sd">            Bool that forces a redraw to occur when `True`.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
+    <span class="nd">@contextmanager</span>
+    <span class="k">def</span> <span class="nf">_block_refresh</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Prevent refresh calls from updating view.&quot;&quot;&quot;</span>
+        <span class="n">previous</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_refresh_blocked</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_refresh_blocked</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">yield</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_refresh_blocked</span> <span class="o">=</span> <span class="n">previous</span>
+
 <div class="viewcode-block" id="Layer.refresh"><a class="viewcode-back" href="../../../../api/napari.layers.Layer.html#napari.layers.Layer.refresh">[docs]</a>    <span class="k">def</span> <span class="nf">refresh</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Refresh all layer data based on current view slice.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_refresh_blocked</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Layer.refresh blocked: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+            <span class="k">return</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Layer.refresh: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
         <span class="c1"># If async is enabled then emit an event that the viewer should handle.</span>
         <span class="k">if</span> <span class="n">get_settings</span><span class="p">()</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">async_</span><span class="p">:</span>
@@ -2071,10 +2127,19 @@ document.write(`
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;An augmented, axis-aligned (ndisplay, 2) bounding box.</span>
 
-<span class="sd">        This bounding box for includes the &quot;full&quot; size of the layer, including</span>
-<span class="sd">        for example the size of points or pixels.</span>
+<span class="sd">        This bounding box includes the size of the layer in best resolution, including required padding</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extent_data_augmented</span><span class="p">[:,</span> <span class="n">dims_displayed</span><span class="p">]</span><span class="o">.</span><span class="n">T</span>
+
+    <span class="k">def</span> <span class="nf">_display_bounding_box_augmented_data_level</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">dims_displayed</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;An augmented, axis-aligned (ndisplay, 2) bounding box.</span>
+
+<span class="sd">        If the layer is multiscale layer, then returns the</span>
+<span class="sd">        bounding box of the data at the current level</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_display_bounding_box_augmented</span><span class="p">(</span><span class="n">dims_displayed</span><span class="p">)</span>
 
 <div class="viewcode-block" id="Layer.click_plane_from_click_data"><a class="viewcode-back" href="../../../../api/napari.layers.Layer.html#napari.layers.Layer.click_plane_from_click_data">[docs]</a>    <span class="k">def</span> <span class="nf">click_plane_from_click_data</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
@@ -2489,6 +2554,29 @@ document.write(`
 
         <span class="k">return</span> <span class="n">save_layers</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="p">[</span><span class="bp">self</span><span class="p">],</span> <span class="n">plugin</span><span class="o">=</span><span class="n">plugin</span><span class="p">)</span></div>
 
+    <span class="k">def</span> <span class="nf">__copy__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Create a copy of this layer.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        layer : napari.layers.Layer</span>
+<span class="sd">            Copy of this layer.</span>
+
+<span class="sd">        Notes</span>
+<span class="sd">        -----</span>
+<span class="sd">        This method is defined for purpose of asv memory benchmarks.</span>
+<span class="sd">        The copy of data is intentional for properly estimating memory</span>
+<span class="sd">        usage for layer.</span>
+
+<span class="sd">        If you want a to copy a layer without coping the data please use</span>
+<span class="sd">        `layer.create(*layer.as_layer_data_tuple())`</span>
+
+<span class="sd">        If you change this method, validate if memory benchmarks are still</span>
+<span class="sd">        working properly.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">data</span><span class="p">,</span> <span class="n">meta</span><span class="p">,</span> <span class="n">layer_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">as_layer_data_tuple</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">copy</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">,</span> <span class="n">layer_type</span><span class="o">=</span><span class="n">layer_type</span><span class="p">)</span>
+
 <div class="viewcode-block" id="Layer.create"><a class="viewcode-back" href="../../../../api/napari.layers.Layer.html#napari.layers.Layer.create">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">create</span><span class="p">(</span>
         <span class="bp">cls</span><span class="p">,</span>
@@ -2584,7 +2672,7 @@ document.write(`
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
 </div>
                 </footer>
@@ -2604,12 +2692,12 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

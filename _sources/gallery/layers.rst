@@ -28,18 +28,7 @@ using the layers swap method and remove one
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-28
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_layers_001.png
-   :alt: layers
-   :srcset: /gallery/images/sphx_glr_layers_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -67,16 +56,13 @@ using the layers swap method and remove one
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: layers.ipynb <layers.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: layers.py <layers.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: layers.ipynb <layers.ipynb>`
 
 
 .. only:: html

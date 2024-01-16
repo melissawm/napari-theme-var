@@ -30,7 +30,7 @@ them using magicgui.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-20
 
-.. code-block:: default
+.. code-block:: Python
 
 
     import dask.array as da
@@ -41,19 +41,13 @@ them using magicgui.
     import napari
 
 
-
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 21-22
 
 Part 1: using code to view a specific value.
 
 .. GENERATED FROM PYTHON SOURCE LINES 22-38
 
-.. code-block:: default
+.. code-block:: Python
 
 
     blobs = data.binary_blobs(length=64, n_dim=3)
@@ -72,24 +66,13 @@ Part 1: using code to view a specific value.
         napari.run()
 
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_dynamic-projections-dask_001.png
-   :alt: dynamic projections dask
-   :srcset: /gallery/images/sphx_glr_dynamic-projections-dask_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 39-40
 
 Part 2: using magicgui to vary the slice thickness.
 
 .. GENERATED FROM PYTHON SOURCE LINES 40-72
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from magicgui import magicgui  # noqa: E402
@@ -125,33 +108,19 @@ Part 2: using magicgui to vary the slice thickness.
         napari.run()
 
 
-
-.. image-sg:: /gallery/images/sphx_glr_dynamic-projections-dask_002.png
-   :alt: dynamic projections dask
-   :srcset: /gallery/images/sphx_glr_dynamic-projections-dask_002.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-
 .. _sphx_glr_download_gallery_dynamic-projections-dask.py:
 
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: dynamic-projections-dask.ipynb <dynamic-projections-dask.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: dynamic-projections-dask.py <dynamic-projections-dask.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: dynamic-projections-dask.ipynb <dynamic-projections-dask.ipynb>`
 
 
 .. only:: html

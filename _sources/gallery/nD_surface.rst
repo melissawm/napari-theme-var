@@ -27,18 +27,7 @@ Display a 3D surface
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-26
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_surface_001.png
-   :alt: nD surface
-   :srcset: /gallery/images/sphx_glr_nD_surface_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -65,16 +54,13 @@ Display a 3D surface
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: nD_surface.ipynb <nD_surface.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: nD_surface.py <nD_surface.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: nD_surface.ipynb <nD_surface.ipynb>`
 
 
 .. only:: html

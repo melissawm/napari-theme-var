@@ -27,18 +27,7 @@ Add small data to examine cursor positions
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-33
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_cursor_position_001.png
-   :alt: cursor position
-   :srcset: /gallery/images/sphx_glr_cursor_position_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -72,16 +61,13 @@ Add small data to examine cursor positions
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: cursor_position.ipynb <cursor_position.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: cursor_position.py <cursor_position.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: cursor_position.ipynb <cursor_position.ipynb>`
 
 
 .. only:: html

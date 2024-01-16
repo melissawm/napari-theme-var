@@ -27,18 +27,7 @@ Shift a rectangle along its normal vector in 3D
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-74
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_interactive_move_rectangle_3d_001.png
-   :alt: interactive move rectangle 3d
-   :srcset: /gallery/images/sphx_glr_interactive_move_rectangle_3d_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -113,16 +102,13 @@ Shift a rectangle along its normal vector in 3D
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: interactive_move_rectangle_3d.ipynb <interactive_move_rectangle_3d.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: interactive_move_rectangle_3d.py <interactive_move_rectangle_3d.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: interactive_move_rectangle_3d.ipynb <interactive_move_rectangle_3d.ipynb>`
 
 
 .. only:: html

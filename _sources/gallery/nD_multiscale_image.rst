@@ -27,29 +27,7 @@ Displays an nD multiscale image
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-29
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_multiscale_image_001.png
-   :alt: nD multiscale image
-   :srcset: /gallery/images/sphx_glr_nD_multiscale_image_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    base shape (8, 1536, 1536)
-    multiscale level shapes:  [(8, 1536, 1536), (4, 768, 1536), (2, 384, 1536)]
-
-
-
-
-
-
-|
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -79,16 +57,13 @@ Displays an nD multiscale image
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: nD_multiscale_image.ipynb <nD_multiscale_image.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: nD_multiscale_image.py <nD_multiscale_image.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: nD_multiscale_image.ipynb <nD_multiscale_image.ipynb>`
 
 
 .. only:: html

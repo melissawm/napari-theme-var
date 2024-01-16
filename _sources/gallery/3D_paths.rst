@@ -30,28 +30,7 @@ appearing on each slice.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-38
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_3D_paths_001.png
-   :alt: 3D paths
-   :srcset: /gallery/images/sphx_glr_3D_paths_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Path (2, 6, 3)
-
-
-
-
-
-
-|
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -87,16 +66,13 @@ appearing on each slice.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: 3D_paths.ipynb <3D_paths.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: 3D_paths.py <3D_paths.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: 3D_paths.ipynb <3D_paths.ipynb>`
 
 
 .. only:: html

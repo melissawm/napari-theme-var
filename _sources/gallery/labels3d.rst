@@ -27,18 +27,7 @@ View 3D labels.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-45
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_labels3d_001.png
-   :alt: labels3d
-   :srcset: /gallery/images/sphx_glr_labels3d_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
 
@@ -84,16 +73,13 @@ View 3D labels.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: labels3d.ipynb <labels3d.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: labels3d.py <labels3d.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: labels3d.ipynb <labels3d.ipynb>`
 
 
 .. only:: html

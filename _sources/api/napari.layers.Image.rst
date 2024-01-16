@@ -104,6 +104,7 @@ napari.layers.Image
       ~Image.interpolation2d
       ~Image.interpolation3d
       ~Image.iso_threshold
+      ~Image.keymap
       ~Image.level_shapes
       ~Image.loaded
       ~Image.metadata
@@ -123,6 +124,7 @@ napari.layers.Image
       ~Image.thumbnail
       ~Image.translate
       ~Image.visible
+      
       
       
       

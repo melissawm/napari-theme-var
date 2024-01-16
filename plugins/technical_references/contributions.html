@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,9 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -58,7 +58,7 @@
     <script src="../../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'plugins/technical_references/contributions';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -135,6 +135,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="../../index.html">
   napari
@@ -146,7 +167,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -272,7 +294,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -573,7 +596,7 @@ yaml</label><div class="sd-tab-content docutils">
 toml</label><div class="sd-tab-content docutils">
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[contributions]</span>
 <span class="n">commands</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.hello_world&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.hello_world&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span><span class="w"> </span><span class="p">},</span>
 <span class="p">]</span>
 </pre></div>
 </div>
@@ -621,14 +644,14 @@ yaml</label><div class="sd-tab-content docutils">
 </input><label class="sd-tab-label" for="sd-tab-item-3">
 toml</label><div class="sd-tab-content docutils">
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.read_xyz&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Read \&quot;.xyz\&quot; files&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:get_reader&quot;</span>
+<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.read_xyz&quot;</span>
+<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Read </span><span class="se">\&quot;</span><span class="s2">.xyz</span><span class="se">\&quot;</span><span class="s2"> files&quot;</span>
+<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example_plugin.some_module:get_reader&quot;</span>
 
 <span class="k">[[contributions.readers]]</span>
-<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.read_xyz&quot;</span>
+<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.read_xyz&quot;</span>
 <span class="n">filename_patterns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s">&quot;*.xyz&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;*.xyz&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 <span class="n">accepts_directories</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
 </pre></div>
@@ -682,17 +705,17 @@ yaml</label><div class="sd-tab-content docutils">
 </input><label class="sd-tab-label" for="sd-tab-item-5">
 toml</label><div class="sd-tab-content docutils">
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.write_points&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Save points layer to csv&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:write_points&quot;</span>
+<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.write_points&quot;</span>
+<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Save points layer to csv&quot;</span>
+<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example_plugin.some_module:write_points&quot;</span>
 
 <span class="k">[[contributions.writers]]</span>
-<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.write_points&quot;</span>
+<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.write_points&quot;</span>
 <span class="n">layer_types</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s">&quot;points&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;points&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 <span class="n">filename_extensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s">&quot;.csv&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;.csv&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 </pre></div>
 </div>
@@ -755,25 +778,25 @@ yaml</label><div class="sd-tab-content docutils">
 toml</label><div class="sd-tab-content docutils">
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[contributions]</span>
 <span class="n">widgets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.my_widget&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Wizard&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.threshold_widget&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Threshold&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.do_threshold&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Threshold&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">autogenerate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">true</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.my_widget&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">display_name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Wizard&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.threshold_widget&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">display_name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Threshold&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.do_threshold&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">display_name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Threshold&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">autogenerate</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">},</span>
 <span class="p">]</span>
 
 <span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.my_widget&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Open my widget&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:MyWidget&quot;</span>
+<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.my_widget&quot;</span>
+<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Open my widget&quot;</span>
+<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example_plugin.some_module:MyWidget&quot;</span>
 
 <span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.threshold_widget&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Make threshold widget with magic_factory&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:widget_factory&quot;</span>
+<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.threshold_widget&quot;</span>
+<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Make threshold widget with magic_factory&quot;</span>
+<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example_plugin.some_module:widget_factory&quot;</span>
 
 <span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.do_threshold&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Perform threshold on image, return new image&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:threshold&quot;</span>
+<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.do_threshold&quot;</span>
+<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Perform threshold on image, return new image&quot;</span>
+<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example_plugin.some_module:threshold&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -840,19 +863,19 @@ yaml</label><div class="sd-tab-content docutils">
 </input><label class="sd-tab-label" for="sd-tab-item-9">
 toml</label><div class="sd-tab-content docutils">
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[contributions.commands]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.data.fractal&quot;</span>
-<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Create fractal image&quot;</span>
-<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example_plugin.some_module:create_fractal&quot;</span>
+<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.data.fractal&quot;</span>
+<span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Create fractal image&quot;</span>
+<span class="n">python_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example_plugin.some_module:create_fractal&quot;</span>
 
 <span class="k">[[contributions.sample_data]]</span>
-<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-plugin.data.fractal&quot;</span>
-<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;fractal&quot;</span>
-<span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Fractal&quot;</span>
+<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;example-plugin.data.fractal&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;fractal&quot;</span>
+<span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Fractal&quot;</span>
 
 <span class="k">[[contributions.sample_data]]</span>
-<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;napari&quot;</span>
-<span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Tabueran Kiribati&quot;</span>
-<span class="n">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://en.wikipedia.org/wiki/Napari#/media/File:Tabuaeran_Kiribati.jpg&quot;</span>
+<span class="n">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;napari&quot;</span>
+<span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Tabueran Kiribati&quot;</span>
+<span class="n">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://en.wikipedia.org/wiki/Napari#/media/File:Tabuaeran_Kiribati.jpg&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -914,23 +937,23 @@ yaml</label><div class="sd-tab-content docutils">
 </input><label class="sd-tab-label" for="sd-tab-item-11">
 toml</label><div class="sd-tab-content docutils">
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[contributions.themes]]</span>
-<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;monokai&quot;</span>
-<span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Monokai&quot;</span>
-<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;dark&quot;</span>
-<span class="n">syntax_style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;monokai&quot;</span>
+<span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;monokai&quot;</span>
+<span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Monokai&quot;</span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;dark&quot;</span>
+<span class="n">syntax_style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;monokai&quot;</span>
 
 <span class="k">[contributions.themes.colors]</span>
-<span class="n">canvas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;black&quot;</span>
-<span class="n">console</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;black&quot;</span>
-<span class="n">background</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#272822&quot;</span>
-<span class="n">foreground</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#75715e&quot;</span>
-<span class="n">primary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#cfcfc2&quot;</span>
-<span class="n">secondary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#f8f8f2&quot;</span>
-<span class="n">highlight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#e6db74&quot;</span>
-<span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#a1ef34&quot;</span>
-<span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#a1ef34&quot;</span>
-<span class="n">warning</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#f92672&quot;</span>
-<span class="n">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;#66d9ef&quot;</span>
+<span class="n">canvas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;black&quot;</span>
+<span class="n">console</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;black&quot;</span>
+<span class="n">background</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#272822&quot;</span>
+<span class="n">foreground</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#75715e&quot;</span>
+<span class="n">primary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#cfcfc2&quot;</span>
+<span class="n">secondary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#f8f8f2&quot;</span>
+<span class="n">highlight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#e6db74&quot;</span>
+<span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#a1ef34&quot;</span>
+<span class="n">icon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#a1ef34&quot;</span>
+<span class="n">warning</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#f92672&quot;</span>
+<span class="n">current</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#66d9ef&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -947,7 +970,7 @@ toml</label><div class="sd-tab-content docutils">
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="manifest.html"
@@ -977,6 +1000,7 @@ toml</label><div class="sd-tab-content docutils">
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
@@ -1024,12 +1048,12 @@ toml</label><div class="sd-tab-content docutils">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

@@ -147,6 +147,7 @@ napari.layers.Shapes
       ~Shapes.features
       ~Shapes.help
       ~Shapes.interactive
+      ~Shapes.keymap
       ~Shapes.loaded
       ~Shapes.metadata
       ~Shapes.mode
@@ -170,6 +171,7 @@ napari.layers.Shapes
       ~Shapes.translate
       ~Shapes.visible
       ~Shapes.z_index
+      
       
       
       

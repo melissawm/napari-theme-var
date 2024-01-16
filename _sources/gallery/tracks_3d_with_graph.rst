@@ -25,18 +25,7 @@ Tracks 3D with graph
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-56
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_tracks_3d_with_graph_001.png
-   :alt: tracks 3d with graph
-   :srcset: /gallery/images/sphx_glr_tracks_3d_with_graph_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -95,16 +84,13 @@ Tracks 3D with graph
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: tracks_3d_with_graph.ipynb <tracks_3d_with_graph.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: tracks_3d_with_graph.py <tracks_3d_with_graph.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: tracks_3d_with_graph.ipynb <tracks_3d_with_graph.ipynb>`
 
 
 .. only:: html

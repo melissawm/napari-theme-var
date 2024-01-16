@@ -25,18 +25,7 @@ Show points based on feature
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-39
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_show_points_based_on_feature_001.png
-   :alt: show points based on feature
-   :srcset: /gallery/images/sphx_glr_show_points_based_on_feature_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
     #!/usr/bin/env python3
 
@@ -78,16 +67,13 @@ Show points based on feature
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: show_points_based_on_feature.ipynb <show_points_based_on_feature.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: show_points_based_on_feature.py <show_points_based_on_feature.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: show_points_based_on_feature.ipynb <show_points_based_on_feature.ipynb>`
 
 
 .. only:: html

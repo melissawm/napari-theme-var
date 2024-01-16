@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,9 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -58,7 +58,7 @@
     <script src="../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'developers/core_dev_guide';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -135,6 +135,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="../index.html">
   napari
@@ -146,7 +167,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -272,7 +294,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -397,7 +420,13 @@ document.write(`
      aria-label="Section Navigation">
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing guide</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../naps/index.html">napari Advancement Proposals (NAPs)</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="architecture/index.html">napari architecture guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="architecture/dir_organization.html">napari directory organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture/napari_models.html">napari models and events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture/app_model.html">napari’s application model</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../naps/index.html">napari Advancement Proposals (NAPs)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../naps/0-nap-process.html">NAP 0 — Purpose and Process</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../naps/1-institutional-funding-partners.html">NAP-1 — Institutional and Funding Partners</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../naps/2-conda-based-packaging.html">NAP-2 — Distributing napari with conda-based packaging</a></li>
@@ -410,7 +439,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../naps/template.html">NAP-X — Template and Instructions</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="documentation/index.html">Contributing Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="documentation/index.html">Contributing Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="documentation/docs_template.html">Docs template</a></li>
 <li class="toctree-l2"><a class="reference internal" href="documentation/docs_deployment.html">Documentation and website deployment</a></li>
 </ul>
@@ -426,7 +455,7 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="benchmarks.html">Benchmarks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="packaging.html">Packaging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maintenance.html">Maintenance</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../release/index.html">Release notes</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../release/index.html">Release notes</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../release/release_0_4_18.html">napari 0.4.18</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../release/release_0_4_17.html">napari 0.4.17</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../release/release_0_4_16.html">napari 0.4.16</a></li>
@@ -472,7 +501,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../release/release_0_1_0.html">napari 0.1.0</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../roadmaps/index.html">Roadmaps</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../roadmaps/index.html">Roadmaps</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../roadmaps/0_4.html">Roadmap 0.4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../roadmaps/0_3_retrospective.html">Roadmap 0.3 Retrospective</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../roadmaps/0_3.html">Roadmap 0.3</a></li>
@@ -557,8 +586,8 @@ guidelines for how to do that.</p>
 other contributors’ pull requests.  Much like nuclear launch keys, it
 is a shared power: you must merge <em>only after</em> another core has
 approved the pull request, <em>and</em> after you yourself have carefully
-reviewed it.  (See <a class="reference internal" href="#reviewing"><span class="std std-doc">Reviewing</span></a> and especially
-<a class="reference internal" href="#merge-only-changes-you-understand"><span class="std std-doc">Merge Only Changes You Understand</span></a> below.)
+reviewed it.  (See <a class="reference internal" href="#reviewing">Reviewing</a> and especially
+<a class="reference internal" href="#merge-only-changes-you-understand">Merge Only Changes You Understand</a> below.)
 It should also be considered best practice to leave a reasonable (24hr) time window
 after approval before merge to ensure that other core developers have a reasonable
 chance to weigh in.</p>
@@ -623,7 +652,7 @@ For any major new features, accompanying changes should be made to our
 <a class="reference external" href="https://napari.org/tutorials">tutorials</a>. These should not only
 illustrates the new feature, but explains it. Titles for all documents in napari should follow <a class="reference external" href="https://apastyle.apa.org/style-grammar-guidelines/capitalization/sentence-case">sentence case capitalization</a>, but the name <code class="docutils literal notranslate"><span class="pre">napari</span></code> should always be written in lowercase.</p></li>
 <li><p><strong>Implementations and algorithms:</strong> You should understand the code being modified
-or added before approving it.  (See <a class="reference internal" href="#merge-only-changes-you-understand"><span class="std std-doc">Merge Only Changes You Understand</span></a>
+or added before approving it.  (See <a class="reference internal" href="#merge-only-changes-you-understand">Merge Only Changes You Understand</a>
 below.) Implementations should do what they claim and be simple, readable, and efficient
 in that order.</p></li>
 <li><p><strong>Tests:</strong> All contributions <em>must</em> be tested, and each added line of code
@@ -686,7 +715,7 @@ for docstring conventions.</p></li>
 <li><p><a class="reference external" href="https://github.com/psf/black"><code class="docutils literal notranslate"><span class="pre">black</span></code></a> autoformatting.</p></li>
 <li><p><a class="reference external" href="https://github.com/PyCQA/flake8"><code class="docutils literal notranslate"><span class="pre">flake8</span></code></a> linting.</p></li>
 <li><p><a class="reference external" href="https://forum.image.sc/tag/napari">#napari on image.sc</a>.</p></li>
-<li><p><a class="reference external" href="https://twitter.com/search?q=%23napari&amp;f=live">#napari</a> and <a class="reference external" href="https://twitter.com/napari_imaging">&#64;napari_imaging</a> on twitter.</p></li>
+<li><p><a class="reference external" href="https://twitter.com/search?q=%23napari&amp;amp;f=live">#napari</a> and <a class="reference external" href="https://twitter.com/napari_imaging">&#64;napari_imaging</a> on twitter.</p></li>
 <li><p><a class="reference external" href="https://napari.zulipchat.com/">napari zulip</a> community chat channel.</p></li>
 </ul>
 <p>You are not required to monitor the social resources.</p>
@@ -734,7 +763,7 @@ advance!</p>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="translations.html"
@@ -764,6 +793,7 @@ advance!</p>
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
@@ -796,12 +826,12 @@ advance!</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

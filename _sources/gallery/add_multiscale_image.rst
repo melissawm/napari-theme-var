@@ -27,28 +27,7 @@ Displays a multiscale image
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-28
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_multiscale_image_001.png
-   :alt: add multiscale image
-   :srcset: /gallery/images/sphx_glr_add_multiscale_image_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    multiscale level shapes:  [(4096, 4096), (2048, 2048), (1024, 1024), (512, 512), (256, 256)]
-
-
-
-
-
-
-|
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -77,16 +56,13 @@ Displays a multiscale image
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: add_multiscale_image.ipynb <add_multiscale_image.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: add_multiscale_image.py <add_multiscale_image.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: add_multiscale_image.ipynb <add_multiscale_image.ipynb>`
 
 
 .. only:: html

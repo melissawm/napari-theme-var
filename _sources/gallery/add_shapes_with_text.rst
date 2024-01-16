@@ -29,18 +29,7 @@ your shapes.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-63
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_add_shapes_with_text_001.png
-   :alt: add shapes with text
-   :srcset: /gallery/images/sphx_glr_add_shapes_with_text_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -102,16 +91,13 @@ your shapes.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: add_shapes_with_text.ipynb <add_shapes_with_text.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: add_shapes_with_text.py <add_shapes_with_text.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: add_shapes_with_text.ipynb <add_shapes_with_text.ipynb>`
 
 
 .. only:: html

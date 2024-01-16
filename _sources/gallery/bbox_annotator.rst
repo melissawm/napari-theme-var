@@ -25,18 +25,7 @@ bbox annotator
 
 .. GENERATED FROM PYTHON SOURCE LINES 7-121
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_bbox_annotator_001.png
-   :alt: bbox annotator
-   :srcset: /gallery/images/sphx_glr_bbox_annotator_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -160,16 +149,13 @@ bbox annotator
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: bbox_annotator.ipynb <bbox_annotator.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: bbox_annotator.py <bbox_annotator.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: bbox_annotator.ipynb <bbox_annotator.ipynb>`
 
 
 .. only:: html

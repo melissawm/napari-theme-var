@@ -64,7 +64,7 @@ coordinates, and may require resizing the textures to match each other.
 
 .. GENERATED FROM PYTHON SOURCE LINES 46-54
 
-.. code-block:: default
+.. code-block:: Python
 
     import os
 
@@ -75,12 +75,6 @@ coordinates, and may require resizing the textures to match each other.
     import napari
 
 
-
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 55-57
 
 Download the model
@@ -88,7 +82,7 @@ Download the model
 
 .. GENERATED FROM PYTHON SOURCE LINES 57-79
 
-.. code-block:: default
+.. code-block:: Python
 
     download = pooch.DOIDownloader(progressbar=True)
     doi = "10.6084/m9.figshare.22348645.v1"
@@ -113,21 +107,6 @@ Download the model
             print(f"using cached {tmp_dir / file_name}")
 
 
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    downloading data into /home/melissa/.cache/napari-surface-texture-example
-    using cached /home/melissa/.cache/napari-surface-texture-example/PocilloporaDamicornisSkin.obj
-    using cached /home/melissa/.cache/napari-surface-texture-example/PocilloporaDamicornisSkin_Texture_0.jpg
-    using cached /home/melissa/.cache/napari-surface-texture-example/PocilloporaDamicornisSkin_GeneratedMat2.png
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 80-86
 
 Load the model
@@ -139,15 +118,9 @@ are also ignored and re-calculated from the faces.
 
 .. GENERATED FROM PYTHON SOURCE LINES 86-88
 
-.. code-block:: default
+.. code-block:: Python
 
     vertices, faces, _normals, texcoords = read_mesh(tmp_dir / data_files["mesh"])
-
-
-
-
-
-
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 89-94
@@ -160,16 +133,10 @@ material to fill in  parts of the model lacking photographic texture.
 
 .. GENERATED FROM PYTHON SOURCE LINES 94-97
 
-.. code-block:: default
+.. code-block:: Python
 
     photo_texture = imread(tmp_dir / data_files["Texture_0"])
     generated_texture = imread(tmp_dir / data_files["GeneratedMat2"])
-
-
-
-
-
-
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 98-99
@@ -178,7 +145,7 @@ This is what the texture images look like in 2D:
 
 .. GENERATED FROM PYTHON SOURCE LINES 99-110
 
-.. code-block:: default
+.. code-block:: Python
 
     fig, axs = plt.subplots(1, 2)
     axs[0].set_title(f"Texture_0 {photo_texture.shape}")
@@ -192,17 +159,6 @@ This is what the texture images look like in 2D:
     fig.show()
 
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_surface_multi_texture_001.png
-   :alt: Texture_0 (8192, 8192, 3), GeneratedMat2 (2048, 2048, 4)
-   :srcset: /gallery/images/sphx_glr_surface_multi_texture_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 111-116
 
 Create the napari layers
@@ -213,7 +169,7 @@ texture, but this is not a strict requirement.
 
 .. GENERATED FROM PYTHON SOURCE LINES 116-129
 
-.. code-block:: default
+.. code-block:: Python
 
     photo_texture_layer = napari.layers.Surface(
         (vertices, faces),
@@ -229,12 +185,6 @@ texture, but this is not a strict requirement.
     )
 
 
-
-
-
-
-
-
 .. GENERATED FROM PYTHON SOURCE LINES 130-134
 
 Add the layers to a viewer
@@ -244,7 +194,7 @@ sphinx_gallery_thumbnail_number = 2
 
 .. GENERATED FROM PYTHON SOURCE LINES 134-144
 
-.. code-block:: default
+.. code-block:: Python
 
     viewer = napari.Viewer(ndisplay=3)
 
@@ -258,38 +208,19 @@ sphinx_gallery_thumbnail_number = 2
         napari.run()
 
 
-
-.. image-sg:: /gallery/images/sphx_glr_surface_multi_texture_002.png
-   :alt: surface multi texture
-   :srcset: /gallery/images/sphx_glr_surface_multi_texture_002.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-
-.. rst-class:: sphx-glr-timing
-
-   **Total running time of the script:** (0 minutes 16.843 seconds)
-
-
 .. _sphx_glr_download_gallery_surface_multi_texture.py:
 
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: surface_multi_texture.ipynb <surface_multi_texture.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: surface_multi_texture.py <surface_multi_texture.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: surface_multi_texture.ipynb <surface_multi_texture.ipynb>`
 
 
 .. only:: html

@@ -27,18 +27,7 @@ Display a 3D volume and the fps label.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-28
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_viewer_fps_label_001.png
-   :alt: viewer fps label
-   :srcset: /gallery/images/sphx_glr_viewer_fps_label_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
     import numpy as np
 
@@ -67,16 +56,13 @@ Display a 3D volume and the fps label.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: viewer_fps_label.ipynb <viewer_fps_label.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: viewer_fps_label.py <viewer_fps_label.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: viewer_fps_label.ipynb <viewer_fps_label.ipynb>`
 
 
 .. only:: html

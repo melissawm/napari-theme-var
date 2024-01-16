@@ -29,18 +29,7 @@ This is useful e.g. when proofreading segmentations within a time series.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-35
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_paint-nd_001.png
-   :alt: paint nd
-   :srcset: /gallery/images/sphx_glr_paint-nd_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -74,16 +63,13 @@ This is useful e.g. when proofreading segmentations within a time series.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: paint-nd.ipynb <paint-nd.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: paint-nd.py <paint-nd.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: paint-nd.ipynb <paint-nd.ipynb>`
 
 
 .. only:: html

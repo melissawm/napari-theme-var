@@ -27,18 +27,7 @@ Displays an image and sets the theme to 'light'.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-22
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_set_theme_001.png
-   :alt: set theme
-   :srcset: /gallery/images/sphx_glr_set_theme_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     from skimage import data
@@ -61,16 +50,13 @@ Displays an image and sets the theme to 'light'.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: set_theme.ipynb <set_theme.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: set_theme.py <set_theme.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: set_theme.ipynb <set_theme.ipynb>`
 
 
 .. only:: html

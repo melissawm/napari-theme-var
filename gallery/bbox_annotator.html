@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,9 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -58,7 +58,7 @@
     <script src="../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'gallery/bbox_annotator';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -135,6 +135,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="../index.html">
   napari
@@ -146,7 +167,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -268,7 +290,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -395,7 +418,7 @@ document.write(`
 <li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials/start_index.html">Getting started</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/quick_start.html">Quick start</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/installation.html">How to install napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/getting_started.html">How to launch napari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/getting_started.html">How to launch <code class="docutils literal notranslate"><span class="pre">napari</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tutorials/fundamentals/viewer.html">Viewer tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/layers.html">Layers at a glance</a></li>
 </ul>
@@ -430,17 +453,19 @@ document.write(`
 <li class="toctree-l3"><a class="reference internal" href="../howtos/layers/vectors.html">Using the vectors layer</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../howtos/connecting_events.html">Hooking up your own events</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../howtos/extending/index.html">Extending napari</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../howtos/extending/magicgui.html">Creating widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../howtos/extending/connecting_events.html">Hooking up your own events</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../howtos/napari_imageJ.html">napari + ImageJ how-to guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../howtos/docker.html">Napari in Docker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../howtos/perfmon.html">Performance monitoring</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../howtos/headless.html">Running napari headlessly</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/index.html">In-depth explanations</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../guides/magicgui.html">Using <code class="docutils literal notranslate"><span class="pre">magicgui</span></code> in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/event_loop.html">An introduction to the event loop in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/napari_models.html">Napari models and events</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/index.html">In-depth explanations</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/event_loop.html">napari event loop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/threading.html">Multithreading in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/3D_interactivity.html">3D interactivity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/rendering-explanation.html">Rendering in napari</a></li>
@@ -448,23 +473,22 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../guides/performance.html">napari performance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guides/events_reference.html">Events reference</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../further-resources/glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../further-resources/napari-workshops.html">napari workshops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../further-resources/sample_data.html">Sample databases</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../gallery.html">Gallery</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../_tags/tagsindex.html">Tags</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/analysis.html">analysis (4)</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../gallery.html">Gallery</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../_tags/tagsindex.html">Tags</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/analysis.html">analysis (4)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="add_labels_with_features.html">Add labels with features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="annotate-2d.html">Annotate 2D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="annotate_segmentation_with_text.html">Annotate segmentation with text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="paint-nd.html">Paint nD</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/experimental.html">experimental (9)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/experimental.html">experimental (9)</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="action_manager.html">Action manager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interaction_box_image.html">Interaction box image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interactive_move_rectangle_3d.html">Interactive move rectangle</a></li>
@@ -476,7 +500,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="viewer_fps_label.html">Viewer FPS label</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current active has-children"><a class="reference internal" href="../_tags/gui.html">gui (16)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="../_tags/gui.html">gui (16)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="action_manager.html">Action manager</a></li>
 <li class="toctree-l4 current active"><a class="current reference internal" href="#">bbox annotator</a></li>
@@ -495,14 +519,14 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="set_theme.html">Set theme</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/historical.html">historical (4)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/historical.html">historical (4)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="reader_plugin.html">Reader plugin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="shapes_to_labels.html">Shapes to labels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="update_console.html">Update console</a></li>
 <li class="toctree-l4"><a class="reference internal" href="without_gui_qt.html">napari without gui_qt</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/interactivity.html">interactivity (5)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/interactivity.html">interactivity (5)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="cursor_position.html">Cursor position</a></li>
 <li class="toctree-l4"><a class="reference internal" href="cursor_ray.html">Cursor ray</a></li>
 <li class="toctree-l4"><a class="reference internal" href="fourier_transform_playground.html">Fourier transform playground</a></li>
@@ -510,15 +534,16 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="interactive_scripting.html">Interactive scripting</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/layers.html">layers (6)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/layers.html">layers (6)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="3D_paths.html">3D Paths</a></li>
 <li class="toctree-l4"><a class="reference internal" href="3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_3D_image.html">Add 3D image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_labels.html">Add labels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_labels_with_features.html">Add labels with features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="vortex.html">Visualizing optical flow in napari</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-advanced.html">visualization-advanced (14)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-advanced.html">visualization-advanced (14)</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="3D_paths.html">3D Paths</a></li>
 <li class="toctree-l4"><a class="reference internal" href="3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_multiscale_image.html">Add multiscale image</a></li>
@@ -532,9 +557,10 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="to_screenshot.html">To screenshot</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tracks_3d.html">Tracks 3D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tracks_3d_with_graph.html">Tracks 3D with graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="vortex.html">Visualizing optical flow in napari</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-basic.html">visualization-basic (22)</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-basic.html">visualization-basic (22)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="add_grayscale_image.html">Add grayscale image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_image.html">Add image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_image_transformed.html">Add image transformed</a></li>
@@ -559,7 +585,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="tracks_2d.html">Tracks 2D</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-nd.html">visualization-nD (21)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../_tags/visualization-nd.html">visualization-nD (21)</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="add-points-3d.html">Add points 3D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_3D_image.html">Add 3D image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="add_points_on_nD_shapes.html">Add points on nD shapes</a></li>
@@ -660,21 +686,21 @@ to download the full example code</p>
 <section class="sphx-glr-example-title" id="bbox-annotator">
 <span id="sphx-glr-gallery-bbox-annotator-py"></span><h1>bbox annotator<a class="headerlink" href="#bbox-annotator" title="Permalink to this heading">#</a></h1>
 <p class="tags"><span>Tags: </span><a class="reference external" href="../_tags/gui.html">gui</a></p>
-<img src="../_images/sphx_glr_bbox_annotator_001.png" srcset="../_images/sphx_glr_bbox_annotator_001.png" alt="bbox annotator" class = "sphx-glr-single-img"/><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">magicgui.widgets</span> <span class="kn">import</span> <a href="https://pyapp-kit.github.io/magicgui/api/widgets/ComboBox/#magicgui.widgets.ComboBox" title="magicgui.widgets.ComboBox" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class"><span class="n">ComboBox</span></a><span class="p">,</span> <a href="https://pyapp-kit.github.io/magicgui/api/widgets/Container/#magicgui.widgets.Container" title="magicgui.widgets.Container" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class"><span class="n">Container</span></a>
+<span class="kn">from</span> <span class="nn">magicgui.widgets</span> <span class="kn">import</span> <a href="https://pyapp-kit.github.io/magicgui/api/widgets/ComboBox/#magicgui.widgets.ComboBox" title="magicgui.widgets.ComboBox" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ComboBox</span></a><span class="p">,</span> <a href="https://pyapp-kit.github.io/magicgui/api/widgets/Container/#magicgui.widgets.Container" title="magicgui.widgets.Container" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Container</span></a>
 <span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">data</span>
 
 <span class="kn">import</span> <span class="nn">napari</span>
 
 <span class="c1"># set up the categorical annotation values and text display properties</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">box_annotations</span></a> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">,</span> <span class="s1">&#39;sky&#39;</span><span class="p">,</span> <span class="s1">&#39;camera&#39;</span><span class="p">]</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_feature</span></a> <span class="o">=</span> <span class="s1">&#39;box_label&#39;</span>
+<span class="n">box_annotations</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">,</span> <span class="s1">&#39;sky&#39;</span><span class="p">,</span> <span class="s1">&#39;camera&#39;</span><span class="p">]</span>
+<span class="n">text_feature</span> <span class="o">=</span> <span class="s1">&#39;box_label&#39;</span>
 <span class="n">features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_feature</span></a><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">box_annotations</span></a><span class="p">))</span>
+    <span class="n">text_feature</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">CategoricalDtype</span><span class="p">(</span><span class="n">box_annotations</span><span class="p">))</span>
 <span class="p">})</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_color</span></a> <span class="o">=</span> <span class="s1">&#39;green&#39;</span>
-<a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_size</span></a> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">text_color</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span>
+<span class="n">text_size</span> <span class="o">=</span> <span class="mi">20</span>
 
 
 <span class="c1"># create the GUI for selecting the values</span>
@@ -696,8 +722,8 @@ to download the full example code</p>
 <span class="sd">        the container widget with the label combobox</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># Create the label selection menu</span>
-    <span class="n">label_menu</span> <span class="o">=</span> <a href="https://pyapp-kit.github.io/magicgui/api/widgets/ComboBox/#magicgui.widgets.ComboBox" title="magicgui.widgets.ComboBox" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class"><span class="n">ComboBox</span></a><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;text label&#39;</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">labels</span><span class="p">)</span>
-    <a href="https://pyapp-kit.github.io/magicgui/api/widgets/Container/#magicgui.widgets.Container" title="magicgui.widgets.Container" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">label_widget</span></a> <span class="o">=</span> <a href="https://pyapp-kit.github.io/magicgui/api/widgets/Container/#magicgui.widgets.Container" title="magicgui.widgets.Container" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class"><span class="n">Container</span></a><span class="p">(</span><span class="n">widgets</span><span class="o">=</span><span class="p">[</span><span class="n">label_menu</span><span class="p">])</span>
+    <span class="n">label_menu</span> <span class="o">=</span> <a href="https://pyapp-kit.github.io/magicgui/api/widgets/ComboBox/#magicgui.widgets.ComboBox" title="magicgui.widgets.ComboBox" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ComboBox</span></a><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;text label&#39;</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">labels</span><span class="p">)</span>
+    <span class="n">label_widget</span> <span class="o">=</span> <a href="https://pyapp-kit.github.io/magicgui/api/widgets/Container/#magicgui.widgets.Container" title="magicgui.widgets.Container" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Container</span></a><span class="p">(</span><span class="n">widgets</span><span class="o">=</span><span class="p">[</span><span class="n">label_menu</span><span class="p">])</span>
 
     <span class="k">def</span> <span class="nf">update_label_menu</span><span class="p">():</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;This is a callback function that updates the label menu when</span>
@@ -730,57 +756,57 @@ to download the full example code</p>
 
     <span class="n">label_menu</span><span class="o">.</span><span class="n">changed</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">label_changed</span><span class="p">)</span>
 
-    <span class="k">return</span> <a href="https://pyapp-kit.github.io/magicgui/api/widgets/Container/#magicgui.widgets.Container" title="magicgui.widgets.Container" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">label_widget</span></a>
+    <span class="k">return</span> <span class="n">label_widget</span>
 
 
 <span class="c1"># create a stack with the camera image shifted in each slice</span>
-<a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">n_slices</span></a> <span class="o">=</span> <span class="mi">5</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">base_image</span></a> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">camera</span><span class="p">()</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">image</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.zeros.html#numpy.zeros" title="numpy.zeros" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">((</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">n_slices</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#tuple" title="builtins.tuple" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">base_image</span><span class="o">.</span><span class="n">shape</span></a><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <a href="https://docs.python.org/3/library/stdtypes.html#tuple" title="builtins.tuple" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">base_image</span><span class="o">.</span><span class="n">shape</span></a><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">dtype</span><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">base_image</span></a><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-<span class="k">for</span> <a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">slice_idx</span></a> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">n_slices</span></a><span class="p">):</span>
-    <a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">shift</span></a> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">slice_idx</span></a>
-    <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">image</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">slice_idx</span></a><span class="p">,</span> <span class="o">...</span><span class="p">]</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.pad.html#numpy.pad" title="numpy.pad" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">pad</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">base_image</span></a><span class="p">,</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">shift</span></a><span class="p">,</span> <span class="mi">0</span><span class="p">)),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;constant&#39;</span><span class="p">)[:,</span> <span class="p">:</span><span class="o">-</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">shift</span></a><span class="p">]</span>
+<span class="n">n_slices</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">base_image</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">camera</span><span class="p">()</span>
+<span class="n">image</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.zeros.html#numpy.zeros" title="numpy.zeros" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">((</span><span class="n">n_slices</span><span class="p">,</span> <span class="n">base_image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">base_image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">base_image</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">slice_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_slices</span><span class="p">):</span>
+    <span class="n">shift</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">slice_idx</span>
+    <span class="n">image</span><span class="p">[</span><span class="n">slice_idx</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.pad.html#numpy.pad" title="numpy.pad" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">pad</span></a><span class="p">(</span><span class="n">base_image</span><span class="p">,</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="n">shift</span><span class="p">,</span> <span class="mi">0</span><span class="p">)),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;constant&#39;</span><span class="p">)[:,</span> <span class="p">:</span><span class="o">-</span><span class="n">shift</span><span class="p">]</span>
 
 
 <span class="c1"># create a viewer with a fake t+2D image</span>
-<a href="../api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">image</span></a><span class="p">)</span>
+<span class="n">viewer</span> <span class="o">=</span> <a href="../api/napari.html#napari.view_image" title="napari.view_image" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">view_image</span></a><span class="p">(</span><span class="n">image</span><span class="p">)</span>
 
 <span class="c1"># create an empty shapes layer initialized with</span>
 <span class="c1"># text set to display the box label</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_kwargs</span></a> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;string&#39;</span><span class="p">:</span> <a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_feature</span></a><span class="p">,</span>
-    <span class="s1">&#39;size&#39;</span><span class="p">:</span> <a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_size</span></a><span class="p">,</span>
-    <span class="s1">&#39;color&#39;</span><span class="p">:</span> <a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_color</span></a>
+<span class="n">text_kwargs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;string&#39;</span><span class="p">:</span> <span class="n">text_feature</span><span class="p">,</span>
+    <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="n">text_size</span><span class="p">,</span>
+    <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="n">text_color</span>
 <span class="p">}</span>
-<a href="../api/napari.layers.Shapes.html#napari.layers.Shapes" title="napari.layers.Shapes" class="sphx-glr-backref-module-napari-layers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">shapes</span></a> <span class="o">=</span> <a href="../api/napari.Viewer.html#napari.Viewer.add_shapes" title="napari.Viewer.add_shapes" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">add_shapes</span></a><span class="p">(</span>
+<span class="n">shapes</span> <span class="o">=</span> <span class="n">viewer</span><span class="o">.</span><span class="n">add_shapes</span><span class="p">(</span>
     <span class="n">face_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
     <span class="n">features</span><span class="o">=</span><span class="n">features</span><span class="p">,</span>
-    <span class="n">text</span><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_kwargs</span></a><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="n">text_kwargs</span><span class="p">,</span>
     <span class="n">ndim</span><span class="o">=</span><span class="mi">3</span>
 <span class="p">)</span>
 
 <span class="c1"># create the label section gui</span>
-<a href="https://pyapp-kit.github.io/magicgui/api/widgets/Container/#magicgui.widgets.Container" title="magicgui.widgets.Container" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">label_widget</span></a> <span class="o">=</span> <span class="n">create_label_menu</span><span class="p">(</span>
-    <span class="n">shapes_layer</span><span class="o">=</span><a href="../api/napari.layers.Shapes.html#napari.layers.Shapes" title="napari.layers.Shapes" class="sphx-glr-backref-module-napari-layers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">shapes</span></a><span class="p">,</span>
-    <span class="n">label_feature</span><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">text_feature</span></a><span class="p">,</span>
-    <span class="n">labels</span><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">box_annotations</span></a>
+<span class="n">label_widget</span> <span class="o">=</span> <span class="n">create_label_menu</span><span class="p">(</span>
+    <span class="n">shapes_layer</span><span class="o">=</span><span class="n">shapes</span><span class="p">,</span>
+    <span class="n">label_feature</span><span class="o">=</span><span class="n">text_feature</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="n">box_annotations</span>
 <span class="p">)</span>
 <span class="c1"># add the label selection gui to the viewer as a dock widget</span>
-<a href="../api/napari.components.ViewerModel.html#napari.components.ViewerModel.window" title="napari.components.ViewerModel.window" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-attribute"><span class="n">viewer</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">add_dock_widget</span></a><span class="p">(</span><a href="https://pyapp-kit.github.io/magicgui/api/widgets/Container/#magicgui.widgets.Container" title="magicgui.widgets.Container" class="sphx-glr-backref-module-magicgui-widgets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">label_widget</span></a><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;label_widget&#39;</span><span class="p">)</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">add_dock_widget</span><span class="p">(</span><span class="n">label_widget</span><span class="p">,</span> <span class="n">area</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;label_widget&#39;</span><span class="p">)</span>
 
 <span class="c1"># set the shapes layer mode to adding rectangles</span>
-<a href="../api/napari.layers.Shapes.html#id9" title="napari.layers.Shapes.mode" class="sphx-glr-backref-module-napari-layers sphx-glr-backref-type-py-property"><span class="n">shapes</span><span class="o">.</span><span class="n">mode</span></a> <span class="o">=</span> <span class="s1">&#39;add_rectangle&#39;</span>
+<span class="n">shapes</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="s1">&#39;add_rectangle&#39;</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <a href="../api/napari.html#napari.run" title="napari.run" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">run</span></a><span class="p">()</span>
 </pre></div>
 </div>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-gallery-bbox-annotator-py">
-<div class="sphx-glr-download sphx-glr-download-python docutils container">
-<p><a class="reference download internal" download="" href="../_downloads/b5f6c3a893d4c81a6f08346e4646bd37/bbox_annotator.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">bbox_annotator.py</span></code></a></p>
-</div>
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/f94a7927c3d7302104be3f262a0a0e2b/bbox_annotator.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">bbox_annotator.ipynb</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/b5f6c3a893d4c81a6f08346e4646bd37/bbox_annotator.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">bbox_annotator.py</span></code></a></p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
@@ -794,7 +820,7 @@ to download the full example code</p>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="3Dimage_plane_rendering.html"
@@ -832,12 +858,12 @@ to download the full example code</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

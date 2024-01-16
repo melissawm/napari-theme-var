@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -21,12 +21,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -43,9 +43,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -58,7 +58,7 @@
     <script src="../../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/fundamentals/installation';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.14.3';
+        DOCUMENTATION_OPTIONS.theme_version = '0.14.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://napari.org/dev/_static/version_switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -135,6 +135,27 @@
   
   <div class="col-lg-3 navbar-header-items__start">
     
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="napari - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="napari - Home"/>`);</script>
+  
+  
+</a></div>
+    
       <div class="navbar-item"><!-- A small template snippet for theme testing -->
 <a class="navbar-brand" href="../../index.html">
   napari
@@ -146,7 +167,8 @@
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -272,7 +294,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -399,7 +422,7 @@ document.write(`
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../start_index.html">Getting started</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="quick_start.html">Quick start</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">How to install napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html">How to launch napari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html">How to launch <code class="docutils literal notranslate"><span class="pre">napari</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="viewer.html">Viewer tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/layers.html">Layers at a glance</a></li>
 </ul>
@@ -434,17 +457,19 @@ document.write(`
 <li class="toctree-l3"><a class="reference internal" href="../../howtos/layers/vectors.html">Using the vectors layer</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../howtos/connecting_events.html">Hooking up your own events</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../howtos/extending/index.html">Extending napari</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../howtos/extending/magicgui.html">Creating widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../howtos/extending/connecting_events.html">Hooking up your own events</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../howtos/napari_imageJ.html">napari + ImageJ how-to guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../howtos/docker.html">Napari in Docker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../howtos/perfmon.html">Performance monitoring</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../howtos/headless.html">Running napari headlessly</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../guides/index.html">In-depth explanations</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/magicgui.html">Using <code class="docutils literal notranslate"><span class="pre">magicgui</span></code> in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/event_loop.html">An introduction to the event loop in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/napari_models.html">Napari models and events</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../guides/index.html">In-depth explanations</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/event_loop.html">napari event loop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/threading.html">Multithreading in napari</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/3D_interactivity.html">3D interactivity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/rendering-explanation.html">Rendering in napari</a></li>
@@ -452,23 +477,22 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../../guides/performance.html">napari performance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/preferences.html">Preferences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/contexts_expressions.html">Contexts and Expressions in napari</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/app_model.html">napari’s application model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/events_reference.html">Events reference</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../further-resources/glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../further-resources/napari-workshops.html">napari workshops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../further-resources/sample_data.html">Sample databases</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../gallery.html">Gallery</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../_tags/tagsindex.html">Tags</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/analysis.html">analysis (4)</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../gallery.html">Gallery</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../_tags/tagsindex.html">Tags</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/analysis.html">analysis (4)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_labels_with_features.html">Add labels with features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/annotate-2d.html">Annotate 2D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/annotate_segmentation_with_text.html">Annotate segmentation with text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/paint-nd.html">Paint nD</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/experimental.html">experimental (9)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/experimental.html">experimental (9)</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/action_manager.html">Action manager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/interaction_box_image.html">Interaction box image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/interactive_move_rectangle_3d.html">Interactive move rectangle</a></li>
@@ -480,7 +504,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/viewer_fps_label.html">Viewer FPS label</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/gui.html">gui (16)</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/gui.html">gui (16)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/action_manager.html">Action manager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/bbox_annotator.html">bbox annotator</a></li>
@@ -499,14 +523,14 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/set_theme.html">Set theme</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/historical.html">historical (4)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/historical.html">historical (4)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/reader_plugin.html">Reader plugin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/shapes_to_labels.html">Shapes to labels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/update_console.html">Update console</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/without_gui_qt.html">napari without gui_qt</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/interactivity.html">interactivity (5)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/interactivity.html">interactivity (5)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/cursor_position.html">Cursor position</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/cursor_ray.html">Cursor ray</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/fourier_transform_playground.html">Fourier transform playground</a></li>
@@ -514,15 +538,16 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/interactive_scripting.html">Interactive scripting</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/layers.html">layers (6)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/layers.html">layers (6)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3D_paths.html">3D Paths</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_3D_image.html">Add 3D image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_labels.html">Add labels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_labels_with_features.html">Add labels with features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../gallery/vortex.html">Visualizing optical flow in napari</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-advanced.html">visualization-advanced (14)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-advanced.html">visualization-advanced (14)</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3D_paths.html">3D Paths</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/3Dimage_plane_rendering.html">3D image plane rendering</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_multiscale_image.html">Add multiscale image</a></li>
@@ -536,9 +561,10 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/to_screenshot.html">To screenshot</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/tracks_3d.html">Tracks 3D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/tracks_3d_with_graph.html">Tracks 3D with graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../gallery/vortex.html">Visualizing optical flow in napari</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-basic.html">visualization-basic (22)</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-basic.html">visualization-basic (22)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_grayscale_image.html">Add grayscale image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_image.html">Add image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_image_transformed.html">Add image transformed</a></li>
@@ -563,7 +589,7 @@ document.write(`
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/tracks_2d.html">Tracks 2D</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-nd.html">visualization-nD (21)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../_tags/visualization-nd.html">visualization-nD (21)</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add-points-3d.html">Add points 3D</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_3D_image.html">Add 3D image</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../gallery/add_points_on_nD_shapes.html">Add points on nD shapes</a></li>
@@ -659,11 +685,8 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>If you want to contribute code back into napari, you should follow the <a class="reference external" href="https://napari.org/developers/contributing.html">development installation instructions in the contributing guide</a> instead.</p>
 </div>
-<section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
-<p>Prerequisites differ depending on how you want to install napari.</p>
-<section id="prerequisites-for-installing-napari-as-a-python-package">
-<h3>Prerequisites for installing napari as a Python package<a class="headerlink" href="#prerequisites-for-installing-napari-as-a-python-package" title="Permalink to this heading">#</a></h3>
+<section id="install-as-python-package-recommended">
+<h2>Install as Python package (recommended)<a class="headerlink" href="#install-as-python-package-recommended" title="Permalink to this heading">#</a></h2>
 <p>This installation method allows you to use napari from Python to programmatically
 interact with the app. It is the best way to install napari and make full use of
 all its features.</p>
@@ -677,17 +700,6 @@ all its features.</p>
 <li><p>an environment manager like <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">conda</a> or
 <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a> <strong>(Highly recommended)</strong></p></li>
 </ul>
-</section>
-<section id="prerequisites-for-installing-napari-as-a-bundled-app">
-<h3>Prerequisites for installing napari as a bundled app<a class="headerlink" href="#prerequisites-for-installing-napari-as-a-bundled-app" title="Permalink to this heading">#</a></h3>
-<p>This is the easiest way to install napari if you only wish to use it as a standalone GUI app.
-This installation method does not have any prerequisites.</p>
-<p><a class="reference internal" href="#install-as-a-bundled-app"><span class="std std-doc">Click here</span></a> to see instructions
-for installing the bundled app.</p>
-</section>
-</section>
-<section id="install-as-python-package-recommended">
-<h2>Install as Python package (recommended)<a class="headerlink" href="#install-as-python-package-recommended" title="Permalink to this heading">#</a></h2>
 <p>Python package distributions of napari can be installed via <code class="docutils literal notranslate"><span class="pre">pip</span></code>, <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>, or from source.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -703,23 +715,10 @@ conda<span class="w"> </span>activate<span class="w"> </span>napari-env
 </div>
 </div>
 <p>Choose one of the options below to install napari as a Python package.</p>
-<div class="dropdown admonition">
-<p class="admonition-title"><strong>1. From pip</strong></p>
-<p>napari can be installed on most macOS (Intel x86), Linux, and Windows systems with Python
-3.8–3.10 using pip:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;napari[all]&quot;</span>
-</pre></div>
-</div>
-<p>You can then upgrade napari to a new version using:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;napari[all]&quot;</span><span class="w"> </span>--upgrade
-</pre></div>
-</div>
-<p><em>(See <a class="reference internal" href="#choosing-a-different-qt-backend"><span class="std std-doc">Choosing a different Qt backend</span></a> below for an explanation of the <code class="docutils literal notranslate"><span class="pre">[all]</span></code>
-notation.)</em></p>
-<p><em>(See <a class="reference internal" href="#using-constraints-files"><span class="std std-doc">Using constraints file</span></a> for help installing older versions of napari)</em></p>
-</div>
-<div class="dropdown admonition">
-<p class="admonition-title"><strong>2. From conda-forge</strong></p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+From conda-forge using conda</label><div class="sd-tab-content docutils">
 <p>If you prefer to manage packages with conda, napari is available on the
 conda-forge channel. We also recommend this path for users of arm64 macOS machines
 (Apple Silicon, meaning a processor with a name like “M1”). You can install it with:</p>
@@ -733,7 +732,6 @@ conda-forge channel. We also recommend this path for users of arm64 macOS machin
 <p>If you want to install napari with PySide2 as the backend you need to install it using</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>napari<span class="w"> </span>pyside2
 </pre></div>
-</div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -764,17 +762,35 @@ Then you can use <code class="docutils literal notranslate"><span class="pre">ma
 </pre></div>
 </div>
 </div>
-<div class="dropdown admonition">
-<p class="admonition-title"><strong>3. From the main branch on Github</strong></p>
-<p>To install the latest version with yet to be released features from github via pip, call</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+From PyPI using pip</label><div class="sd-tab-content docutils">
+<p>napari can be installed from PyPI on most macOS (Intel x86), Linux, and Windows systems with Python
+3.8–3.10 using pip:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;napari[all]&quot;</span>
+</pre></div>
+</div>
+<p>You can then upgrade napari to a new version using:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;napari[all]&quot;</span><span class="w"> </span>--upgrade
+</pre></div>
+</div>
+<p><em>(See <a class="reference internal" href="#choosing-a-different-qt-backend">Choosing a different Qt backend</a> below for an explanation of the <code class="docutils literal notranslate"><span class="pre">[all]</span></code>
+notation.)</em></p>
+<p><em>(See <a class="reference internal" href="#using-constraints-files">Using constraints file</a> for help installing older versions of napari)</em></p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+From the main branch on Github</label><div class="sd-tab-content docutils">
+<p>To install the latest version with yet to be released features from Github you can use pip:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;git+https://github.com/napari/napari.git#egg=napari[all]&quot;</span>
 </pre></div>
 </div>
 </div>
+</div>
 <!-- #region -->
-</section>
 <section id="checking-it-worked">
-<h2>Checking it worked<a class="headerlink" href="#checking-it-worked" title="Permalink to this heading">#</a></h2>
+<h3>Checking it worked<a class="headerlink" href="#checking-it-worked" title="Permalink to this heading">#</a></h3>
 <p>After installation you should be able to launch napari from the command line by
 simply running</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>napari
@@ -796,7 +812,7 @@ measures may further delay launches—even after the first launch.</p>
 </div>
 </section>
 <section id="choosing-a-different-qt-backend">
-<h2>Choosing a different Qt backend<a class="headerlink" href="#choosing-a-different-qt-backend" title="Permalink to this heading">#</a></h2>
+<h3>Choosing a different Qt backend<a class="headerlink" href="#choosing-a-different-qt-backend" title="Permalink to this heading">#</a></h3>
 <p>napari needs a library called <a class="reference external" href="https://www.qt.io/">Qt</a> to run its user interface
 (UI). In Python, there are two alternative libraries to run this, called
 <a class="reference external" href="https://www.riverbankcomputing.com/software/pyqt/download5">PyQt5</a> and
@@ -832,7 +848,7 @@ you’re not using.</p>
 </div>
 </section>
 <section id="using-constraints-files">
-<h2>Using constraints files<a class="headerlink" href="#using-constraints-files" title="Permalink to this heading">#</a></h2>
+<h3>Using constraints files<a class="headerlink" href="#using-constraints-files" title="Permalink to this heading">#</a></h3>
 <p>Since napari 0.4.18, we store constraints files with information about each exact dependency version against which napari was tested.
 This could be useful if you need to install napari as a package from PyPI, and prevents creating environments where napari does not start or work properly.</p>
 <p>The constraints files are stored in the napari repository under <code class="docutils literal notranslate"><span class="pre">resources/constraints/constraints_py3.10.txt</span></code>. To find
@@ -845,6 +861,7 @@ replacing <code class="docutils literal notranslate"><span class="pre">{tag}</sp
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>napari<span class="o">[</span>all,<span class="w"> </span>pyqt<span class="o">]</span><span class="w"> </span>-c<span class="w"> </span>constraints_py3.10.txt
 </pre></div>
 </div>
+</section>
 </section>
 <section id="install-as-a-bundled-app">
 <h2>Install as a bundled app<a class="headerlink" href="#install-as-a-bundled-app" title="Permalink to this heading">#</a></h2>
@@ -859,7 +876,7 @@ extended with napari plugins installed directly via the app.</p>
 <p class="admonition-title">Important</p>
 <p>Note that the bundled app is still
 in active development, and may not be very stable. We strongly recommend
-<a class="reference internal" href="#install-as-python-package-recommended"><span class="std std-doc">installing as a Python package instead</span></a>.</p>
+<a class="reference internal" href="#install-as-python-package-recommended">installing as a Python package instead</a>.</p>
 </div>
 <p>To access the cross platform bundles you can visit our <a class="reference external" href="https://github.com/napari/napari/releases">release
 page</a> and scroll to the release you
@@ -875,15 +892,10 @@ expand the <code class="docutils literal notranslate"><span class="pre">Assets</
 <li><p>to start learning how to use napari, checkout our <a class="reference internal" href="getting_started.html"><span class="doc std std-doc">getting
 started</span></a> tutorial</p></li>
 <li><p>if you are interested in
-contributing to napari please check our <a class="reference internal" href="../../developers/contributing.html"><span class="doc std std-doc">contributing
+contributing to napari please check our <a class="reference internal" href="../../developers/contributing.html"><span class="std std-doc">contributing
 guidelines</span></a></p></li>
-<li><p>if you are running into issues or bugs, please open a new issue on our <a class="reference external" href="https://github.com/napari/napari/issues">issue
-tracker</a></p>
-<ul>
-<li><p>include the output of <code class="docutils literal notranslate"><span class="pre">napari</span> <span class="pre">--info</span></code>
-(or go to <code class="docutils literal notranslate"><span class="pre">Help&gt;Info</span></code> in the viewer and copy paste the information)</p></li>
-</ul>
-</li>
+<li><p>if you are running into issues or bugs, please open a <a class="reference external" href="https://github.com/napari/napari/issues/new/choose">new issue</a> on our <a class="reference external" href="https://github.com/napari/napari/issues">issue
+tracker</a></p></li>
 <li><p>if you want help using napari, we are a community partner on the <a class="reference external" href="https://forum.image.sc/tags/napari">imagesc
 forum</a> and all usage support requests should
 be posted on the forum with the tag <code class="docutils literal notranslate"><span class="pre">napari</span></code>. We look forward to interacting
@@ -900,7 +912,7 @@ with you there!</p></li>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="quick_start.html"
@@ -916,7 +928,7 @@ with you there!</p></li>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">How to launch napari</p>
+        <p class="prev-next-title">How to launch <code class="docutils literal notranslate"><span class="pre">napari</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -930,20 +942,18 @@ with you there!</p></li>
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites-for-installing-napari-as-a-python-package">Prerequisites for installing napari as a Python package</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites-for-installing-napari-as-a-bundled-app">Prerequisites for installing napari as a bundled app</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-as-python-package-recommended">Install as Python package (recommended)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-it-worked">Checking it worked</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-different-qt-backend">Choosing a different Qt backend</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-constraints-files">Using constraints files</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-as-python-package-recommended">Install as Python package (recommended)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-it-worked">Checking it worked</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-different-qt-backend">Choosing a different Qt backend</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-constraints-files">Using constraints files</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-as-a-bundled-app">Install as a bundled app</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next steps</a></li>
 </ul>
@@ -962,12 +972,12 @@ with you there!</p></li>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 <footer class="napari-footer">
   
     <div class="footer-item">
-      <a href="/">
+      <a class="footer-icon__hover-blue" href="https://napari.org" target="_blank" rel="noreferrer">
   <svg
   width="30"
   height="30"

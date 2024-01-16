@@ -27,29 +27,7 @@ Display one 4-D image layer using the ``add_image`` API
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-60
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_nD_shapes_001.png
-   :alt: nD shapes
-   :srcset: /gallery/images/sphx_glr_nD_shapes_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    sliced: nshapes 128, mask shape (128, 128, 128, 128), labels_shape (128, 128, 128), array_shape, (128, 5, 3)
-    broadcast: nshapes 1, mask shape (1, 128, 128), labels_shape (128, 128), array_shape, (1, 4, 2)
-
-
-
-
-
-
-|
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -110,16 +88,13 @@ Display one 4-D image layer using the ``add_image`` API
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: nD_shapes.ipynb <nD_shapes.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: nD_shapes.py <nD_shapes.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: nD_shapes.ipynb <nD_shapes.ipynb>`
 
 
 .. only:: html

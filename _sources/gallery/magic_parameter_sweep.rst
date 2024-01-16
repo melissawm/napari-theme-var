@@ -31,18 +31,7 @@ It demonstrates:
 
 .. GENERATED FROM PYTHON SOURCE LINES 13-54
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_magic_parameter_sweep_001.png
-   :alt: magic parameter sweep
-   :srcset: /gallery/images/sphx_glr_magic_parameter_sweep_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
     import typing
 
@@ -93,16 +82,13 @@ It demonstrates:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: magic_parameter_sweep.ipynb <magic_parameter_sweep.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: magic_parameter_sweep.py <magic_parameter_sweep.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: magic_parameter_sweep.ipynb <magic_parameter_sweep.ipynb>`
 
 
 .. only:: html

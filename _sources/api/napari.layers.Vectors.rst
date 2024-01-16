@@ -93,6 +93,7 @@ napari.layers.Vectors
       ~Vectors.features
       ~Vectors.help
       ~Vectors.interactive
+      ~Vectors.keymap
       ~Vectors.length
       ~Vectors.loaded
       ~Vectors.metadata
@@ -114,6 +115,7 @@ napari.layers.Vectors
       ~Vectors.translate
       ~Vectors.vector_style
       ~Vectors.visible
+      
       
       
       

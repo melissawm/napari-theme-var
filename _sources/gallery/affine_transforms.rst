@@ -27,18 +27,7 @@ Display an image and its corners before and after an affine transform
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-48
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_affine_transforms_001.png
-   :alt: affine transforms
-   :srcset: /gallery/images/sphx_glr_affine_transforms_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
     import numpy as np
     import scipy.ndimage as ndi
@@ -87,16 +76,13 @@ Display an image and its corners before and after an affine transform
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: affine_transforms.ipynb <affine_transforms.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: affine_transforms.py <affine_transforms.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: affine_transforms.ipynb <affine_transforms.ipynb>`
 
 
 .. only:: html

@@ -32,18 +32,7 @@ current dims point (`viewer.dims.point`).
 
 .. GENERATED FROM PYTHON SOURCE LINES 14-466
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_multiple_viewer_widget_001.png
-   :alt: multiple viewer widget
-   :srcset: /gallery/images/sphx_glr_multiple_viewer_widget_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     from copy import deepcopy
@@ -505,16 +494,13 @@ current dims point (`viewer.dims.point`).
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: multiple_viewer_widget.ipynb <multiple_viewer_widget.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: multiple_viewer_widget.py <multiple_viewer_widget.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: multiple_viewer_widget.ipynb <multiple_viewer_widget.ipynb>`
 
 
 .. only:: html

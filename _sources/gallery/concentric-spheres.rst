@@ -27,18 +27,7 @@ Display concentric spheres in 3D.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-31
 
-
-
-.. image-sg:: /gallery/images/sphx_glr_concentric-spheres_001.png
-   :alt: concentric spheres
-   :srcset: /gallery/images/sphx_glr_concentric-spheres_001.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -70,16 +59,13 @@ Display concentric spheres in 3D.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: concentric-spheres.ipynb <concentric-spheres.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: concentric-spheres.py <concentric-spheres.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: concentric-spheres.ipynb <concentric-spheres.ipynb>`
 
 
 .. only:: html
